@@ -1,0 +1,1 @@
+" .vimrc rebuilt from scratch
