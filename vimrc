@@ -61,3 +61,7 @@ set backupdir=~/.vim_backup
 set directory=~/.vim_backup
 " Search upwards for a tags file
 set tags=tags;
+" -------------------------------- key mappings --------------------------------
+" you will need your map leader
+let mapleader = ","
+source $HOME/.vim/keymaps.vim
