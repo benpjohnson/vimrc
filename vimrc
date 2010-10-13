@@ -41,3 +41,9 @@ set backspace=start,eol,indent
 " use incremental searching
 set incsearch
 filetype indent on
+
+" --------------------------------- filetypes ----------------------------------
+syntax on
+filetype on
+filetype plugin on
+filetype indent on
