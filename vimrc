@@ -20,8 +20,6 @@ set vb t_vb=
 set cul 
 set ruler
 set laststatus=2
-" A nice coding font http://www.levien.com/type/myfonts/inconsolata.html
-set guifont="Inconsolata\ 14"
 
 " ------------------------------- text handling -------------------------------
 " convert tabs to spaces
