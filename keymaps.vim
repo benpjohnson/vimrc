@@ -3,7 +3,6 @@
 if has("mac") 
     map <D-k> <ESC>:tabnext<CR>
     map <D-j> <ESC>:tabprev<CR>
-    map <D-t> <ESC>:tabnew<CR>
     map <D-W> <ESC>:tabclose<CR>
     map <D-1> 1gt
     map <D-2> 2gt
@@ -18,7 +17,6 @@ if has("mac")
 else
     map <C-Right> <ESC>:tabnext<CR>
     map <C-Left> <ESC>:tabprev<CR>
-    map <C-\> <ESC>:tabnew<CR>
     map <D-W> <ESC>:tabclose<CR>
     map <A-1> 1gt
     map <A-2> 2gt
@@ -30,22 +28,35 @@ else
     map <A-8> 8gt
     map <A-9> 9gt
 end
-
-" Tab next/previous
+" tab next/previous
 nnoremap <c-l> gt
 nnoremap <c-h> gT
+" new tab
+map <Leader>t <ESC>:tabnew<CR>
 
 " gnome-vim specific remap copy/paste to something sensible
-" Use alt instead of shift as it will override c-v for some 
+" use alt instead of shift as it will override c-v for some 
 " stupid reason I can't recall
 nmap <C-A-V> "+gP
 imap <C-A-V> <ESC><C-V>i
 vmap <C-A-C> "+y 
 
-" F5 to make
+" f5 to make
 map <F5> :make<CR>
 
-" Edit vimrc 
+" edit vimrc 
 map <Leader>er :e $MYVIMRC<CR>
-" Source vimrc
+" source vimrc
 map <Leader>sr :source $MYVIMRC<CR>
+
+" make ',e' (in normal mode) give a prompt for opening files
+map <Leader>e :e <C-R>=expand("%:p:h") . "/" <CR>
+
+" write with sudo powers
+cmap w!! %!sudo tee > /dev/null %<CR>
+
+" friendly vert split new file
+map <Leader>v :vert botright new<cr>
+
+" insert from screen 
+noremap <Leader>< :r /tmp/screen-exchange<CR>
