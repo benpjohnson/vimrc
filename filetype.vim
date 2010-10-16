@@ -3,12 +3,6 @@ if exists("autocommands_loaded")
 endif
 let autocommands_loaded = 1
 
-" markdown settings
-augroup markdown
-    autocmd BufRead,BufNewFile *.mkd setfiletype mkd
-    autocmd BufRead *.mkd  set ai formatoptions=tcroqn2 comments=n:> textwidth=80
-augroup END
-
 autocmd BufNewFile,BufRead *.zpt,*.inc,*.php,*.phpd,*.htm,*.html setf php
 
 " drupal Modules
