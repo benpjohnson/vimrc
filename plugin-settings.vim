@@ -3,6 +3,10 @@ map <F2> :TlistToggle<CR>
 " refine taglist to get rid of those dam variables</CR>
 let tlist_php_settings = 'php;c:class;f:function;d:constant'
 
+" Lusty juggler
+map <Leader>b :LustyBufferExplorer<CR>
+map <Leader>j :LustyJuggler<CR>
+
 " alignmaps
 map <Leader>a= :Align =<CR>
 
