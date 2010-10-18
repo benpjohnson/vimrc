@@ -45,6 +45,9 @@ set backspace=start,eol,indent
 set incsearch
 filetype indent on
 
+" ---------------------------------- buffers -----------------------------------
+set hidden
+
 " --------------------------------- filetypes ----------------------------------
 syntax on
 filetype on
