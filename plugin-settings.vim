@@ -10,10 +10,6 @@ map <Leader>j :LustyJuggler<CR>
 " alignmaps
 map <Leader>a= :Align =<CR>
 
-" html.vim 
-" Load useful HTML stuff in PHP files
-au Filetype php source ~/.vim/ftplugin/HTML.vim
-
 " mru
 noremap <Leader>m :MRU<CR>
 let MRU_Max_Entries = 40
