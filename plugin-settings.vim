@@ -10,11 +10,6 @@ map <Leader>j :LustyJuggler<CR>
 " alignmaps
 map <Leader>a= :Align =<CR>
 
-" html closetag  
-let b:closetag_html_style=1
-let b:unaryTagsStack="br"
-au Filetype html,xml,xsl,php,zpt,htm source ~/.vim/scripts/closetag.vim 
-
 " html.vim 
 " Load useful HTML stuff in PHP files
 au Filetype php source ~/.vim/ftplugin/HTML.vim
@@ -48,7 +43,6 @@ nmap <Leader>vwa <Plug>CVSWatchAdd
 nmap <Leader>vwn <Plug>CVSWatchOn
 nmap <Leader>vwf <Plug>CVSWatchOff
 nmap <Leader>vwf <Plug>CVSWatchRemove
-
 
 " ----------------------- In Progress -------------------------
 " map to check html and display error in a new window
