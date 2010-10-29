@@ -22,3 +22,6 @@
 [submodule "bundle/snippetsemu"]
 	path = bundle/snippetsemu
 	url = http://github.com/vim-scripts/snippetsEmu.git
+[submodule "snippetsEmu-bundles"]
+	path = snippetsEmu-bundles
+	url = git@github.com:benpjohnson/snippetsEmu-bundles.git
