@@ -19,3 +19,6 @@
 [submodule "bundle/command-t"]
 	path = bundle/command-t
 	url = git://git.wincent.com/command-t.git
+[submodule "bundle/snippetsemu"]
+	path = bundle/snippetsemu
+	url = http://github.com/vim-scripts/snippetsEmu.git
