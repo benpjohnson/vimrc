@@ -42,6 +42,10 @@ nmap <Leader>vwf <Plug>CVSWatchRemove
 " CommandT
 map <Leader>f :CommandT<CR>
 
+" PHP Documenter
+imap <C-d> <ESC>:set paste<CR>:exe PhpDoc()<CR>:set nopaste<CR>i
+map <Leader>d <ESC>:set paste<CR>:exe PhpDoc()<CR>:set nopaste<CR>i
+
 " ----------------------- In Progress -------------------------
 " map to check html and display error in a new window
 noremap \err :1<CR>yG :20new<CR>p :setfiletype html<CR> :%!tidy -i >/dev/null<CR>

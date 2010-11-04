@@ -25,3 +25,6 @@
 [submodule "bundle/snippetsemu-bundles/after/ftplugin"]
 	path = bundle/snippetsemu-bundles/after/ftplugin
 	url = git@github.com:benpjohnson/snippetsEmu-bundles.git
+[submodule "bundle/pdv"]
+	path = bundle/pdv
+	url = https://github.com/vim-scripts/PDV--phpDocumentor-for-Vim.git
