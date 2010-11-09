@@ -39,12 +39,21 @@ nmap <Leader>vwn <Plug>CVSWatchOn
 nmap <Leader>vwf <Plug>CVSWatchOff
 nmap <Leader>vwf <Plug>CVSWatchRemove
 
+" git fugitive commands
+nmap <Leader>gs :Gstatus<CR>
+nmap <Leader>gc :Gcommit<CR>
+nmap <Leader>gw :Gwrite<CR>
+nmap <Leader>gd :Gdiff<CR>
+nmap <Leader>gb :Gblame<CR>
+nmap <Leader>gl :Glog<CR>
+nmap <Leader>gg :Ggrep<CR>
+
 " CommandT
 map <Leader>f :CommandT<CR>
 
 " PHP Documenter
 imap <C-d> <ESC>:set paste<CR>:exe PhpDoc()<CR>:set nopaste<CR>i
-map <Leader>d <ESC>:set paste<CR>:exe PhpDoc()<CR>:set nopaste<CR>i
+nmap <Leader>d :set paste<CR>:exe PhpDoc()<CR>:set nopaste<CR>
 
 " ----------------------- In Progress -------------------------
 " map to check html and display error in a new window
