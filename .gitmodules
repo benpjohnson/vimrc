@@ -31,3 +31,6 @@
 [submodule "bundle/phpfolding"]
 	path = bundle/phpfolding
 	url = https://github.com/vim-scripts/phpfolding.vim.git
+[submodule "bundle/async"]
+	path = bundle/async
+	url = https://github.com/MarcWeber/vim-addon-async.git
