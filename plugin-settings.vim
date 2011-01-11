@@ -80,7 +80,7 @@ noremap <Leader>< :r /tmp/screen-exchange<CR>
 
 " add a basic note entry
 fun! NoteAdd()
-    return "#NOTE:" . strftime("%Y-%m-%d") . " "
+    return "* " . strftime("%Y-%m-%d") . " "
 endfun
 map <Leader>n <Esc>ggO<C-r>=NoteAdd()<CR>
 

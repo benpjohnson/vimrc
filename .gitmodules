@@ -43,3 +43,6 @@
 [submodule "bundle/surround"]
 	path = bundle/surround
 	url = https://github.com/tpope/vim-surround.git
+[submodule "bundle/vimorg"]
+	path = bundle/vimorg
+	url = https://github.com/hsitz/VimOrganizer.git
