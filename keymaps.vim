@@ -59,7 +59,7 @@ cmap w!! %!sudo tee > /dev/null %<CR>
 map <Leader>v :vert botright new<cr>
 
 " insert from screen 
-noremap <Leader>< :r /tmp/screen-exchange<CR>
+noremap <Leader>< :r $HOME/.screen-exchange<CR>
 
 " toggle paste setting
 nnoremap <F3> :set invpaste paste?<CR>
