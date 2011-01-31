@@ -15,4 +15,4 @@ submodule-init :
 	ln -fs $(CURDIR)/vimrc $(HOME)/.vimrc && ln -fs $(CURDIR)/gvimrc $(HOME)/.gvimrc 
 
 commandt : 
-	   cd $(HOME)/.vim/bundle/command-t/ruby/command-t && ruby extconf.rb && make
+	   cd $(HOME)/.vim/bundle/command-t/ruby/command-t && make clean && ruby extconf.rb && make
