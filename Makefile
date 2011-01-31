@@ -6,7 +6,7 @@ update :
 	git submodule foreach git pull origin master
 
 pathogen.vim : 
-	rm -f autoload/pathogen.vim && wget -qP autoload $(PATHOGEN)
+	rm -f autoload/pathogen.vim && wget --no-check-certificate -qP autoload $(PATHOGEN)
 
 submodule-init :
 	cd $(HOME)/.vim && git submodule update --init
