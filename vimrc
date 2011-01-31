@@ -43,7 +43,6 @@ set number
 set backspace=start,eol,indent
 " use incremental searching
 set incsearch
-filetype indent on
 
 " ---------------------------------- buffers -----------------------------------
 set hidden
