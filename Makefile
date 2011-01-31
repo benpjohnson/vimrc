@@ -1,6 +1,6 @@
 PATHOGEN="http://github.com/tpope/vim-pathogen/raw/master/autoload/pathogen.vim"
 
-install : pathogen.vim submodule-init .vimrc command-t
+install : pathogen.vim submodule-init .vimrc commandt
 
 update : 
 	git submodule foreach git pull origin master
@@ -14,5 +14,5 @@ submodule-init :
 .vimrc : 
 	ln -fs $(CURDIR)/vimrc $(HOME)/.vimrc && ln -fs $(CURDIR)/gvimrc $(HOME)/.gvimrc 
 
-command-t : 
+commandt : 
 	   cd $(HOME)/.vim/bundle/command-t/ruby/command-t && ruby extconf.rb && make
