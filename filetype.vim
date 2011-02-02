@@ -12,3 +12,6 @@ augroup END
 
 " csv files
 autocmd BufNewFile,BufRead *.csv,*.tsv setf csv
+
+" vimorg
+autocmd BufNewFile,BufRead *.org setf org
