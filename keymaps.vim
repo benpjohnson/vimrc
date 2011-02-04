@@ -65,3 +65,5 @@ noremap <Leader>< :r $HOME/.screen-exchange<CR>
 nnoremap <F3> :set invpaste paste?<CR>
 set pastetoggle=<F3>
 set showmode
+" Yank current filename to the unnamed register
+nmap cp :let @" = expand("%:t")<CR>
