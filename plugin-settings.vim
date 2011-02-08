@@ -6,9 +6,6 @@ let tlist_php_settings = 'php;c:class;f:function;d:constant'
 map <Leader>b :LustyBufferExplorer<CR>
 map <Leader>j :LustyJuggler<CR>
 
-" alignmaps
-map <Leader>a= :Align =<CR>
-
 " mru
 noremap <Leader>m :MRU<CR>
 let MRU_Max_Entries = 40
