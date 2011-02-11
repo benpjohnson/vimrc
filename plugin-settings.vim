@@ -88,3 +88,8 @@ map <silent> <Leader>rr :silent !fr -e content  -j 'location.reload()'<CR>
 map <C-s>] :Ack <cword> * <CR>
 map <C-s>n :cnext<CR>
 map <C-s>p :cprevious<CR>
+
+" Set some basic phpdoc values
+let g:pdv_cfg_Author = "Benjamin Johnson"
+let g:pdv_cfg_Copyright = ""
+let g:pdv_cfg_License = ""
