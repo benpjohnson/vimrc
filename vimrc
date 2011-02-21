@@ -75,3 +75,8 @@ source $HOME/.vim/keymaps.vim
 " ---------------------------------- plugins -----------------------------------
 " stop gap solution to somewhat isolate plugin-specific settings/key mappings
 source $HOME/.vim/plugin-settings.vim
+
+" Keep location-specific stuff isolated
+if filereadable($HOME . "/.vimrc.local")
+      exec 'source ~/.vimrc.local'
+endif
