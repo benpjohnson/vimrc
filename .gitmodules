@@ -61,3 +61,6 @@
 [submodule "bundle/phpcomplete"]
 	path = bundle/phpcomplete
 	url = https://github.com/shawncplus/phpcomplete.vim.git
+[submodule "bundle/taglistplus"]
+	path = bundle/taglistplus
+	url = https://github.com/int3/vim-taglist-plus.git
