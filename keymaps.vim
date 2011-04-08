@@ -69,4 +69,4 @@ set showmode
 nmap cp :let @" = expand("%:t")<CR>
 
 " directory navigation
-nmap up :cd ..<CR>
+nmap up :cd ..<CR>:pwd<CR>
