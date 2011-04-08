@@ -67,3 +67,6 @@ set pastetoggle=<F3>
 set showmode
 " Yank current filename to the unnamed register
 nmap cp :let @" = expand("%:t")<CR>
+
+" directory navigation
+nmap up :cd ..<CR>
