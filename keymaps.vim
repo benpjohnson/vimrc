@@ -37,7 +37,7 @@ map <Leader>t <ESC>:tabnew<CR>
 " gnome-vim specific remap copy/paste to something sensible
 " use alt instead of shift as it will override c-v for some 
 " stupid reason I can't recall
-nmap <C-A-V> "+gP
+nmap <C-A-V> "+gp
 imap <C-A-V> <ESC><C-V>i
 vmap <C-A-C> "+y 
 
