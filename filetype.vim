@@ -17,4 +17,4 @@ autocmd BufNewFile,BufRead *.csv,*.tsv setf csv
 autocmd BufNewFile,BufRead *.org setf org
 
 " Markdown
-autocmd BufNewFile,BufRead set ts=1
+autocmd BufNewFile,BufRead set ts=1 tw=80

@@ -64,3 +64,6 @@
 [submodule "bundle/tcomment"]
 	path = bundle/tcomment
 	url = https://github.com/tomtom/tcomment_vim.git
+[submodule "bundle/VimLocalHistory"]
+	path = bundle/VimLocalHistory
+	url = git@github.com:benpjohnson/VimLocalHistory.git
