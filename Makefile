@@ -1,6 +1,6 @@
 PATHOGEN="http://github.com/tpope/vim-pathogen/raw/master/autoload/pathogen.vim"
 
-install : pathogen.vim submodule-init .vimrc commandt VimLocalHistory
+install : pathogen.vim submodule-init .vimrc commandt 
 
 update : 
 	git submodule foreach git pull origin master
@@ -15,7 +15,4 @@ submodule-init :
 	ln -fs $(CURDIR)/vimrc $(HOME)/.vimrc && ln -fs $(CURDIR)/gvimrc $(HOME)/.gvimrc 
 
 commandt : 
-	   cd $(HOME)/.vim/bundle/command-t/ruby/command-t && make clean && ruby extconf.rb && make
-
-VimLocalHistory : 
-	if [ ! -d $(HOME)/.vimlocalhistory ] ; then mkdir $(HOME)/.vimlocalhistory ; fi
+	   cd $(HOME)/.vim/bundle/command-t/ruby/command-t && ruby extconf.rb && make
