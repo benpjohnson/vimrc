@@ -1,6 +1,6 @@
 PATHOGEN="http://github.com/tpope/vim-pathogen/raw/master/autoload/pathogen.vim"
 
-install : pathogen.vim submodule-init .vimrc commandt 
+install : pathogen.vim submodule-init .vimrc
 
 update : 
 	git submodule foreach git pull origin master
