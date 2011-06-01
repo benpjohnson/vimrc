@@ -70,3 +70,7 @@ nmap cp :let @" = expand("%:t")<CR>
 
 " directory navigation
 nmap up :cd ..<CR>:pwd<CR>
+
+" quickfix shortcuts
+map <c-j> :cnext<CR>
+map <c-k> :cprevious<CR>
