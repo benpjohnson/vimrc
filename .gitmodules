@@ -21,7 +21,7 @@
 	url = http://github.com/vim-scripts/snippetsEmu.git
 [submodule "bundle/snippetsemu-bundles/after/ftplugin"]
 	path = bundle/snippetsemu-bundles/after/ftplugin
-	url = git@github.com:benpjohnson/snippetsEmu-bundles.git
+	url = http://github.com/benpjohnson/snippetsEmu-bundles.git
 [submodule "bundle/pdv"]
 	path = bundle/pdv
 	url = https://github.com/vim-scripts/PDV--phpDocumentor-for-Vim.git
@@ -58,6 +58,9 @@
 [submodule "bundle/phpcomplete"]
 	path = bundle/phpcomplete
 	url = https://github.com/shawncplus/phpcomplete.vim.git
+[submodule "bundle/taglistplus"]
+	path = bundle/taglistplus
+	url = https://github.com/int3/vim-taglist-plus.git
 [submodule "bundle/tcomment"]
 	path = bundle/tcomment
 	url = https://github.com/tomtom/tcomment_vim.git

@@ -15,3 +15,6 @@ autocmd BufNewFile,BufRead *.csv,*.tsv setf csv
 
 " vimorg
 autocmd BufNewFile,BufRead *.org setf org
+
+" Markdown
+autocmd BufNewFile,BufRead set ts=1 tw=80
