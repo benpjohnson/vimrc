@@ -1,6 +1,0 @@
-repl.enter(content) enters current tab
-
-then 
-
-this.console            log messages to ff & pull them back to vim
-this.find('string')     useful to search for view text on the current page
