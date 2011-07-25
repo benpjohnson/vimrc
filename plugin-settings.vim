@@ -6,8 +6,7 @@ let tlist_php_settings = 'php;c:class;f:function;d:constant'
 noremap <Leader>b :Unite buffer<CR>
 
 " mru
-noremap <Leader>m :MRU<CR>
-let MRU_Max_Entries = 40
+noremap <Leader>m :Unite file_mru<CR>
 
 " remap vcs commands to stop them messing with surround.vim
 nmap <Leader>va <Plug>VCSAdd
