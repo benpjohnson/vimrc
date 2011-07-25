@@ -2,9 +2,8 @@
 map <F2> :TagbarToggle<CR>
 let tlist_php_settings = 'php;c:class;f:function;d:constant'
 
-" Lusty juggler
-map <Leader>b :LustyBufferExplorer<CR>
-map <Leader>j :LustyJuggler<CR>
+" Buffers
+noremap <Leader>b :Unite buffer<CR>
 
 " mru
 noremap <Leader>m :MRU<CR>
