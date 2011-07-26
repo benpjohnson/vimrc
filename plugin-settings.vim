@@ -2,13 +2,11 @@
 map <F2> :TagbarToggle<CR>
 let tlist_php_settings = 'php;c:class;f:function;d:constant'
 
-" Lusty juggler
-noremap <Leader>b :LustyBufferExplorer<CR>
-map <Leader>j :LustyJuggler<CR>
+" Buffers
+noremap <Leader>b :Unite buffer<CR>
 
 " mru
-noremap <Leader>m :MRU<CR>
-let MRU_Max_Entries = 40
+noremap <Leader>m :Unite file_mru<CR>
 
 " remap vcs commands to stop them messing with surround.vim
 nmap <Leader>va <Plug>VCSAdd

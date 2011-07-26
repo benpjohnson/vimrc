@@ -1,12 +1,6 @@
-[submodule "bundle/mru"]
-	path = bundle/mru
-	url = http://github.com/vim-scripts/mru.vim.git
 [submodule "bundle/markdown"]
 	path = bundle/markdown
 	url = http://github.com/tpope/vim-markdown.git
-[submodule "bundle/lusty"]
-	path = bundle/lusty
-	url = http://github.com/sjbach/lusty.git
 [submodule "bundle/fugitive"]
 	path = bundle/fugitive
 	url = http://github.com/tpope/vim-fugitive.git
