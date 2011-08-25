@@ -1,3 +1,4 @@
+autocmd FileType php set omnifunc=phpcomplete#CompletePHP
 " contine comments when a newline is started
 set comments=sr:/*,mb:*,ex:*/
 " reverse the order of elements in an array
