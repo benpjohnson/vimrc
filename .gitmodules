@@ -61,6 +61,3 @@
 [submodule "bundle/unite"]
 	path = bundle/unite
 	url = https://github.com/Shougo/unite.vim.git
-[submodule "bundle/phpunit/plugin"]
-	path = bundle/phpunit/plugin
-	url = https://github.com/klokane/vim-phpunit.git
