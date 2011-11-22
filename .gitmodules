@@ -10,12 +10,6 @@
 [submodule "bundle/command-t"]
 	path = bundle/command-t
 	url = git://git.wincent.com/command-t.git
-[submodule "bundle/snippetsemu"]
-	path = bundle/snippetsemu
-	url = http://github.com/vim-scripts/snippetsEmu.git
-[submodule "bundle/snippetsemu-bundles/after/ftplugin"]
-	path = bundle/snippetsemu-bundles/after/ftplugin
-	url = http://github.com/benpjohnson/snippetsEmu-bundles.git
 [submodule "bundle/pdv"]
 	path = bundle/pdv
 	url = https://github.com/vim-scripts/PDV--phpDocumentor-for-Vim.git
