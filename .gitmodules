@@ -61,3 +61,6 @@
 [submodule "bundle/AsyncCommand"]
 	path = bundle/AsyncCommand
 	url = https://github.com/pydave/AsyncCommand.git
+[submodule "bundle/snipmate"]
+	path = bundle/snipmate
+	url = git@github.com:benpjohnson/snipmate.vim.git
