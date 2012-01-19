@@ -9,7 +9,7 @@ call pathogen#helptags()
 " ---------------------------------- look/feel ---------------------------------
 " define a highlight for trailing whitespace before the colorscheme is pulled in
 " to prevent it getting overwritten
-highlight ExtraWhitespace ctermbg=red guibg=red
+" highlight ExtraWhitespace ctermbg=red guibg=red
 autocmd ColorScheme * highlight ExtraWhitespace ctermbg=red guibg=red
 " console support for 256 colours
 set t_Co=256
