@@ -41,6 +41,10 @@ nmap <C-A-V> "+gp
 imap <C-A-V> <ESC><C-V>i
 vmap <C-A-C> "+y 
 
+
+" F3 toggle paste setting
+ nnoremap <F3> :set invpaste paste?<CR>
+" set pastetoggle=<F3>
 " f5 to make
 map <F5> :make<CR>
 
@@ -61,9 +65,6 @@ map <Leader>v :vert botright new<cr>
 " insert from screen 
 noremap <Leader>< :r $HOME/.screen-exchange<CR>
 
-" toggle paste setting
-nnoremap <F3> :set invpaste paste?<CR>
-set pastetoggle=<F3>
 set showmode
 " Yank current filename to the unnamed register
 nmap cp :let @" = expand("%:t")<CR>
