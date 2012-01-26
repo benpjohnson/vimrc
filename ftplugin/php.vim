@@ -7,7 +7,6 @@ map <Leader>cc :s/_\([a-z]\)/\U\1/g<CR>
 
 " Experimenting with Neocachecomplete + phpcomplete
 NeoComplCacheEnable
-<<<<<<< HEAD
 NeoComplCacheCachingTags
 
 "Enable heavy omni completion. 
