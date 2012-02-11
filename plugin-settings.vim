@@ -91,3 +91,6 @@ map <C-s>p :cprevious<CR>
 let g:pdv_cfg_Author = "Benjamin Johnson"
 let g:pdv_cfg_Copyright = ""
 let g:pdv_cfg_License = ""
+
+" Use debain ack version
+let g:ackprg="ack-grep -H --nocolor --nogroup --column"    
