@@ -47,8 +47,10 @@ nmap <Leader>gg :Ggrep<CR>
 map <Leader>f :CommandT<CR>
 
 " PHP Documenter
-imap <C-d> <ESC>:set paste<CR>:exe PhpDoc()<CR>:set nopaste<CR>i
-nmap <Leader>d :set paste<CR>:exe PhpDoc()<CR>:set nopaste<CR>
+" imap <C-d> <ESC>:set paste<CR>:exe PhpDoc()<CR>:set nopaste<CR>i
+ imap <C-d> <ESC>:exe PhpDoc()<CR>i
+" nmap <Leader>d :set paste<CR>:exe PhpDoc()<CR>:set nopaste<CR>
+nmap <Leader>d :exe PhpDoc()<CR>
 
 " ----------------------- In Progress -------------------------
 " map to check html and display error in a new window
@@ -94,3 +96,6 @@ let g:pdv_cfg_License = ""
 
 " Use debain ack version
 let g:ackprg="ack-grep -H --nocolor --nogroup --column"    
+
+" Syntastic_enable_signs
+let g:syntastic_enable_signs=1
