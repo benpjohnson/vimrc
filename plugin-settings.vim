@@ -99,8 +99,8 @@ let g:pdv_cfg_Author = "Benjamin Johnson"
 let g:pdv_cfg_Copyright = ""
 let g:pdv_cfg_License = ""
 
-" Local history settings
-let g:vlh_repository_dir = $HOME . "/.vimlocalhistory"
+" Use debain ack version
+let g:ackprg="ack-grep -H --nocolor --nogroup --column"    
 
 " Syntastic_enable_signs
 let g:syntastic_enable_signs=1
