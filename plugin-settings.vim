@@ -79,7 +79,12 @@ noremap <Leader>< :r /tmp/screen-exchange<CR>
 fun! NoteAdd()
     return "* " . strftime("%Y-%m-%d") . " "
 endfun
+fun! EntryAdd()
+    return strftime("%Y-%m-%d %H:%M:%S") . " "
+endfun
+
 map <Leader>n <Esc>ggO<C-r>=NoteAdd()<CR>
+map <Leader>N <Esc>ggO<C-r>=EntryAdd()<CR>
 
 " Experiments with MozRepl
 map <silent> <Leader>rr :silent !fr -e content  -j 'location.reload()'<CR>
@@ -99,3 +104,4 @@ let g:vlh_repository_dir = $HOME . "/.vimlocalhistory"
 
 " Syntastic_enable_signs
 let g:syntastic_enable_signs=1
+let g:syntastic_phpcs_disable=1
