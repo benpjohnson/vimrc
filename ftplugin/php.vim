@@ -10,9 +10,9 @@ NeoComplCacheEnable
 NeoComplCacheCachingTags
 
 "Enable heavy omni completion. 
-if !exists('g:neocomplcache_omni_patterns') 
-let g:neocomplcache_omni_patterns = {} 
-endif 
+" if !exists('g:neocomplcache_omni_patterns') 
+" let g:neocomplcache_omni_patterns = {} 
+" endif 
 
 let g:neocomplcache_omni_patterns.php = '[^. \t]->\h\w*\|\h\w*::'
 autocmd FileType php set omnifunc=phpcomplete#CompletePHP
