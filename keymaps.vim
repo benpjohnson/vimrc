@@ -72,6 +72,12 @@ nmap cp :let @" = expand("%:t")<CR>
 " directory navigation
 nmap up :cd ..<CR>:pwd<CR>
 
+" cd to the path of the current file
+map <Leader>cd :exe 'cd ' . expand ("%:p:h")<CR>
+
+" lcd version (cd only in the local window)
+map <Leader>lcd :exe 'lcd ' . expand ("%:p:h")<CR>
+
 " quickfix shortcuts
 map <c-j> :cnext<CR>
 map <c-k> :cprevious<CR>
