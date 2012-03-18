@@ -53,6 +53,10 @@ match ExtraWhitespace /\s\+\%#\@<!$/
 " ---------------------------------- buffers -----------------------------------
 set hidden
 
+" auto close the preview onmi complete buffer after we are done with it
+autocmd CursorMovedI * if pumvisible() == 0|pclose|endif
+autocmd InsertLeave * if pumvisible() == 0|pclose|endif
+
 " --------------------------------- filetypes ----------------------------------
 syntax on
 filetype on
