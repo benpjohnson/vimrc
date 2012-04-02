@@ -105,3 +105,7 @@ let g:ackprg="ack-grep -H --nocolor --nogroup --column"
 " Syntastic_enable_signs
 let g:syntastic_enable_signs=1
 let g:syntastic_phpcs_disable=1
+
+" debugbydie mappings
+map <Leader>di :call Die()<CR>
+map <Leader>dr :call RemoveDies()<CR>
