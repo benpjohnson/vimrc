@@ -76,3 +76,6 @@
 [submodule "bundle/AutoFenc"]
 	path = bundle/AutoFenc
 	url = https://github.com/vim-scripts/AutoFenc.vim
+[submodule "bundle/debugbydie"]
+	path = bundle/debugbydie
+	url = ssh://gitolite@git.benpjohnson.com/debugbydie.git

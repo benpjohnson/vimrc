@@ -42,9 +42,9 @@ imap <C-A-V> <ESC><C-V>i
 vmap <C-A-C> "+y 
 
 " F3 toggle paste setting
-nnoremap <F3> :set invpaste paste?<CR>
+map <F3> :set invpaste paste?<CR>
 " I have have a spelling checker it came with my pc
-map <F5> :setlocal spell! spelllang=en_us<CR>
+map! <F4> :setlocal spell! spelllang=en_us<CR>
 " f5 to make
 map <F5> :make<CR>
 
@@ -71,6 +71,12 @@ nmap cp :let @" = expand("%:t")<CR>
 
 " directory navigation
 nmap up :cd ..<CR>:pwd<CR>
+
+" cd to the path of the current file
+map <Leader>cd :exe 'cd ' . expand ("%:p:h")<CR>
+
+" lcd version (cd only in the local window)
+map <Leader>lcd :exe 'lcd ' . expand ("%:p:h")<CR>
 
 " quickfix shortcuts
 map <c-j> :cnext<CR>

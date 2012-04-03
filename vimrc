@@ -53,6 +53,10 @@ match ExtraWhitespace /\s\+\%#\@<!$/
 " ---------------------------------- buffers -----------------------------------
 set hidden
 
+" auto close the preview onmi complete buffer after we are done with it
+autocmd CursorMovedI * if pumvisible() == 0|pclose|endif
+autocmd InsertLeave * if pumvisible() == 0|pclose|endif
+
 " --------------------------------- filetypes ----------------------------------
 syntax on
 filetype on
@@ -62,10 +66,6 @@ filetype indent on
 " --------------------------------- filesystem ---------------------------------
 " friendly menu when tabbing though file matches
 set wildmenu
-" cd to the path of the current file
-map ,cd :exe 'cd "' . expand ("%:p:h") . '"'<CR>
-" lcd version (cd only in the local window)
-map ,lcd :exe 'lcd "' . expand ("%:p:h") . '"'<CR>
 " stick backup files where they belong 
 silent !mkdir ~/.vim_backup > /dev/null 2>&1
 set backupdir=~/.vim_backup
