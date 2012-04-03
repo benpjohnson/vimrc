@@ -63,9 +63,9 @@ filetype indent on
 " friendly menu when tabbing though file matches
 set wildmenu
 " cd to the path of the current file
-map ,cd :exe 'cd ' . expand ("%:p:h")<CR>
+map ,cd :exe 'cd "' . expand ("%:p:h") . '"'<CR>
 " lcd version (cd only in the local window)
-map ,lcd :exe 'lcd ' . expand ("%:p:h")<CR>
+map ,lcd :exe 'lcd "' . expand ("%:p:h") . '"'<CR>
 " stick backup files where they belong 
 silent !mkdir ~/.vim_backup > /dev/null 2>&1
 set backupdir=~/.vim_backup
