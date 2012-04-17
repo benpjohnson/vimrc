@@ -23,3 +23,5 @@ set statusline+=%#Error#
 set statusline+=%{SyntasticStatuslineFlag()}
 set statusline+=%*
 set statusline+=%=%-14.(%l,%c%V%)\ %P
+
+set keywordprg=pman

@@ -49,7 +49,7 @@ map! <F4> :setlocal spell! spelllang=en_us<CR>
 map <F5> :make<CR>
 
 " edit vimrc 
-map <Leader>er :e $MYVIMRC<CR>
+map <Leader>er :exec "e " . resolve(expand($MYVIMRC))<CR>
 " source vimrc
 map <Leader>sr :source $MYVIMRC<CR>
 

@@ -54,8 +54,8 @@ match ExtraWhitespace /\s\+\%#\@<!$/
 set hidden
 
 " auto close the preview onmi complete buffer after we are done with it
-autocmd CursorMovedI * if pumvisible() == 0|pclose|endif
-autocmd InsertLeave * if pumvisible() == 0|pclose|endif
+autocmd CursorMovedI * if pumvisible() == 0 && bufname("%") != "[Command Line]"|pclose|endif
+autocmd InsertLeave * if pumvisible() == 0 && bufname("%") != "[Command Line]"|pclose|endif
 
 " --------------------------------- filetypes ----------------------------------
 syntax on
