@@ -100,7 +100,13 @@ let g:pdv_cfg_Copyright = ""
 let g:pdv_cfg_License = ""
 
 " Use debain ack version
-let g:ackprg="ack-grep -H --nocolor --nogroup --column"    
+if filereadable($HOME . "/bin/ack")
+    let s:ack = $HOME . "/bin/ack"
+else
+    let s:ack = "ack-grep"
+endif
+
+let g:ackprg= s:ack . " -H --nocolor --nogroup --column"    
 
 " Syntastic_enable_signs
 let g:syntastic_enable_signs=1
