@@ -79,3 +79,6 @@
 [submodule "bundle/debugbydie"]
 	path = bundle/debugbydie
 	url = ssh://gitolite@git.benpjohnson.com/debugbydie.git
+[submodule "bundle/ctrlp"]
+	path = bundle/ctrlp
+	url = https://github.com/kien/ctrlp.vim.git
