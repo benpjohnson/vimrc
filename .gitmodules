@@ -82,3 +82,6 @@
 [submodule "bundle/ctrlp"]
 	path = bundle/ctrlp
 	url = https://github.com/kien/ctrlp.vim.git
+[submodule "/Users/ben/.vim/bundle/gundo"]
+	path = /Users/ben/.vim/bundle/gundo
+	url = http://github.com/sjl/gundo.vim.git
