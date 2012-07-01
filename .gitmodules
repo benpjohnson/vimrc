@@ -82,3 +82,6 @@
 [submodule "bundle/ctrlp"]
 	path = bundle/ctrlp
 	url = https://github.com/kien/ctrlp.vim.git
+[submodule "bundle/json"]
+	path = bundle/json
+	url = https://github.com/vim-scripts/JSON.vim.git
