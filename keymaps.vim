@@ -42,7 +42,7 @@ imap <C-A-V> <ESC><C-V>i
 vmap <C-A-C> "+y 
 
 " F3 toggle paste setting
-map <F3> :set invpaste paste?<CR>
+set pastetoggle=<F3>
 " I have have a spelling checker it came with my pc
 map! <F4> :setlocal spell! spelllang=en_us<CR>
 " f5 to make
