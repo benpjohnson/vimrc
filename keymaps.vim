@@ -50,6 +50,8 @@ map <F5> :make<CR>
 
 " edit vimrc 
 map <Leader>er :exec "e " . resolve(expand($MYVIMRC))<CR>
+" edit keymaps                                                                                                                                                                                                                                                              
+map <Leader>ek :exec "e " . $HOME . "/.vim/keymaps.vim"<CR>  
 " source vimrc
 map <Leader>sr :source $MYVIMRC<CR>
 
