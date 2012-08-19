@@ -15,8 +15,8 @@ if has("mac")
     map <D-9> 9gt
 " use the ctrl key in other os
 else
-    map <C-Right> <ESC>:tabnext<CR>
-    map <C-Left> <ESC>:tabprev<CR>
+    noremap <C-Right> <ESC>:tabnext<CR>
+    noremap <C-Left> <ESC>:tabprev<CR>
     map <D-W> <ESC>:tabclose<CR>
     map <A-1> 1gt
     map <A-2> 2gt
@@ -44,7 +44,7 @@ vmap <C-A-C> "+y
 " F3 toggle paste setting
 set pastetoggle=<F3>
 " I have have a spelling checker it came with my pc
-map! <F4> :setlocal spell! spelllang=en_us<CR>
+map <F4> :setlocal spell! spelllang=en_us<CR>
 " f5 to make
 map <F5> :make<CR>
 
