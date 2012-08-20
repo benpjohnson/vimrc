@@ -10,7 +10,7 @@ call pathogen#helptags()
 " define a highlight for trailing whitespace before the colorscheme is pulled in
 " to prevent it getting overwritten
 " highlight ExtraWhitespace ctermbg=red guibg=red
-autocmd ColorScheme * highlight ExtraWhitespace ctermbg=red guibg=red
+" autocmd ColorScheme * highlight ExtraWhitespace ctermbg=red guibg=red
 " console support for 256 colours
 set t_Co=256
 " make zenburn user darker colours
@@ -49,7 +49,7 @@ set backspace=start,eol,indent
 set incsearch
 " highlight whitespace at the end of a line, expect while typing at the end of 
 " the line
-match ExtraWhitespace /\s\+\%#\@<!$/
+" match ExtraWhitespace /\s\+\%#\@<!$/
 " ---------------------------------- buffers -----------------------------------
 set hidden
 
