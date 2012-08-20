@@ -61,9 +61,6 @@
 [submodule "bundle/AsyncCommand"]
 	path = bundle/AsyncCommand
 	url = https://github.com/pydave/AsyncCommand.git
-[submodule "bundle/snipmate"]
-	path = bundle/snipmate
-	url = git@github.com:benpjohnson/snipmate.vim.git
 [submodule "bundle/vim-extradite"]
 	path = bundle/vim-extradite
 	url = https://github.com/int3/vim-extradite.git
@@ -88,3 +85,6 @@
 [submodule "bundle/gundo"]
 	path = bundle/gundo
 	url = http://github.com/sjl/gundo.vim.git
+[submodule "bundle/ultisnips"]
+	path = bundle/ultisnips
+	url = https://github.com/SirVer/ultisnips
