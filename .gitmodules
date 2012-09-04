@@ -88,3 +88,6 @@
 [submodule "bundle/ultisnips"]
 	path = bundle/ultisnips
 	url = https://github.com/SirVer/ultisnips
+[submodule "bundle/ctlp"]
+	path = bundle/ctlp
+	url = https://github.com/kien/ctrlp.vim.git
