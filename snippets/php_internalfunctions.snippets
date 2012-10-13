@@ -1,0 +1,2628 @@
+snippet zend_version
+	 zend_version()
+endsnippet
+snippet func_num_args
+	 func_num_args()
+endsnippet
+snippet func_get_arg
+	 func_get_arg(${1:\$arg_num [required]})
+endsnippet
+snippet func_get_args
+	 func_get_args()
+endsnippet
+snippet strlen
+	 strlen(${1:\$str [required]})
+endsnippet
+snippet strcmp
+	 strcmp(${1:\$str1 [required]},${2:\$str2 [required]})
+endsnippet
+snippet strncmp
+	 strncmp(${1:\$str1 [required]},${2:\$str2 [required]},${3:\$len [required]})
+endsnippet
+snippet strcasecmp
+	 strcasecmp(${1:\$str1 [required]},${2:\$str2 [required]})
+endsnippet
+snippet strncasecmp
+	 strncasecmp(${1:\$str1 [required]},${2:\$str2 [required]},${3:\$len [required]})
+endsnippet
+snippet each
+	 each()
+endsnippet
+snippet error_reporting
+	 error_reporting(${1:\$new_error_level [optional]})
+endsnippet
+snippet define
+	 define(${1:\$constant_name [required]},${2:\$value [required]},${3:\$case_insensitive [required]})
+endsnippet
+snippet defined
+	 defined(${1:\$constant_name [required]})
+endsnippet
+snippet get_class
+	 get_class(${1:\$object [optional]})
+endsnippet
+snippet get_called_class
+	 get_called_class()
+endsnippet
+snippet get_parent_class
+	 get_parent_class(${1:\$object [optional]})
+endsnippet
+snippet method_exists
+	 method_exists(${1:\$object [required]},${2:\$method [required]})
+endsnippet
+snippet property_exists
+	 property_exists(${1:\$object_or_class [required]},${2:\$property_name [required]})
+endsnippet
+snippet class_exists
+	 class_exists(${1:\$classname [required]},${2:\$autoload [optional]})
+endsnippet
+snippet interface_exists
+	 interface_exists(${1:\$classname [required]},${2:\$autoload [optional]})
+endsnippet
+snippet trait_exists
+	 trait_exists(${1:\$traitname [required]},${2:\$autoload [optional]})
+endsnippet
+snippet function_exists
+	 function_exists(${1:\$function_name [required]})
+endsnippet
+snippet class_alias
+	 class_alias(${1:\$user_class_name [required]},${2:\$alias_name [required]},${3:\$autoload [optional]})
+endsnippet
+snippet get_included_files
+	 get_included_files()
+endsnippet
+snippet get_required_files
+	 get_required_files()
+endsnippet
+snippet is_subclass_of
+	 is_subclass_of(${1:\$object [required]},${2:\$class_name [required]},${3:\$allow_string [optional]})
+endsnippet
+snippet is_a
+	 is_a(${1:\$object [required]},${2:\$class_name [required]},${3:\$allow_string [optional]})
+endsnippet
+snippet get_class_vars
+	 get_class_vars(${1:\$class_name [required]})
+endsnippet
+snippet get_object_vars
+	 get_object_vars(${1:\$obj [required]})
+endsnippet
+snippet get_class_methods
+	 get_class_methods(${1:\$class [required]})
+endsnippet
+snippet trigger_error
+	 trigger_error(${1:\$message [required]},${2:\$error_type [optional]})
+endsnippet
+snippet user_error
+	 user_error(${1:\$message [required]},${2:\$error_type [optional]})
+endsnippet
+snippet set_error_handler
+	 set_error_handler(${1:\$error_handler [required]},${2:\$error_types [optional]})
+endsnippet
+snippet restore_error_handler
+	 restore_error_handler()
+endsnippet
+snippet set_exception_handler
+	 set_exception_handler(${1:\$exception_handler [required]})
+endsnippet
+snippet restore_exception_handler
+	 restore_exception_handler()
+endsnippet
+snippet get_declared_classes
+	 get_declared_classes()
+endsnippet
+snippet get_declared_traits
+	 get_declared_traits()
+endsnippet
+snippet get_declared_interfaces
+	 get_declared_interfaces()
+endsnippet
+snippet get_defined_functions
+	 get_defined_functions()
+endsnippet
+snippet get_defined_vars
+	 get_defined_vars()
+endsnippet
+snippet create_function
+	 create_function(${1:\$args [required]},${2:\$code [required]})
+endsnippet
+snippet get_resource_type
+	 get_resource_type(${1:\$res [required]})
+endsnippet
+snippet get_loaded_extensions
+	 get_loaded_extensions(${1:\$zend_extensions [optional]})
+endsnippet
+snippet extension_loaded
+	 extension_loaded(${1:\$extension_name [required]})
+endsnippet
+snippet get_extension_funcs
+	 get_extension_funcs(${1:\$extension_name [required]})
+endsnippet
+snippet get_defined_constants
+	 get_defined_constants(${1:\$categorize [optional]})
+endsnippet
+snippet debug_backtrace
+	 debug_backtrace(${1:\$options [optional]},${2:\$limit [optional]})
+endsnippet
+snippet debug_print_backtrace
+	 debug_print_backtrace(${1:\$options [optional]})
+endsnippet
+snippet gc_collect_cycles
+	 gc_collect_cycles()
+endsnippet
+snippet gc_enabled
+	 gc_enabled()
+endsnippet
+snippet gc_enable
+	 gc_enable()
+endsnippet
+snippet gc_disable
+	 gc_disable()
+endsnippet
+snippet strtotime
+	 strtotime(${1:\$time [required]},${2:\$now [optional]})
+endsnippet
+snippet date
+	 date(${1:\$format [required]},${2:\$timestamp [optional]})
+endsnippet
+snippet idate
+	 idate(${1:\$format [required]},${2:\$timestamp [optional]})
+endsnippet
+snippet gmdate
+	 gmdate(${1:\$format [required]},${2:\$timestamp [optional]})
+endsnippet
+snippet mktime
+	 mktime(${1:\$hour [optional]},${2:\$min [optional]},${3:\$sec [optional]},${4:\$mon [optional]},${5:\$day [optional]},${6:\$year [optional]})
+endsnippet
+snippet gmmktime
+	 gmmktime(${1:\$hour [optional]},${2:\$min [optional]},${3:\$sec [optional]},${4:\$mon [optional]},${5:\$day [optional]},${6:\$year [optional]})
+endsnippet
+snippet checkdate
+	 checkdate(${1:\$month [required]},${2:\$day [required]},${3:\$year [required]})
+endsnippet
+snippet strftime
+	 strftime(${1:\$format [required]},${2:\$timestamp [optional]})
+endsnippet
+snippet gmstrftime
+	 gmstrftime(${1:\$format [required]},${2:\$timestamp [optional]})
+endsnippet
+snippet time
+	 time()
+endsnippet
+snippet localtime
+	 localtime(${1:\$timestamp [optional]},${2:\$associative_array [optional]})
+endsnippet
+snippet getdate
+	 getdate(${1:\$timestamp [optional]})
+endsnippet
+snippet date_create
+	 date_create(${1:\$time [optional]},${2:\$object [optional]})
+endsnippet
+snippet date_create_from_format
+	 date_create_from_format(${1:\$format [required]},${2:\$time [required]},${3:\$object [optional]})
+endsnippet
+snippet date_parse
+	 date_parse(${1:\$date [required]})
+endsnippet
+snippet date_parse_from_format
+	 date_parse_from_format(${1:\$format [required]},${2:\$date [required]})
+endsnippet
+snippet date_get_last_errors
+	 date_get_last_errors()
+endsnippet
+snippet date_format
+	 date_format(${1:\$object [required]},${2:\$format [required]})
+endsnippet
+snippet date_modify
+	 date_modify(${1:\$object [required]},${2:\$modify [required]})
+endsnippet
+snippet date_add
+	 date_add(${1:\$object [required]},${2:\$interval [required]})
+endsnippet
+snippet date_sub
+	 date_sub(${1:\$object [required]},${2:\$interval [required]})
+endsnippet
+snippet date_timezone_get
+	 date_timezone_get(${1:\$object [required]})
+endsnippet
+snippet date_timezone_set
+	 date_timezone_set(${1:\$object [required]},${2:\$timezone [required]})
+endsnippet
+snippet date_offset_get
+	 date_offset_get(${1:\$object [required]})
+endsnippet
+snippet date_diff
+	 date_diff(${1:\$object [required]},${2:\$object2 [required]},${3:\$absolute [optional]})
+endsnippet
+snippet date_time_set
+	 date_time_set(${1:\$object [required]},${2:\$hour [required]},${3:\$minute [required]},${4:\$second [optional]})
+endsnippet
+snippet date_date_set
+	 date_date_set(${1:\$object [required]},${2:\$year [required]},${3:\$month [required]},${4:\$day [required]})
+endsnippet
+snippet date_isodate_set
+	 date_isodate_set(${1:\$object [required]},${2:\$year [required]},${3:\$week [required]},${4:\$day [optional]})
+endsnippet
+snippet date_timestamp_set
+	 date_timestamp_set(${1:\$object [required]},${2:\$unixtimestamp [required]})
+endsnippet
+snippet date_timestamp_get
+	 date_timestamp_get(${1:\$object [required]})
+endsnippet
+snippet timezone_open
+	 timezone_open(${1:\$timezone [required]})
+endsnippet
+snippet timezone_name_get
+	 timezone_name_get(${1:\$object [required]})
+endsnippet
+snippet timezone_name_from_abbr
+	 timezone_name_from_abbr(${1:\$abbr [required]},${2:\$gmtoffset [optional]},${3:\$isdst [optional]})
+endsnippet
+snippet timezone_offset_get
+	 timezone_offset_get(${1:\$object [required]},${2:\$datetime [required]})
+endsnippet
+snippet timezone_transitions_get
+	 timezone_transitions_get(${1:\$object [required]},${2:\$timestamp_begin [optional]},${3:\$timestamp_end [optional]})
+endsnippet
+snippet timezone_location_get
+	 timezone_location_get(${1:\$object [required]})
+endsnippet
+snippet timezone_identifiers_list
+	 timezone_identifiers_list(${1:\$what [optional]},${2:\$country [optional]})
+endsnippet
+snippet timezone_abbreviations_list
+	 timezone_abbreviations_list()
+endsnippet
+snippet timezone_version_get
+	 timezone_version_get()
+endsnippet
+snippet date_interval_create_from_date_string
+	 date_interval_create_from_date_string(${1:\$time [required]})
+endsnippet
+snippet date_interval_format
+	 date_interval_format(${1:\$object [required]},${2:\$format [required]})
+endsnippet
+snippet date_default_timezone_set
+	 date_default_timezone_set(${1:\$timezone_identifier [required]})
+endsnippet
+snippet date_default_timezone_get
+	 date_default_timezone_get()
+endsnippet
+snippet date_sunrise
+	 date_sunrise(${1:\$time [required]},${2:\$format [optional]},${3:\$latitude [optional]},${4:\$longitude [optional]},${5:\$zenith [optional]},${6:\$gmt_offset [optional]})
+endsnippet
+snippet date_sunset
+	 date_sunset(${1:\$time [required]},${2:\$format [optional]},${3:\$latitude [optional]},${4:\$longitude [optional]},${5:\$zenith [optional]},${6:\$gmt_offset [optional]})
+endsnippet
+snippet date_sun_info
+	 date_sun_info(${1:\$time [required]},${2:\$latitude [required]},${3:\$longitude [required]})
+endsnippet
+snippet ereg
+	 ereg(${1:\$pattern [required]},${2:\$string [required]})
+endsnippet
+snippet ereg_replace
+	 ereg_replace(${1:\$pattern [required]},${2:\$replacement [required]},${3:\$string [required]})
+endsnippet
+snippet eregi
+	 eregi(${1:\$pattern [required]},${2:\$string [required]})
+endsnippet
+snippet eregi_replace
+	 eregi_replace(${1:\$pattern [required]},${2:\$replacement [required]},${3:\$string [required]})
+endsnippet
+snippet split
+	 split(${1:\$pattern [required]},${2:\$string [required]},${3:\$limit [optional]})
+endsnippet
+snippet spliti
+	 spliti(${1:\$pattern [required]},${2:\$string [required]},${3:\$limit [optional]})
+endsnippet
+snippet sql_regcase
+	 sql_regcase(${1:\$string [required]})
+endsnippet
+snippet libxml_set_streams_context
+	 libxml_set_streams_context(${1:\$context [required]})
+endsnippet
+snippet libxml_use_internal_errors
+	 libxml_use_internal_errors(${1:\$use_errors [optional]})
+endsnippet
+snippet libxml_get_last_error
+	 libxml_get_last_error()
+endsnippet
+snippet libxml_clear_errors
+	 libxml_clear_errors()
+endsnippet
+snippet libxml_get_errors
+	 libxml_get_errors()
+endsnippet
+snippet libxml_disable_entity_loader
+	 libxml_disable_entity_loader(${1:\$disable [optional]})
+endsnippet
+snippet libxml_set_external_entity_loader
+	 libxml_set_external_entity_loader(${1:\$resolver_function [required]})
+endsnippet
+snippet openssl_pkey_free
+	 openssl_pkey_free(${1:\$key [required]})
+endsnippet
+snippet openssl_pkey_new
+	 openssl_pkey_new(${1:\$configargs [optional]})
+endsnippet
+snippet openssl_pkey_export
+	 openssl_pkey_export(${1:\$key [required]},${2:\$passphrase [optional]},${3:\$config_args [optional]})
+endsnippet
+snippet openssl_pkey_export_to_file
+	 openssl_pkey_export_to_file(${1:\$key [required]},${2:\$outfilename [required]},${3:\$passphrase [optional]},${4:\$config_args [optional]})
+endsnippet
+snippet openssl_pkey_get_private
+	 openssl_pkey_get_private(${1:\$key [required]},${2:\$passphrase [optional]})
+endsnippet
+snippet openssl_pkey_get_public
+	 openssl_pkey_get_public(${1:\$cert [required]})
+endsnippet
+snippet openssl_pkey_get_details
+	 openssl_pkey_get_details(${1:\$key [required]})
+endsnippet
+snippet openssl_free_key
+	 openssl_free_key(${1:\$key [required]})
+endsnippet
+snippet openssl_get_privatekey
+	 openssl_get_privatekey(${1:\$key [required]},${2:\$passphrase [optional]})
+endsnippet
+snippet openssl_get_publickey
+	 openssl_get_publickey(${1:\$cert [required]})
+endsnippet
+snippet openssl_x509_read
+	 openssl_x509_read(${1:\$cert [required]})
+endsnippet
+snippet openssl_x509_free
+	 openssl_x509_free(${1:\$x509 [required]})
+endsnippet
+snippet openssl_x509_parse
+	 openssl_x509_parse(${1:\$x509 [required]},${2:\$shortname [required]})
+endsnippet
+snippet openssl_x509_checkpurpose
+	 openssl_x509_checkpurpose(${1:\$x509cert [required]},${2:\$purpose [required]},${3:\$cainfo [required]},${4:\$untrustedfile [optional]})
+endsnippet
+snippet openssl_x509_check_private_key
+	 openssl_x509_check_private_key(${1:\$cert [required]},${2:\$key [required]})
+endsnippet
+snippet openssl_x509_export
+	 openssl_x509_export(${1:\$x509 [required]},${2:\$notext [optional]})
+endsnippet
+snippet openssl_x509_export_to_file
+	 openssl_x509_export_to_file(${1:\$x509 [required]},${2:\$outfilename [required]},${3:\$notext [optional]})
+endsnippet
+snippet openssl_pkcs12_export
+	 openssl_pkcs12_export(${1:\$x509 [required]},${2:\$priv_key [required]},${3:\$pass [required]},${4:\$args [required]})
+endsnippet
+snippet openssl_pkcs12_export_to_file
+	 openssl_pkcs12_export_to_file(${1:\$x509 [required]},${2:\$filename [required]},${3:\$priv_key [required]},${4:\$pass [required]},${5:\$args [optional]})
+endsnippet
+snippet openssl_pkcs12_read
+	 openssl_pkcs12_read(${1:\$PKCS12 [required]},${2:\$pass [required]})
+endsnippet
+snippet openssl_csr_new
+	 openssl_csr_new(${1:\$dn [required]},${2:\$configargs [optional]},${3:\$extraattribs [optional]})
+endsnippet
+snippet openssl_csr_export
+	 openssl_csr_export(${1:\$csr [required]},${2:\$notext [optional]})
+endsnippet
+snippet openssl_csr_export_to_file
+	 openssl_csr_export_to_file(${1:\$csr [required]},${2:\$outfilename [required]},${3:\$notext [optional]})
+endsnippet
+snippet openssl_csr_sign
+	 openssl_csr_sign(${1:\$csr [required]},${2:\$x509 [required]},${3:\$priv_key [required]},${4:\$days [required]},${5:\$config_args [optional]},${6:\$serial [optional]})
+endsnippet
+snippet openssl_csr_get_subject
+	 openssl_csr_get_subject(${1:\$csr [required]})
+endsnippet
+snippet openssl_csr_get_public_key
+	 openssl_csr_get_public_key(${1:\$csr [required]})
+endsnippet
+snippet openssl_digest
+	 openssl_digest(${1:\$data [required]},${2:\$method [required]},${3:\$raw_output [optional]})
+endsnippet
+snippet openssl_encrypt
+	 openssl_encrypt(${1:\$data [required]},${2:\$method [required]},${3:\$password [required]},${4:\$options [optional]},${5:\$iv [optional]})
+endsnippet
+snippet openssl_decrypt
+	 openssl_decrypt(${1:\$data [required]},${2:\$method [required]},${3:\$password [required]},${4:\$options [optional]},${5:\$iv [optional]})
+endsnippet
+snippet openssl_cipher_iv_length
+	 openssl_cipher_iv_length(${1:\$method [required]})
+endsnippet
+snippet openssl_sign
+	 openssl_sign(${1:\$data [required]},${2:\$key [required]},${3:\$method [optional]})
+endsnippet
+snippet openssl_verify
+	 openssl_verify(${1:\$data [required]},${2:\$signature [required]},${3:\$key [required]},${4:\$method [optional]})
+endsnippet
+snippet openssl_seal
+	 openssl_seal(${1:\$data [required]},${2:\$pubkeys [required]})
+endsnippet
+snippet openssl_open
+	 openssl_open(${1:\$data [required]},${2:\$ekey [required]},${3:\$privkey [required]})
+endsnippet
+snippet openssl_pkcs7_verify
+	 openssl_pkcs7_verify(${1:\$filename [required]},${2:\$flags [required]},${3:\$signerscerts [optional]},${4:\$cainfo [optional]},${5:\$extracerts [optional]},${6:\$content [optional]})
+endsnippet
+snippet openssl_pkcs7_decrypt
+	 openssl_pkcs7_decrypt(${1:\$infilename [required]},${2:\$outfilename [required]},${3:\$recipcert [required]},${4:\$recipkey [optional]})
+endsnippet
+snippet openssl_pkcs7_sign
+	 openssl_pkcs7_sign(${1:\$infile [required]},${2:\$outfile [required]},${3:\$signcert [required]},${4:\$signkey [required]},${5:\$headers [required]},${6:\$flags [optional]},${7:\$extracertsfilename [optional]})
+endsnippet
+snippet openssl_pkcs7_encrypt
+	 openssl_pkcs7_encrypt(${1:\$infile [required]},${2:\$outfile [required]},${3:\$recipcerts [required]},${4:\$headers [required]},${5:\$flags [optional]},${6:\$cipher [optional]})
+endsnippet
+snippet openssl_private_encrypt
+	 openssl_private_encrypt(${1:\$data [required]},${2:\$key [required]},${3:\$padding [optional]})
+endsnippet
+snippet openssl_private_decrypt
+	 openssl_private_decrypt(${1:\$data [required]},${2:\$key [required]},${3:\$padding [optional]})
+endsnippet
+snippet openssl_public_encrypt
+	 openssl_public_encrypt(${1:\$data [required]},${2:\$key [required]},${3:\$padding [optional]})
+endsnippet
+snippet openssl_public_decrypt
+	 openssl_public_decrypt(${1:\$data [required]},${2:\$key [required]},${3:\$padding [optional]})
+endsnippet
+snippet openssl_get_md_methods
+	 openssl_get_md_methods(${1:\$aliases [optional]})
+endsnippet
+snippet openssl_get_cipher_methods
+	 openssl_get_cipher_methods(${1:\$aliases [optional]})
+endsnippet
+snippet openssl_dh_compute_key
+	 openssl_dh_compute_key(${1:\$pub_key [required]},${2:\$dh_key [required]})
+endsnippet
+snippet openssl_random_pseudo_bytes
+	 openssl_random_pseudo_bytes(${1:\$length [required]})
+endsnippet
+snippet openssl_error_string
+	 openssl_error_string()
+endsnippet
+snippet preg_match
+	 preg_match(${1:\$pattern [required]},${2:\$subject [required]},${3:\$flags [optional]},${4:\$offset [optional]})
+endsnippet
+snippet preg_match_all
+	 preg_match_all(${1:\$pattern [required]},${2:\$subject [required]},${3:\$flags [optional]},${4:\$offset [optional]})
+endsnippet
+snippet preg_replace
+	 preg_replace(${1:\$regex [required]},${2:\$replace [required]},${3:\$subject [required]},${4:\$limit [optional]})
+endsnippet
+snippet preg_replace_callback
+	 preg_replace_callback(${1:\$regex [required]},${2:\$callback [required]},${3:\$subject [required]},${4:\$limit [optional]})
+endsnippet
+snippet preg_filter
+	 preg_filter(${1:\$regex [required]},${2:\$replace [required]},${3:\$subject [required]},${4:\$limit [optional]})
+endsnippet
+snippet preg_split
+	 preg_split(${1:\$pattern [required]},${2:\$subject [required]},${3:\$limit [optional]},${4:\$flags [optional]})
+endsnippet
+snippet preg_quote
+	 preg_quote(${1:\$str [required]},${2:\$delim_char [optional]})
+endsnippet
+snippet preg_grep
+	 preg_grep(${1:\$regex [required]},${2:\$input [required]},${3:\$flags [optional]})
+endsnippet
+snippet preg_last_error
+	 preg_last_error()
+endsnippet
+snippet readgzfile
+	 readgzfile(${1:\$filename [required]},${2:\$use_include_path [optional]})
+endsnippet
+snippet gzrewind
+	 gzrewind(${1:\$fp [required]})
+endsnippet
+snippet gzclose
+	 gzclose(${1:\$fp [required]})
+endsnippet
+snippet gzeof
+	 gzeof(${1:\$fp [required]})
+endsnippet
+snippet gzgetc
+	 gzgetc(${1:\$fp [required]})
+endsnippet
+snippet gzgets
+	 gzgets(${1:\$fp [required]},${2:\$length [optional]})
+endsnippet
+snippet gzgetss
+	 gzgetss(${1:\$fp [required]},${2:\$length [optional]},${3:\$allowable_tags [optional]})
+endsnippet
+snippet gzread
+	 gzread(${1:\$fp [required]},${2:\$length [required]})
+endsnippet
+snippet gzopen
+	 gzopen(${1:\$filename [required]},${2:\$mode [required]},${3:\$use_include_path [optional]})
+endsnippet
+snippet gzpassthru
+	 gzpassthru(${1:\$fp [required]})
+endsnippet
+snippet gzseek
+	 gzseek(${1:\$fp [required]},${2:\$offset [required]},${3:\$whence [optional]})
+endsnippet
+snippet gztell
+	 gztell(${1:\$fp [required]})
+endsnippet
+snippet gzwrite
+	 gzwrite(${1:\$fp [required]},${2:\$str [required]},${3:\$length [optional]})
+endsnippet
+snippet gzputs
+	 gzputs(${1:\$fp [required]},${2:\$str [required]},${3:\$length [optional]})
+endsnippet
+snippet gzfile
+	 gzfile(${1:\$filename [required]},${2:\$use_include_path [optional]})
+endsnippet
+snippet gzcompress
+	 gzcompress(${1:\$data [required]},${2:\$level [optional]},${3:\$encoding [optional]})
+endsnippet
+snippet gzuncompress
+	 gzuncompress(${1:\$data [required]},${2:\$max_decoded_len [optional]})
+endsnippet
+snippet gzdeflate
+	 gzdeflate(${1:\$data [required]},${2:\$level [optional]},${3:\$encoding [optional]})
+endsnippet
+snippet gzinflate
+	 gzinflate(${1:\$data [required]},${2:\$max_decoded_len [optional]})
+endsnippet
+snippet gzencode
+	 gzencode(${1:\$data [required]},${2:\$level [optional]},${3:\$encoding [optional]})
+endsnippet
+snippet gzdecode
+	 gzdecode(${1:\$data [required]},${2:\$max_decoded_len [optional]})
+endsnippet
+snippet zlib_encode
+	 zlib_encode(${1:\$data [required]},${2:\$encoding [required]},${3:\$level [optional]})
+endsnippet
+snippet zlib_decode
+	 zlib_decode(${1:\$data [required]},${2:\$max_decoded_len [optional]})
+endsnippet
+snippet zlib_get_coding_type
+	 zlib_get_coding_type()
+endsnippet
+snippet ob_gzhandler
+	 ob_gzhandler(${1:\$data [required]},${2:\$flags [required]})
+endsnippet
+snippet bcadd
+	 bcadd(${1:\$left_operand [required]},${2:\$right_operand [required]},${3:\$scale [optional]})
+endsnippet
+snippet bcsub
+	 bcsub(${1:\$left_operand [required]},${2:\$right_operand [required]},${3:\$scale [optional]})
+endsnippet
+snippet bcmul
+	 bcmul(${1:\$left_operand [required]},${2:\$right_operand [required]},${3:\$scale [optional]})
+endsnippet
+snippet bcdiv
+	 bcdiv(${1:\$left_operand [required]},${2:\$right_operand [required]},${3:\$scale [optional]})
+endsnippet
+snippet bcmod
+	 bcmod(${1:\$left_operand [required]},${2:\$right_operand [required]})
+endsnippet
+snippet bcpow
+	 bcpow(${1:\$x [required]},${2:\$y [required]},${3:\$scale [optional]})
+endsnippet
+snippet bcsqrt
+	 bcsqrt(${1:\$operand [required]},${2:\$scale [optional]})
+endsnippet
+snippet bcscale
+	 bcscale(${1:\$scale [required]})
+endsnippet
+snippet bccomp
+	 bccomp(${1:\$left_operand [required]},${2:\$right_operand [required]},${3:\$scale [optional]})
+endsnippet
+snippet bcpowmod
+	 bcpowmod(${1:\$x [required]},${2:\$y [required]},${3:\$mod [required]},${4:\$scale [optional]})
+endsnippet
+snippet bzopen
+	 bzopen(${1:\$file [required]},${2:\$mode [required]})
+endsnippet
+snippet bzread
+	 bzread(${1:\$bz [required]},${2:\$length [optional]})
+endsnippet
+snippet bzwrite
+	 bzwrite(${1:\$fp [required]},${2:\$str [required]},${3:\$length [optional]})
+endsnippet
+snippet bzflush
+	 bzflush(${1:\$fp [required]})
+endsnippet
+snippet bzclose
+	 bzclose(${1:\$fp [required]})
+endsnippet
+snippet bzerrno
+	 bzerrno(${1:\$bz [required]})
+endsnippet
+snippet bzerrstr
+	 bzerrstr(${1:\$bz [required]})
+endsnippet
+snippet bzerror
+	 bzerror(${1:\$bz [required]})
+endsnippet
+snippet bzcompress
+	 bzcompress(${1:\$source [required]},${2:\$blocksize [required]},${3:\$workfactor [optional]})
+endsnippet
+snippet bzdecompress
+	 bzdecompress(${1:\$source [required]},${2:\$small [optional]})
+endsnippet
+snippet jdtogregorian
+	 jdtogregorian(${1:\$juliandaycount [required]})
+endsnippet
+snippet gregoriantojd
+	 gregoriantojd(${1:\$month [required]},${2:\$day [required]},${3:\$year [required]})
+endsnippet
+snippet jdtojulian
+	 jdtojulian(${1:\$juliandaycount [required]})
+endsnippet
+snippet juliantojd
+	 juliantojd(${1:\$month [required]},${2:\$day [required]},${3:\$year [required]})
+endsnippet
+snippet jdtojewish
+	 jdtojewish(${1:\$juliandaycount [required]},${2:\$hebrew [optional]},${3:\$fl [optional]})
+endsnippet
+snippet jewishtojd
+	 jewishtojd(${1:\$month [required]},${2:\$day [required]},${3:\$year [required]})
+endsnippet
+snippet jdtofrench
+	 jdtofrench(${1:\$juliandaycount [required]})
+endsnippet
+snippet frenchtojd
+	 frenchtojd(${1:\$month [required]},${2:\$day [required]},${3:\$year [required]})
+endsnippet
+snippet jddayofweek
+	 jddayofweek(${1:\$juliandaycount [required]},${2:\$mode [optional]})
+endsnippet
+snippet jdmonthname
+	 jdmonthname(${1:\$juliandaycount [required]},${2:\$mode [required]})
+endsnippet
+snippet easter_date
+	 easter_date(${1:\$year [optional]})
+endsnippet
+snippet easter_days
+	 easter_days(${1:\$year [optional]},${2:\$method [optional]})
+endsnippet
+snippet unixtojd
+	 unixtojd(${1:\$timestamp [optional]})
+endsnippet
+snippet jdtounix
+	 jdtounix(${1:\$jday [required]})
+endsnippet
+snippet cal_to_jd
+	 cal_to_jd(${1:\$calendar [required]},${2:\$month [required]},${3:\$day [required]},${4:\$year [required]})
+endsnippet
+snippet cal_from_jd
+	 cal_from_jd(${1:\$jd [required]},${2:\$calendar [required]})
+endsnippet
+snippet cal_days_in_month
+	 cal_days_in_month(${1:\$calendar [required]},${2:\$month [required]},${3:\$year [required]})
+endsnippet
+snippet cal_info
+	 cal_info(${1:\$calendar [optional]})
+endsnippet
+snippet ctype_alnum
+	 ctype_alnum(${1:\$text [required]})
+endsnippet
+snippet ctype_alpha
+	 ctype_alpha(${1:\$text [required]})
+endsnippet
+snippet ctype_cntrl
+	 ctype_cntrl(${1:\$text [required]})
+endsnippet
+snippet ctype_digit
+	 ctype_digit(${1:\$text [required]})
+endsnippet
+snippet ctype_lower
+	 ctype_lower(${1:\$text [required]})
+endsnippet
+snippet ctype_graph
+	 ctype_graph(${1:\$text [required]})
+endsnippet
+snippet ctype_print
+	 ctype_print(${1:\$text [required]})
+endsnippet
+snippet ctype_punct
+	 ctype_punct(${1:\$text [required]})
+endsnippet
+snippet ctype_space
+	 ctype_space(${1:\$text [required]})
+endsnippet
+snippet ctype_upper
+	 ctype_upper(${1:\$text [required]})
+endsnippet
+snippet ctype_xdigit
+	 ctype_xdigit(${1:\$text [required]})
+endsnippet
+snippet dba_open
+	 dba_open(${1:\$path [required]},${2:\$mode [required]},${3:\$handlername [optional]},${4:\$... [optional]})
+endsnippet
+snippet dba_popen
+	 dba_popen(${1:\$path [required]},${2:\$mode [required]},${3:\$handlername [optional]},${4:\$... [optional]})
+endsnippet
+snippet dba_close
+	 dba_close(${1:\$handle [required]})
+endsnippet
+snippet dba_delete
+	 dba_delete(${1:\$key [required]},${2:\$handle [required]})
+endsnippet
+snippet dba_exists
+	 dba_exists(${1:\$key [required]},${2:\$handle [required]})
+endsnippet
+snippet dba_fetch
+	 dba_fetch(${1:\$key [required]},${2:\$skip [required]},${3:\$handle [optional]})
+endsnippet
+snippet dba_insert
+	 dba_insert(${1:\$key [required]},${2:\$value [required]},${3:\$handle [required]})
+endsnippet
+snippet dba_replace
+	 dba_replace(${1:\$key [required]},${2:\$value [required]},${3:\$handle [required]})
+endsnippet
+snippet dba_firstkey
+	 dba_firstkey(${1:\$handle [required]})
+endsnippet
+snippet dba_nextkey
+	 dba_nextkey(${1:\$handle [required]})
+endsnippet
+snippet dba_optimize
+	 dba_optimize(${1:\$handle [required]})
+endsnippet
+snippet dba_sync
+	 dba_sync(${1:\$handle [required]})
+endsnippet
+snippet dba_handlers
+	 dba_handlers(${1:\$full_info [optional]})
+endsnippet
+snippet dba_list
+	 dba_list()
+endsnippet
+snippet dba_key_split
+	 dba_key_split(${1:\$key [required]})
+endsnippet
+snippet dom_import_simplexml
+	 dom_import_simplexml(${1:\$node [required]})
+endsnippet
+snippet exif_read_data
+	 exif_read_data(${1:\$filename [required]},${2:\$sections_needed [optional]},${3:\$sub_arrays [optional]},${4:\$read_thumbnail [optional]})
+endsnippet
+snippet read_exif_data
+	 read_exif_data(${1:\$filename [required]},${2:\$sections_needed [optional]},${3:\$sub_arrays [optional]},${4:\$read_thumbnail [optional]})
+endsnippet
+snippet exif_tagname
+	 exif_tagname(${1:\$index [required]})
+endsnippet
+snippet exif_thumbnail
+	 exif_thumbnail(${1:\$filename [required]})
+endsnippet
+snippet exif_imagetype
+	 exif_imagetype(${1:\$imagefile [required]})
+endsnippet
+snippet finfo_open
+	 finfo_open(${1:\$options [optional]},${2:\$arg [optional]})
+endsnippet
+snippet finfo_close
+	 finfo_close(${1:\$finfo [required]})
+endsnippet
+snippet finfo_set_flags
+	 finfo_set_flags(${1:\$finfo [required]},${2:\$options [required]})
+endsnippet
+snippet finfo_file
+	 finfo_file(${1:\$finfo [required]},${2:\$filename [required]},${3:\$options [optional]},${4:\$context [optional]})
+endsnippet
+snippet finfo_buffer
+	 finfo_buffer(${1:\$finfo [required]},${2:\$string [required]},${3:\$options [optional]},${4:\$context [optional]})
+endsnippet
+snippet mime_content_type
+	 mime_content_type(${1:\$string [required]})
+endsnippet
+snippet filter_input
+	 filter_input(${1:\$type [required]},${2:\$variable_name [required]},${3:\$filter [optional]},${4:\$options [optional]})
+endsnippet
+snippet filter_var
+	 filter_var(${1:\$variable [required]},${2:\$filter [optional]},${3:\$options [optional]})
+endsnippet
+snippet filter_input_array
+	 filter_input_array(${1:\$type [required]},${2:\$definition [optional]},${3:\$add_empty [optional]})
+endsnippet
+snippet filter_var_array
+	 filter_var_array(${1:\$data [required]},${2:\$definition [optional]},${3:\$add_empty [optional]})
+endsnippet
+snippet filter_list
+	 filter_list()
+endsnippet
+snippet filter_has_var
+	 filter_has_var(${1:\$type [required]},${2:\$variable_name [required]})
+endsnippet
+snippet filter_id
+	 filter_id(${1:\$filtername [required]})
+endsnippet
+snippet ftp_connect
+	 ftp_connect(${1:\$host [required]},${2:\$port [optional]},${3:\$timeout [optional]})
+endsnippet
+snippet ftp_ssl_connect
+	 ftp_ssl_connect(${1:\$host [required]},${2:\$port [optional]},${3:\$timeout [optional]})
+endsnippet
+snippet ftp_login
+	 ftp_login(${1:\$ftp [required]},${2:\$username [required]},${3:\$password [required]})
+endsnippet
+snippet ftp_pwd
+	 ftp_pwd(${1:\$ftp [required]})
+endsnippet
+snippet ftp_cdup
+	 ftp_cdup(${1:\$ftp [required]})
+endsnippet
+snippet ftp_chdir
+	 ftp_chdir(${1:\$ftp [required]},${2:\$directory [required]})
+endsnippet
+snippet ftp_exec
+	 ftp_exec(${1:\$ftp [required]},${2:\$command [required]})
+endsnippet
+snippet ftp_raw
+	 ftp_raw(${1:\$ftp [required]},${2:\$command [required]})
+endsnippet
+snippet ftp_mkdir
+	 ftp_mkdir(${1:\$ftp [required]},${2:\$directory [required]})
+endsnippet
+snippet ftp_rmdir
+	 ftp_rmdir(${1:\$ftp [required]},${2:\$directory [required]})
+endsnippet
+snippet ftp_chmod
+	 ftp_chmod(${1:\$ftp [required]},${2:\$mode [required]},${3:\$filename [required]})
+endsnippet
+snippet ftp_alloc
+	 ftp_alloc(${1:\$ftp [required]},${2:\$size [required]})
+endsnippet
+snippet ftp_nlist
+	 ftp_nlist(${1:\$ftp [required]},${2:\$directory [required]})
+endsnippet
+snippet ftp_rawlist
+	 ftp_rawlist(${1:\$ftp [required]},${2:\$directory [required]},${3:\$recursive [optional]})
+endsnippet
+snippet ftp_systype
+	 ftp_systype(${1:\$ftp [required]})
+endsnippet
+snippet ftp_pasv
+	 ftp_pasv(${1:\$ftp [required]},${2:\$pasv [required]})
+endsnippet
+snippet ftp_get
+	 ftp_get(${1:\$ftp [required]},${2:\$local_file [required]},${3:\$remote_file [required]},${4:\$mode [required]},${5:\$resume_pos [optional]})
+endsnippet
+snippet ftp_fget
+	 ftp_fget(${1:\$ftp [required]},${2:\$fp [required]},${3:\$remote_file [required]},${4:\$mode [required]},${5:\$resumepos [optional]})
+endsnippet
+snippet ftp_put
+	 ftp_put(${1:\$ftp [required]},${2:\$remote_file [required]},${3:\$local_file [required]},${4:\$mode [required]},${5:\$startpos [optional]})
+endsnippet
+snippet ftp_fput
+	 ftp_fput(${1:\$ftp [required]},${2:\$remote_file [required]},${3:\$fp [required]},${4:\$mode [required]},${5:\$startpos [optional]})
+endsnippet
+snippet ftp_size
+	 ftp_size(${1:\$ftp [required]},${2:\$filename [required]})
+endsnippet
+snippet ftp_mdtm
+	 ftp_mdtm(${1:\$ftp [required]},${2:\$filename [required]})
+endsnippet
+snippet ftp_rename
+	 ftp_rename(${1:\$ftp [required]},${2:\$src [required]},${3:\$dest [required]})
+endsnippet
+snippet ftp_delete
+	 ftp_delete(${1:\$ftp [required]},${2:\$file [required]})
+endsnippet
+snippet ftp_site
+	 ftp_site(${1:\$ftp [required]},${2:\$cmd [required]})
+endsnippet
+snippet ftp_close
+	 ftp_close(${1:\$ftp [required]})
+endsnippet
+snippet ftp_set_option
+	 ftp_set_option(${1:\$ftp [required]},${2:\$option [required]},${3:\$value [required]})
+endsnippet
+snippet ftp_get_option
+	 ftp_get_option(${1:\$ftp [required]},${2:\$option [required]})
+endsnippet
+snippet ftp_nb_fget
+	 ftp_nb_fget(${1:\$ftp [required]},${2:\$fp [required]},${3:\$remote_file [required]},${4:\$mode [required]},${5:\$resumepos [optional]})
+endsnippet
+snippet ftp_nb_get
+	 ftp_nb_get(${1:\$ftp [required]},${2:\$local_file [required]},${3:\$remote_file [required]},${4:\$mode [required]},${5:\$resume_pos [optional]})
+endsnippet
+snippet ftp_nb_continue
+	 ftp_nb_continue(${1:\$ftp [required]})
+endsnippet
+snippet ftp_nb_put
+	 ftp_nb_put(${1:\$ftp [required]},${2:\$remote_file [required]},${3:\$local_file [required]},${4:\$mode [required]},${5:\$startpos [optional]})
+endsnippet
+snippet ftp_nb_fput
+	 ftp_nb_fput(${1:\$ftp [required]},${2:\$remote_file [required]},${3:\$fp [required]},${4:\$mode [required]},${5:\$startpos [optional]})
+endsnippet
+snippet ftp_quit
+	 ftp_quit(${1:\$ftp [required]})
+endsnippet
+snippet textdomain
+	 textdomain(${1:\$domain [required]})
+endsnippet
+snippet gettext
+	 gettext(${1:\$msgid [required]})
+endsnippet
+snippet _
+	 _(${1:\$msgid [required]})
+endsnippet
+snippet dgettext
+	 dgettext(${1:\$domain_name [required]},${2:\$msgid [required]})
+endsnippet
+snippet dcgettext
+	 dcgettext(${1:\$domain_name [required]},${2:\$msgid [required]},${3:\$category [required]})
+endsnippet
+snippet bindtextdomain
+	 bindtextdomain(${1:\$domain_name [required]},${2:\$dir [required]})
+endsnippet
+snippet ngettext
+	 ngettext(${1:\$msgid1 [required]},${2:\$msgid2 [required]},${3:\$count [required]})
+endsnippet
+snippet dngettext
+	 dngettext(${1:\$domain [required]},${2:\$msgid1 [required]},${3:\$msgid2 [required]},${4:\$count [required]})
+endsnippet
+snippet dcngettext
+	 dcngettext(${1:\$domain [required]},${2:\$msgid1 [required]},${3:\$msgid2 [required]},${4:\$count [required]},${5:\$category [required]})
+endsnippet
+snippet bind_textdomain_codeset
+	 bind_textdomain_codeset(${1:\$domain [required]},${2:\$codeset [required]})
+endsnippet
+snippet hash
+	 hash(${1:\$algo [required]},${2:\$data [required]},${3:\$raw_output [optional]})
+endsnippet
+snippet hash_file
+	 hash_file(${1:\$algo [required]},${2:\$filename [required]},${3:\$raw_output [optional]})
+endsnippet
+snippet hash_hmac
+	 hash_hmac(${1:\$algo [required]},${2:\$data [required]},${3:\$key [required]},${4:\$raw_output [optional]})
+endsnippet
+snippet hash_hmac_file
+	 hash_hmac_file(${1:\$algo [required]},${2:\$filename [required]},${3:\$key [required]},${4:\$raw_output [optional]})
+endsnippet
+snippet hash_init
+	 hash_init(${1:\$algo [required]},${2:\$options [optional]},${3:\$key [optional]})
+endsnippet
+snippet hash_update
+	 hash_update(${1:\$context [required]},${2:\$data [required]})
+endsnippet
+snippet hash_update_stream
+	 hash_update_stream(${1:\$context [required]},${2:\$handle [required]},${3:\$length [optional]})
+endsnippet
+snippet hash_update_file
+	 hash_update_file(${1:\$context [required]},${2:\$filename [required]},${3:\$context [optional]})
+endsnippet
+snippet hash_final
+	 hash_final(${1:\$context [required]},${2:\$raw_output [optional]})
+endsnippet
+snippet hash_copy
+	 hash_copy(${1:\$context [required]})
+endsnippet
+snippet hash_algos
+	 hash_algos()
+endsnippet
+snippet mhash_keygen_s2k
+	 mhash_keygen_s2k(${1:\$hash [required]},${2:\$input_password [required]},${3:\$salt [required]},${4:\$bytes [required]})
+endsnippet
+snippet mhash_get_block_size
+	 mhash_get_block_size(${1:\$hash [required]})
+endsnippet
+snippet mhash_get_hash_name
+	 mhash_get_hash_name(${1:\$hash [required]})
+endsnippet
+snippet mhash_count
+	 mhash_count()
+endsnippet
+snippet mhash
+	 mhash(${1:\$hash [required]},${2:\$data [required]},${3:\$key [optional]})
+endsnippet
+snippet iconv
+	 iconv(${1:\$in_charset [required]},${2:\$out_charset [required]},${3:\$str [required]})
+endsnippet
+snippet iconv_get_encoding
+	 iconv_get_encoding(${1:\$type [optional]})
+endsnippet
+snippet iconv_set_encoding
+	 iconv_set_encoding(${1:\$type [required]},${2:\$charset [required]})
+endsnippet
+snippet iconv_strlen
+	 iconv_strlen(${1:\$str [required]},${2:\$charset [optional]})
+endsnippet
+snippet iconv_substr
+	 iconv_substr(${1:\$str [required]},${2:\$offset [required]},${3:\$length [optional]},${4:\$charset [optional]})
+endsnippet
+snippet iconv_strpos
+	 iconv_strpos(${1:\$haystack [required]},${2:\$needle [required]},${3:\$offset [optional]},${4:\$charset [optional]})
+endsnippet
+snippet iconv_strrpos
+	 iconv_strrpos(${1:\$haystack [required]},${2:\$needle [required]},${3:\$charset [optional]})
+endsnippet
+snippet iconv_mime_encode
+	 iconv_mime_encode(${1:\$field_name [required]},${2:\$field_value [required]},${3:\$preference [optional]})
+endsnippet
+snippet iconv_mime_decode
+	 iconv_mime_decode(${1:\$encoded_string [required]},${2:\$mode [optional]},${3:\$charset [optional]})
+endsnippet
+snippet iconv_mime_decode_headers
+	 iconv_mime_decode_headers(${1:\$headers [required]},${2:\$mode [optional]},${3:\$charset [optional]})
+endsnippet
+snippet json_encode
+	 json_encode(${1:\$value [required]},${2:\$options [optional]})
+endsnippet
+snippet json_decode
+	 json_decode(${1:\$json [required]},${2:\$assoc [optional]},${3:\$depth [optional]},${4:\$options [optional]})
+endsnippet
+snippet json_last_error
+	 json_last_error()
+endsnippet
+snippet mb_convert_case
+	 mb_convert_case(${1:\$sourcestring [required]},${2:\$mode [required]},${3:\$encoding [optional]})
+endsnippet
+snippet mb_strtoupper
+	 mb_strtoupper(${1:\$sourcestring [required]},${2:\$encoding [optional]})
+endsnippet
+snippet mb_strtolower
+	 mb_strtolower(${1:\$sourcestring [required]},${2:\$encoding [optional]})
+endsnippet
+snippet mb_language
+	 mb_language(${1:\$language [optional]})
+endsnippet
+snippet mb_internal_encoding
+	 mb_internal_encoding(${1:\$encoding [optional]})
+endsnippet
+snippet mb_http_input
+	 mb_http_input(${1:\$type [optional]})
+endsnippet
+snippet mb_http_output
+	 mb_http_output(${1:\$encoding [optional]})
+endsnippet
+snippet mb_detect_order
+	 mb_detect_order(${1:\$encoding [optional]})
+endsnippet
+snippet mb_substitute_character
+	 mb_substitute_character(${1:\$substchar [optional]})
+endsnippet
+snippet mb_parse_str
+	 mb_parse_str(${1:\$encoded_string [required]})
+endsnippet
+snippet mb_output_handler
+	 mb_output_handler(${1:\$contents [required]},${2:\$status [required]})
+endsnippet
+snippet mb_preferred_mime_name
+	 mb_preferred_mime_name(${1:\$encoding [required]})
+endsnippet
+snippet mb_strlen
+	 mb_strlen(${1:\$str [required]},${2:\$encoding [optional]})
+endsnippet
+snippet mb_strpos
+	 mb_strpos(${1:\$haystack [required]},${2:\$needle [required]},${3:\$offset [optional]},${4:\$encoding [optional]})
+endsnippet
+snippet mb_strrpos
+	 mb_strrpos(${1:\$haystack [required]},${2:\$needle [required]},${3:\$offset [optional]},${4:\$encoding [optional]})
+endsnippet
+snippet mb_stripos
+	 mb_stripos(${1:\$haystack [required]},${2:\$needle [required]},${3:\$offset [optional]},${4:\$encoding [optional]})
+endsnippet
+snippet mb_strripos
+	 mb_strripos(${1:\$haystack [required]},${2:\$needle [required]},${3:\$offset [optional]},${4:\$encoding [optional]})
+endsnippet
+snippet mb_strstr
+	 mb_strstr(${1:\$haystack [required]},${2:\$needle [required]},${3:\$part [optional]},${4:\$encoding [optional]})
+endsnippet
+snippet mb_strrchr
+	 mb_strrchr(${1:\$haystack [required]},${2:\$needle [required]},${3:\$part [optional]},${4:\$encoding [optional]})
+endsnippet
+snippet mb_stristr
+	 mb_stristr(${1:\$haystack [required]},${2:\$needle [required]},${3:\$part [optional]},${4:\$encoding [optional]})
+endsnippet
+snippet mb_strrichr
+	 mb_strrichr(${1:\$haystack [required]},${2:\$needle [required]},${3:\$part [optional]},${4:\$encoding [optional]})
+endsnippet
+snippet mb_substr_count
+	 mb_substr_count(${1:\$haystack [required]},${2:\$needle [required]},${3:\$encoding [optional]})
+endsnippet
+snippet mb_substr
+	 mb_substr(${1:\$str [required]},${2:\$start [required]},${3:\$length [optional]},${4:\$encoding [optional]})
+endsnippet
+snippet mb_strcut
+	 mb_strcut(${1:\$str [required]},${2:\$start [required]},${3:\$length [optional]},${4:\$encoding [optional]})
+endsnippet
+snippet mb_strwidth
+	 mb_strwidth(${1:\$str [required]},${2:\$encoding [optional]})
+endsnippet
+snippet mb_strimwidth
+	 mb_strimwidth(${1:\$str [required]},${2:\$start [required]},${3:\$width [required]},${4:\$trimmarker [optional]},${5:\$encoding [optional]})
+endsnippet
+snippet mb_convert_encoding
+	 mb_convert_encoding(${1:\$str [required]},${2:\$to [required]},${3:\$from [optional]})
+endsnippet
+snippet mb_detect_encoding
+	 mb_detect_encoding(${1:\$str [required]},${2:\$encoding_list [optional]},${3:\$strict [optional]})
+endsnippet
+snippet mb_list_encodings
+	 mb_list_encodings()
+endsnippet
+snippet mb_encoding_aliases
+	 mb_encoding_aliases(${1:\$encoding [required]})
+endsnippet
+snippet mb_convert_kana
+	 mb_convert_kana(${1:\$str [required]},${2:\$option [optional]},${3:\$encoding [optional]})
+endsnippet
+snippet mb_encode_mimeheader
+	 mb_encode_mimeheader(${1:\$str [required]},${2:\$charset [optional]},${3:\$transfer [optional]},${4:\$linefeed [optional]},${5:\$indent [optional]})
+endsnippet
+snippet mb_decode_mimeheader
+	 mb_decode_mimeheader(${1:\$string [required]})
+endsnippet
+snippet mb_convert_variables
+	 mb_convert_variables(${1:\$to [required]},${2:\$from [required]})
+endsnippet
+snippet mb_encode_numericentity
+	 mb_encode_numericentity(${1:\$string [required]},${2:\$convmap [required]},${3:\$encoding [optional]},${4:\$is_hex [optional]})
+endsnippet
+snippet mb_decode_numericentity
+	 mb_decode_numericentity(${1:\$string [required]},${2:\$convmap [required]},${3:\$encoding [optional]})
+endsnippet
+snippet mb_send_mail
+	 mb_send_mail(${1:\$to [required]},${2:\$subject [required]},${3:\$message [required]},${4:\$additional_headers [optional]},${5:\$additional_parameters [optional]})
+endsnippet
+snippet mb_get_info
+	 mb_get_info(${1:\$type [optional]})
+endsnippet
+snippet mb_check_encoding
+	 mb_check_encoding(${1:\$var [optional]},${2:\$encoding [optional]})
+endsnippet
+snippet mb_regex_encoding
+	 mb_regex_encoding(${1:\$encoding [optional]})
+endsnippet
+snippet mb_regex_set_options
+	 mb_regex_set_options(${1:\$options [optional]})
+endsnippet
+snippet mb_ereg
+	 mb_ereg(${1:\$pattern [required]},${2:\$string [required]})
+endsnippet
+snippet mb_eregi
+	 mb_eregi(${1:\$pattern [required]},${2:\$string [required]})
+endsnippet
+snippet mb_ereg_replace
+	 mb_ereg_replace(${1:\$pattern [required]},${2:\$replacement [required]},${3:\$string [required]},${4:\$option [optional]})
+endsnippet
+snippet mb_eregi_replace
+	 mb_eregi_replace(${1:\$pattern [required]},${2:\$replacement [required]},${3:\$string [required]})
+endsnippet
+snippet mb_ereg_replace_callback
+	 mb_ereg_replace_callback(${1:\$pattern [required]},${2:\$callback [required]},${3:\$string [required]},${4:\$option [optional]})
+endsnippet
+snippet mb_split
+	 mb_split(${1:\$pattern [required]},${2:\$string [required]},${3:\$limit [optional]})
+endsnippet
+snippet mb_ereg_match
+	 mb_ereg_match(${1:\$pattern [required]},${2:\$string [required]},${3:\$option [optional]})
+endsnippet
+snippet mb_ereg_search
+	 mb_ereg_search(${1:\$pattern [optional]},${2:\$option [optional]})
+endsnippet
+snippet mb_ereg_search_pos
+	 mb_ereg_search_pos(${1:\$pattern [optional]},${2:\$option [optional]})
+endsnippet
+snippet mb_ereg_search_regs
+	 mb_ereg_search_regs(${1:\$pattern [optional]},${2:\$option [optional]})
+endsnippet
+snippet mb_ereg_search_init
+	 mb_ereg_search_init(${1:\$string [required]},${2:\$pattern [optional]},${3:\$option [optional]})
+endsnippet
+snippet mb_ereg_search_getregs
+	 mb_ereg_search_getregs()
+endsnippet
+snippet mb_ereg_search_getpos
+	 mb_ereg_search_getpos()
+endsnippet
+snippet mb_ereg_search_setpos
+	 mb_ereg_search_setpos(${1:\$position [required]})
+endsnippet
+snippet mbregex_encoding
+	 mbregex_encoding(${1:\$encoding [optional]})
+endsnippet
+snippet mbereg
+	 mbereg(${1:\$pattern [required]},${2:\$string [required]})
+endsnippet
+snippet mberegi
+	 mberegi(${1:\$pattern [required]},${2:\$string [required]})
+endsnippet
+snippet mbereg_replace
+	 mbereg_replace(${1:\$pattern [required]},${2:\$replacement [required]},${3:\$string [required]},${4:\$option [optional]})
+endsnippet
+snippet mberegi_replace
+	 mberegi_replace(${1:\$pattern [required]},${2:\$replacement [required]},${3:\$string [required]})
+endsnippet
+snippet mbsplit
+	 mbsplit(${1:\$pattern [required]},${2:\$string [required]},${3:\$limit [optional]})
+endsnippet
+snippet mbereg_match
+	 mbereg_match(${1:\$pattern [required]},${2:\$string [required]},${3:\$option [optional]})
+endsnippet
+snippet mbereg_search
+	 mbereg_search(${1:\$pattern [optional]},${2:\$option [optional]})
+endsnippet
+snippet mbereg_search_pos
+	 mbereg_search_pos(${1:\$pattern [optional]},${2:\$option [optional]})
+endsnippet
+snippet mbereg_search_regs
+	 mbereg_search_regs(${1:\$pattern [optional]},${2:\$option [optional]})
+endsnippet
+snippet mbereg_search_init
+	 mbereg_search_init(${1:\$string [required]},${2:\$pattern [optional]},${3:\$option [optional]})
+endsnippet
+snippet mbereg_search_getregs
+	 mbereg_search_getregs()
+endsnippet
+snippet mbereg_search_getpos
+	 mbereg_search_getpos()
+endsnippet
+snippet mbereg_search_setpos
+	 mbereg_search_setpos(${1:\$position [required]})
+endsnippet
+snippet pcntl_fork
+	 pcntl_fork()
+endsnippet
+snippet pcntl_waitpid
+	 pcntl_waitpid(${1:\$pid [required]},${2:\$options [optional]})
+endsnippet
+snippet pcntl_wait
+	 pcntl_wait(${1:\$options [optional]})
+endsnippet
+snippet pcntl_signal
+	 pcntl_signal(${1:\$signo [required]},${2:\$handler [required]},${3:\$restart_syscalls [optional]})
+endsnippet
+snippet pcntl_signal_dispatch
+	 pcntl_signal_dispatch()
+endsnippet
+snippet pcntl_wifexited
+	 pcntl_wifexited(${1:\$status [required]})
+endsnippet
+snippet pcntl_wifstopped
+	 pcntl_wifstopped(${1:\$status [required]})
+endsnippet
+snippet pcntl_wifsignaled
+	 pcntl_wifsignaled(${1:\$status [required]})
+endsnippet
+snippet pcntl_wexitstatus
+	 pcntl_wexitstatus(${1:\$status [required]})
+endsnippet
+snippet pcntl_wtermsig
+	 pcntl_wtermsig(${1:\$status [required]})
+endsnippet
+snippet pcntl_wstopsig
+	 pcntl_wstopsig(${1:\$status [required]})
+endsnippet
+snippet pcntl_exec
+	 pcntl_exec(${1:\$path [required]},${2:\$args [optional]},${3:\$envs [optional]})
+endsnippet
+snippet pcntl_alarm
+	 pcntl_alarm(${1:\$seconds [required]})
+endsnippet
+snippet pcntl_get_last_error
+	 pcntl_get_last_error()
+endsnippet
+snippet pcntl_errno
+	 pcntl_errno()
+endsnippet
+snippet pcntl_strerror
+	 pcntl_strerror(${1:\$errno [required]})
+endsnippet
+snippet pcntl_getpriority
+	 pcntl_getpriority(${1:\$pid [optional]},${2:\$process_identifier [optional]})
+endsnippet
+snippet pcntl_setpriority
+	 pcntl_setpriority(${1:\$priority [required]},${2:\$pid [optional]},${3:\$process_identifier [optional]})
+endsnippet
+snippet pcntl_sigprocmask
+	 pcntl_sigprocmask(${1:\$how [required]},${2:\$set [required]})
+endsnippet
+snippet pcntl_sigwaitinfo
+	 pcntl_sigwaitinfo(${1:\$set [required]})
+endsnippet
+snippet pcntl_sigtimedwait
+	 pcntl_sigtimedwait(${1:\$set [required]},${2:\$seconds [optional]},${3:\$nanoseconds [optional]})
+endsnippet
+snippet spl_classes
+	 spl_classes()
+endsnippet
+snippet spl_autoload
+	 spl_autoload(${1:\$class_name [required]},${2:\$file_extensions [optional]})
+endsnippet
+snippet spl_autoload_extensions
+	 spl_autoload_extensions(${1:\$file_extensions [optional]})
+endsnippet
+snippet spl_autoload_register
+	 spl_autoload_register(${1:\$autoload_function [optional]})
+endsnippet
+snippet spl_autoload_unregister
+	 spl_autoload_unregister(${1:\$autoload_function [required]})
+endsnippet
+snippet spl_autoload_functions
+	 spl_autoload_functions()
+endsnippet
+snippet spl_autoload_call
+	 spl_autoload_call(${1:\$class_name [required]})
+endsnippet
+snippet class_parents
+	 class_parents(${1:\$instance [required]},${2:\$autoload [optional]})
+endsnippet
+snippet class_implements
+	 class_implements(${1:\$what [required]},${2:\$autoload [optional]})
+endsnippet
+snippet class_uses
+	 class_uses(${1:\$what [required]},${2:\$autoload [optional]})
+endsnippet
+snippet spl_object_hash
+	 spl_object_hash(${1:\$obj [required]})
+endsnippet
+snippet iterator_to_array
+	 iterator_to_array(${1:\$use_keys [optional]})
+endsnippet
+snippet iterator_count
+	 iterator_count()
+endsnippet
+snippet iterator_apply
+	 iterator_apply(${1:\$function [required]})
+endsnippet
+snippet posix_kill
+	 posix_kill(${1:\$pid [required]},${2:\$sig [required]})
+endsnippet
+snippet posix_getpid
+	 posix_getpid()
+endsnippet
+snippet posix_getppid
+	 posix_getppid()
+endsnippet
+snippet posix_getuid
+	 posix_getuid()
+endsnippet
+snippet posix_setuid
+	 posix_setuid(${1:\$uid [required]})
+endsnippet
+snippet posix_geteuid
+	 posix_geteuid()
+endsnippet
+snippet posix_seteuid
+	 posix_seteuid(${1:\$uid [required]})
+endsnippet
+snippet posix_getgid
+	 posix_getgid()
+endsnippet
+snippet posix_setgid
+	 posix_setgid(${1:\$gid [required]})
+endsnippet
+snippet posix_getegid
+	 posix_getegid()
+endsnippet
+snippet posix_setegid
+	 posix_setegid(${1:\$gid [required]})
+endsnippet
+snippet posix_getgroups
+	 posix_getgroups()
+endsnippet
+snippet posix_getlogin
+	 posix_getlogin()
+endsnippet
+snippet posix_getpgrp
+	 posix_getpgrp()
+endsnippet
+snippet posix_setsid
+	 posix_setsid()
+endsnippet
+snippet posix_setpgid
+	 posix_setpgid(${1:\$pid [required]},${2:\$pgid [required]})
+endsnippet
+snippet posix_getpgid
+	 posix_getpgid(${1:\$pid [required]})
+endsnippet
+snippet posix_getsid
+	 posix_getsid(${1:\$pid [required]})
+endsnippet
+snippet posix_uname
+	 posix_uname()
+endsnippet
+snippet posix_times
+	 posix_times()
+endsnippet
+snippet posix_ctermid
+	 posix_ctermid()
+endsnippet
+snippet posix_ttyname
+	 posix_ttyname(${1:\$fd [required]})
+endsnippet
+snippet posix_isatty
+	 posix_isatty(${1:\$fd [required]})
+endsnippet
+snippet posix_getcwd
+	 posix_getcwd()
+endsnippet
+snippet posix_mkfifo
+	 posix_mkfifo(${1:\$pathname [required]},${2:\$mode [required]})
+endsnippet
+snippet posix_mknod
+	 posix_mknod(${1:\$pathname [required]},${2:\$mode [required]},${3:\$major [optional]},${4:\$minor [optional]})
+endsnippet
+snippet posix_access
+	 posix_access(${1:\$file [required]},${2:\$mode [optional]})
+endsnippet
+snippet posix_getgrnam
+	 posix_getgrnam(${1:\$name [required]})
+endsnippet
+snippet posix_getgrgid
+	 posix_getgrgid(${1:\$gid [required]})
+endsnippet
+snippet posix_getpwnam
+	 posix_getpwnam(${1:\$username [required]})
+endsnippet
+snippet posix_getpwuid
+	 posix_getpwuid(${1:\$uid [required]})
+endsnippet
+snippet posix_getrlimit
+	 posix_getrlimit()
+endsnippet
+snippet posix_get_last_error
+	 posix_get_last_error()
+endsnippet
+snippet posix_errno
+	 posix_errno()
+endsnippet
+snippet posix_strerror
+	 posix_strerror(${1:\$errno [required]})
+endsnippet
+snippet posix_initgroups
+	 posix_initgroups(${1:\$name [required]},${2:\$base_group_id [required]})
+endsnippet
+snippet readline
+	 readline(${1:\$prompt [optional]})
+endsnippet
+snippet readline_info
+	 readline_info(${1:\$varname [optional]},${2:\$newvalue [optional]})
+endsnippet
+snippet readline_add_history
+	 readline_add_history(${1:\$prompt [required]})
+endsnippet
+snippet readline_clear_history
+	 readline_clear_history()
+endsnippet
+snippet readline_list_history
+	 readline_list_history()
+endsnippet
+snippet readline_read_history
+	 readline_read_history(${1:\$filename [optional]})
+endsnippet
+snippet readline_write_history
+	 readline_write_history(${1:\$filename [optional]})
+endsnippet
+snippet readline_completion_function
+	 readline_completion_function(${1:\$funcname [required]})
+endsnippet
+snippet readline_callback_handler_install
+	 readline_callback_handler_install(${1:\$prompt [required]},${2:\$callback [required]})
+endsnippet
+snippet readline_callback_read_char
+	 readline_callback_read_char()
+endsnippet
+snippet readline_callback_handler_remove
+	 readline_callback_handler_remove()
+endsnippet
+snippet readline_redisplay
+	 readline_redisplay()
+endsnippet
+snippet readline_on_new_line
+	 readline_on_new_line()
+endsnippet
+snippet session_name
+	 session_name(${1:\$name [optional]})
+endsnippet
+snippet session_module_name
+	 session_module_name(${1:\$module [optional]})
+endsnippet
+snippet session_save_path
+	 session_save_path(${1:\$path [optional]})
+endsnippet
+snippet session_id
+	 session_id(${1:\$id [optional]})
+endsnippet
+snippet session_regenerate_id
+	 session_regenerate_id(${1:\$delete_old_session [optional]})
+endsnippet
+snippet session_decode
+	 session_decode(${1:\$data [required]})
+endsnippet
+snippet session_encode
+	 session_encode()
+endsnippet
+snippet session_start
+	 session_start()
+endsnippet
+snippet session_destroy
+	 session_destroy()
+endsnippet
+snippet session_unset
+	 session_unset()
+endsnippet
+snippet session_set_save_handler
+	 session_set_save_handler(${1:\$open [required]},${2:\$close [required]},${3:\$read [required]},${4:\$write [required]},${5:\$destroy [required]},${6:\$gc [required]})
+endsnippet
+snippet session_cache_limiter
+	 session_cache_limiter(${1:\$cache_limiter [optional]})
+endsnippet
+snippet session_cache_expire
+	 session_cache_expire(${1:\$new_cache_expire [optional]})
+endsnippet
+snippet session_set_cookie_params
+	 session_set_cookie_params(${1:\$lifetime [required]},${2:\$path [optional]},${3:\$domain [optional]},${4:\$secure [optional]},${5:\$httponly [optional]})
+endsnippet
+snippet session_get_cookie_params
+	 session_get_cookie_params()
+endsnippet
+snippet session_write_close
+	 session_write_close()
+endsnippet
+snippet session_status
+	 session_status()
+endsnippet
+snippet session_register_shutdown
+	 session_register_shutdown()
+endsnippet
+snippet session_commit
+	 session_commit()
+endsnippet
+snippet shmop_open
+	 shmop_open(${1:\$key [required]},${2:\$flags [required]},${3:\$mode [required]},${4:\$size [required]})
+endsnippet
+snippet shmop_read
+	 shmop_read(${1:\$shmid [required]},${2:\$start [required]},${3:\$count [required]})
+endsnippet
+snippet shmop_close
+	 shmop_close(${1:\$shmid [required]})
+endsnippet
+snippet shmop_size
+	 shmop_size(${1:\$shmid [required]})
+endsnippet
+snippet shmop_write
+	 shmop_write(${1:\$shmid [required]},${2:\$data [required]},${3:\$offset [required]})
+endsnippet
+snippet shmop_delete
+	 shmop_delete(${1:\$shmid [required]})
+endsnippet
+snippet simplexml_load_file
+	 simplexml_load_file(${1:\$filename [required]},${2:\$class_name [optional]},${3:\$options [optional]},${4:\$ns [optional]},${5:\$is_prefix [optional]})
+endsnippet
+snippet simplexml_load_string
+	 simplexml_load_string(${1:\$data [required]},${2:\$class_name [optional]},${3:\$options [optional]},${4:\$ns [optional]},${5:\$is_prefix [optional]})
+endsnippet
+snippet simplexml_import_dom
+	 simplexml_import_dom(${1:\$node [required]},${2:\$class_name [optional]})
+endsnippet
+snippet use_soap_error_handler
+	 use_soap_error_handler(${1:\$handler [optional]})
+endsnippet
+snippet is_soap_fault
+	 is_soap_fault(${1:\$object [required]})
+endsnippet
+snippet socket_select
+	 socket_select(${1:\$tv_sec [required]},${2:\$tv_usec [optional]})
+endsnippet
+snippet socket_create
+	 socket_create(${1:\$domain [required]},${2:\$type [required]},${3:\$protocol [required]})
+endsnippet
+snippet socket_create_listen
+	 socket_create_listen(${1:\$port [required]},${2:\$backlog [optional]})
+endsnippet
+snippet socket_create_pair
+	 socket_create_pair(${1:\$domain [required]},${2:\$type [required]},${3:\$protocol [required]})
+endsnippet
+snippet socket_accept
+	 socket_accept(${1:\$socket [required]})
+endsnippet
+snippet socket_set_nonblock
+	 socket_set_nonblock(${1:\$socket [required]})
+endsnippet
+snippet socket_set_block
+	 socket_set_block(${1:\$socket [required]})
+endsnippet
+snippet socket_listen
+	 socket_listen(${1:\$socket [required]},${2:\$backlog [optional]})
+endsnippet
+snippet socket_close
+	 socket_close(${1:\$socket [required]})
+endsnippet
+snippet socket_write
+	 socket_write(${1:\$socket [required]},${2:\$buf [required]},${3:\$length [optional]})
+endsnippet
+snippet socket_read
+	 socket_read(${1:\$socket [required]},${2:\$length [required]},${3:\$type [optional]})
+endsnippet
+snippet socket_getsockname
+	 socket_getsockname(${1:\$socket [required]})
+endsnippet
+snippet socket_getpeername
+	 socket_getpeername(${1:\$socket [required]})
+endsnippet
+snippet socket_connect
+	 socket_connect(${1:\$socket [required]},${2:\$addr [required]},${3:\$port [optional]})
+endsnippet
+snippet socket_strerror
+	 socket_strerror(${1:\$errno [required]})
+endsnippet
+snippet socket_bind
+	 socket_bind(${1:\$socket [required]},${2:\$addr [required]},${3:\$port [optional]})
+endsnippet
+snippet socket_recv
+	 socket_recv(${1:\$socket [required]},${2:\$len [required]},${3:\$flags [required]})
+endsnippet
+snippet socket_send
+	 socket_send(${1:\$socket [required]},${2:\$buf [required]},${3:\$len [required]},${4:\$flags [required]})
+endsnippet
+snippet socket_recvfrom
+	 socket_recvfrom(${1:\$socket [required]},${2:\$len [required]},${3:\$flags [required]})
+endsnippet
+snippet socket_sendto
+	 socket_sendto(${1:\$socket [required]},${2:\$buf [required]},${3:\$len [required]},${4:\$flags [required]},${5:\$addr [required]},${6:\$port [optional]})
+endsnippet
+snippet socket_get_option
+	 socket_get_option(${1:\$socket [required]},${2:\$level [required]},${3:\$optname [required]})
+endsnippet
+snippet socket_set_option
+	 socket_set_option(${1:\$socket [required]},${2:\$level [required]},${3:\$optname [required]},${4:\$optval [required]})
+endsnippet
+snippet socket_shutdown
+	 socket_shutdown(${1:\$socket [required]},${2:\$how [optional]})
+endsnippet
+snippet socket_last_error
+	 socket_last_error(${1:\$socket [optional]})
+endsnippet
+snippet socket_clear_error
+	 socket_clear_error(${1:\$socket [optional]})
+endsnippet
+snippet socket_import_stream
+	 socket_import_stream(${1:\$stream [required]})
+endsnippet
+snippet socket_getopt
+	 socket_getopt(${1:\$socket [required]},${2:\$level [required]},${3:\$optname [required]})
+endsnippet
+snippet socket_setopt
+	 socket_setopt(${1:\$socket [required]},${2:\$level [required]},${3:\$optname [required]},${4:\$optval [required]})
+endsnippet
+snippet constant
+	 constant(${1:\$const_name [required]})
+endsnippet
+snippet bin2hex
+	 bin2hex(${1:\$data [required]})
+endsnippet
+snippet hex2bin
+	 hex2bin(${1:\$data [required]})
+endsnippet
+snippet sleep
+	 sleep(${1:\$seconds [required]})
+endsnippet
+snippet usleep
+	 usleep(${1:\$micro_seconds [required]})
+endsnippet
+snippet time_nanosleep
+	 time_nanosleep(${1:\$seconds [required]},${2:\$nanoseconds [required]})
+endsnippet
+snippet time_sleep_until
+	 time_sleep_until(${1:\$timestamp [required]})
+endsnippet
+snippet strptime
+	 strptime(${1:\$timestamp [required]},${2:\$format [required]})
+endsnippet
+snippet flush
+	 flush()
+endsnippet
+snippet wordwrap
+	 wordwrap(${1:\$str [required]},${2:\$width [optional]},${3:\$break [optional]},${4:\$cut [optional]})
+endsnippet
+snippet htmlspecialchars
+	 htmlspecialchars(${1:\$string [required]},${2:\$quote_style [optional]},${3:\$charset [optional]},${4:\$double_encode [optional]})
+endsnippet
+snippet htmlentities
+	 htmlentities(${1:\$string [required]},${2:\$quote_style [optional]},${3:\$charset [optional]},${4:\$double_encode [optional]})
+endsnippet
+snippet html_entity_decode
+	 html_entity_decode(${1:\$string [required]},${2:\$quote_style [optional]},${3:\$charset [optional]})
+endsnippet
+snippet htmlspecialchars_decode
+	 htmlspecialchars_decode(${1:\$string [required]},${2:\$quote_style [optional]})
+endsnippet
+snippet get_html_translation_table
+	 get_html_translation_table(${1:\$table [optional]},${2:\$quote_style [optional]})
+endsnippet
+snippet sha1
+	 sha1(${1:\$str [required]},${2:\$raw_output [optional]})
+endsnippet
+snippet sha1_file
+	 sha1_file(${1:\$filename [required]},${2:\$raw_output [optional]})
+endsnippet
+snippet md5
+	 md5(${1:\$str [required]},${2:\$raw_output [optional]})
+endsnippet
+snippet md5_file
+	 md5_file(${1:\$filename [required]},${2:\$raw_output [optional]})
+endsnippet
+snippet crc32
+	 crc32(${1:\$str [required]})
+endsnippet
+snippet iptcparse
+	 iptcparse(${1:\$iptcdata [required]})
+endsnippet
+snippet iptcembed
+	 iptcembed(${1:\$iptcdata [required]},${2:\$jpeg_file_name [required]},${3:\$spool [optional]})
+endsnippet
+snippet getimagesize
+	 getimagesize(${1:\$imagefile [required]})
+endsnippet
+snippet getimagesizefromstring
+	 getimagesizefromstring(${1:\$imagefile [required]})
+endsnippet
+snippet image_type_to_mime_type
+	 image_type_to_mime_type(${1:\$imagetype [required]})
+endsnippet
+snippet image_type_to_extension
+	 image_type_to_extension(${1:\$imagetype [required]},${2:\$include_dot [optional]})
+endsnippet
+snippet phpinfo
+	 phpinfo(${1:\$what [optional]})
+endsnippet
+snippet phpversion
+	 phpversion(${1:\$extension [optional]})
+endsnippet
+snippet phpcredits
+	 phpcredits(${1:\$flag [optional]})
+endsnippet
+snippet php_logo_guid
+	 php_logo_guid()
+endsnippet
+snippet php_real_logo_guid
+	 php_real_logo_guid()
+endsnippet
+snippet php_egg_logo_guid
+	 php_egg_logo_guid()
+endsnippet
+snippet zend_logo_guid
+	 zend_logo_guid()
+endsnippet
+snippet php_sapi_name
+	 php_sapi_name()
+endsnippet
+snippet php_uname
+	 php_uname()
+endsnippet
+snippet php_ini_scanned_files
+	 php_ini_scanned_files()
+endsnippet
+snippet php_ini_loaded_file
+	 php_ini_loaded_file()
+endsnippet
+snippet strnatcmp
+	 strnatcmp(${1:\$s1 [required]},${2:\$s2 [required]})
+endsnippet
+snippet strnatcasecmp
+	 strnatcasecmp(${1:\$s1 [required]},${2:\$s2 [required]})
+endsnippet
+snippet substr_count
+	 substr_count(${1:\$haystack [required]},${2:\$needle [required]},${3:\$offset [optional]},${4:\$length [optional]})
+endsnippet
+snippet strspn
+	 strspn(${1:\$str [required]},${2:\$mask [required]},${3:\$start [optional]},${4:\$len [optional]})
+endsnippet
+snippet strcspn
+	 strcspn(${1:\$str [required]},${2:\$mask [required]},${3:\$start [optional]},${4:\$len [optional]})
+endsnippet
+snippet strtok
+	 strtok(${1:\$str [required]},${2:\$token [required]})
+endsnippet
+snippet strtoupper
+	 strtoupper(${1:\$str [required]})
+endsnippet
+snippet strtolower
+	 strtolower(${1:\$str [required]})
+endsnippet
+snippet strpos
+	 strpos(${1:\$haystack [required]},${2:\$needle [required]},${3:\$offset [optional]})
+endsnippet
+snippet stripos
+	 stripos(${1:\$haystack [required]},${2:\$needle [required]},${3:\$offset [optional]})
+endsnippet
+snippet strrpos
+	 strrpos(${1:\$haystack [required]},${2:\$needle [required]},${3:\$offset [optional]})
+endsnippet
+snippet strripos
+	 strripos(${1:\$haystack [required]},${2:\$needle [required]},${3:\$offset [optional]})
+endsnippet
+snippet strrev
+	 strrev(${1:\$str [required]})
+endsnippet
+snippet hebrev
+	 hebrev(${1:\$str [required]},${2:\$max_chars_per_line [optional]})
+endsnippet
+snippet hebrevc
+	 hebrevc(${1:\$str [required]},${2:\$max_chars_per_line [optional]})
+endsnippet
+snippet nl2br
+	 nl2br(${1:\$str [required]},${2:\$is_xhtml [optional]})
+endsnippet
+snippet basename
+	 basename(${1:\$path [required]},${2:\$suffix [optional]})
+endsnippet
+snippet dirname
+	 dirname(${1:\$path [required]})
+endsnippet
+snippet pathinfo
+	 pathinfo(${1:\$path [required]},${2:\$options [optional]})
+endsnippet
+snippet stripslashes
+	 stripslashes(${1:\$str [required]})
+endsnippet
+snippet stripcslashes
+	 stripcslashes(${1:\$str [required]})
+endsnippet
+snippet strstr
+	 strstr(${1:\$haystack [required]},${2:\$needle [required]},${3:\$part [optional]})
+endsnippet
+snippet stristr
+	 stristr(${1:\$haystack [required]},${2:\$needle [required]},${3:\$part [optional]})
+endsnippet
+snippet strrchr
+	 strrchr(${1:\$haystack [required]},${2:\$needle [required]})
+endsnippet
+snippet str_shuffle
+	 str_shuffle(${1:\$str [required]})
+endsnippet
+snippet str_word_count
+	 str_word_count(${1:\$str [required]},${2:\$format [optional]},${3:\$charlist [optional]})
+endsnippet
+snippet str_split
+	 str_split(${1:\$str [required]},${2:\$split_length [optional]})
+endsnippet
+snippet strpbrk
+	 strpbrk(${1:\$haystack [required]},${2:\$char_list [optional]})
+endsnippet
+snippet substr_compare
+	 substr_compare(${1:\$main_str [required]},${2:\$str [required]},${3:\$offset [required]},${4:\$length [optional]},${5:\$case_sensitivity [optional]})
+endsnippet
+snippet strcoll
+	 strcoll(${1:\$str1 [required]},${2:\$str2 [required]})
+endsnippet
+snippet money_format
+	 money_format(${1:\$format [required]},${2:\$value [required]})
+endsnippet
+snippet substr
+	 substr(${1:\$str [required]},${2:\$start [required]},${3:\$length [optional]})
+endsnippet
+snippet substr_replace
+	 substr_replace(${1:\$str [required]},${2:\$replace [required]},${3:\$start [required]},${4:\$length [optional]})
+endsnippet
+snippet quotemeta
+	 quotemeta(${1:\$str [required]})
+endsnippet
+snippet ucfirst
+	 ucfirst(${1:\$str [required]})
+endsnippet
+snippet lcfirst
+	 lcfirst(${1:\$str [required]})
+endsnippet
+snippet ucwords
+	 ucwords(${1:\$str [required]})
+endsnippet
+snippet strtr
+	 strtr(${1:\$str [required]},${2:\$from [required]},${3:\$to [optional]})
+endsnippet
+snippet addslashes
+	 addslashes(${1:\$str [required]})
+endsnippet
+snippet addcslashes
+	 addcslashes(${1:\$str [required]},${2:\$charlist [required]})
+endsnippet
+snippet rtrim
+	 rtrim(${1:\$str [required]},${2:\$character_mask [optional]})
+endsnippet
+snippet str_replace
+	 str_replace(${1:\$search [required]},${2:\$replace [required]},${3:\$subject [required]})
+endsnippet
+snippet str_ireplace
+	 str_ireplace(${1:\$search [required]},${2:\$replace [required]},${3:\$subject [required]})
+endsnippet
+snippet str_repeat
+	 str_repeat(${1:\$input [required]},${2:\$mult [required]})
+endsnippet
+snippet count_chars
+	 count_chars(${1:\$input [required]},${2:\$mode [optional]})
+endsnippet
+snippet chunk_split
+	 chunk_split(${1:\$str [required]},${2:\$chunklen [optional]},${3:\$ending [optional]})
+endsnippet
+snippet trim
+	 trim(${1:\$str [required]},${2:\$character_mask [optional]})
+endsnippet
+snippet ltrim
+	 ltrim(${1:\$str [required]},${2:\$character_mask [optional]})
+endsnippet
+snippet strip_tags
+	 strip_tags(${1:\$str [required]},${2:\$allowable_tags [optional]})
+endsnippet
+snippet similar_text
+	 similar_text(${1:\$str1 [required]},${2:\$str2 [required]})
+endsnippet
+snippet explode
+	 explode(${1:\$separator [required]},${2:\$str [required]},${3:\$limit [optional]})
+endsnippet
+snippet implode
+	 implode(${1:\$glue [required]},${2:\$pieces [required]})
+endsnippet
+snippet join
+	 join(${1:\$glue [required]},${2:\$pieces [required]})
+endsnippet
+snippet setlocale
+	 setlocale(${1:\$category [required]},${2:\$locale [required]},${3:\$... [optional]})
+endsnippet
+snippet localeconv
+	 localeconv()
+endsnippet
+snippet nl_langinfo
+	 nl_langinfo(${1:\$item [required]})
+endsnippet
+snippet soundex
+	 soundex(${1:\$str [required]})
+endsnippet
+snippet levenshtein
+	 levenshtein(${1:\$str1 [required]},${2:\$str2 [required]},${3:\$cost_ins [required]},${4:\$cost_rep [required]},${5:\$cost_del [required]})
+endsnippet
+snippet chr
+	 chr(${1:\$codepoint [required]})
+endsnippet
+snippet ord
+	 ord(${1:\$character [required]})
+endsnippet
+snippet parse_str
+	 parse_str(${1:\$encoded_string [required]})
+endsnippet
+snippet str_getcsv
+	 str_getcsv(${1:\$string [required]},${2:\$delimiter [optional]},${3:\$enclosure [optional]},${4:\$escape [optional]})
+endsnippet
+snippet str_pad
+	 str_pad(${1:\$input [required]},${2:\$pad_length [required]},${3:\$pad_string [optional]},${4:\$pad_type [optional]})
+endsnippet
+snippet chop
+	 chop(${1:\$str [required]},${2:\$character_mask [optional]})
+endsnippet
+snippet strchr
+	 strchr(${1:\$haystack [required]},${2:\$needle [required]},${3:\$part [optional]})
+endsnippet
+snippet sprintf
+	 sprintf(${1:\$format [required]},${2:\$arg1 [required]},${3:\$... [optional]})
+endsnippet
+snippet printf
+	 printf(${1:\$format [required]},${2:\$arg1 [optional]},${3:\$... [optional]})
+endsnippet
+snippet vprintf
+	 vprintf(${1:\$format [required]},${2:\$args [required]})
+endsnippet
+snippet vsprintf
+	 vsprintf(${1:\$format [required]},${2:\$args [required]})
+endsnippet
+snippet fprintf
+	 fprintf(${1:\$stream [required]},${2:\$format [required]},${3:\$arg1 [optional]},${4:\$... [optional]})
+endsnippet
+snippet vfprintf
+	 vfprintf(${1:\$stream [required]},${2:\$format [required]},${3:\$args [required]})
+endsnippet
+snippet sscanf
+	 sscanf(${1:\$str [required]},${2:\$format [required]})
+endsnippet
+snippet fscanf
+	 fscanf(${1:\$stream [required]},${2:\$format [required]})
+endsnippet
+snippet parse_url
+	 parse_url(${1:\$url [required]},${2:\$component [optional]})
+endsnippet
+snippet urlencode
+	 urlencode(${1:\$str [required]})
+endsnippet
+snippet urldecode
+	 urldecode(${1:\$str [required]})
+endsnippet
+snippet rawurlencode
+	 rawurlencode(${1:\$str [required]})
+endsnippet
+snippet rawurldecode
+	 rawurldecode(${1:\$str [required]})
+endsnippet
+snippet http_build_query
+	 http_build_query(${1:\$formdata [required]},${2:\$prefix [optional]},${3:\$arg_separator [optional]},${4:\$enc_type [optional]})
+endsnippet
+snippet readlink
+	 readlink(${1:\$filename [required]})
+endsnippet
+snippet linkinfo
+	 linkinfo(${1:\$filename [required]})
+endsnippet
+snippet symlink
+	 symlink(${1:\$target [required]},${2:\$link [required]})
+endsnippet
+snippet link
+	 link(${1:\$target [required]},${2:\$link [required]})
+endsnippet
+snippet unlink
+	 unlink(${1:\$filename [required]},${2:\$context [optional]})
+endsnippet
+snippet exec
+	 exec(${1:\$command [required]})
+endsnippet
+snippet system
+	 system(${1:\$command [required]})
+endsnippet
+snippet escapeshellcmd
+	 escapeshellcmd(${1:\$command [required]})
+endsnippet
+snippet escapeshellarg
+	 escapeshellarg(${1:\$arg [required]})
+endsnippet
+snippet passthru
+	 passthru(${1:\$command [required]})
+endsnippet
+snippet shell_exec
+	 shell_exec(${1:\$cmd [required]})
+endsnippet
+snippet proc_open
+	 proc_open(${1:\$command [required]},${2:\$descriptorspec [required]},${3:\$cwd [optional]},${4:\$env [optional]},${5:\$other_options [optional]})
+endsnippet
+snippet proc_close
+	 proc_close(${1:\$process [required]})
+endsnippet
+snippet proc_terminate
+	 proc_terminate(${1:\$process [required]},${2:\$signal [optional]})
+endsnippet
+snippet proc_get_status
+	 proc_get_status(${1:\$process [required]})
+endsnippet
+snippet proc_nice
+	 proc_nice(${1:\$priority [required]})
+endsnippet
+snippet rand
+	 rand(${1:\$min [optional]},${2:\$max [optional]})
+endsnippet
+snippet srand
+	 srand(${1:\$seed [optional]})
+endsnippet
+snippet getrandmax
+	 getrandmax()
+endsnippet
+snippet mt_rand
+	 mt_rand(${1:\$min [optional]},${2:\$max [optional]})
+endsnippet
+snippet mt_srand
+	 mt_srand(${1:\$seed [optional]})
+endsnippet
+snippet mt_getrandmax
+	 mt_getrandmax()
+endsnippet
+snippet getservbyname
+	 getservbyname(${1:\$service [required]},${2:\$protocol [required]})
+endsnippet
+snippet getservbyport
+	 getservbyport(${1:\$port [required]},${2:\$protocol [required]})
+endsnippet
+snippet getprotobyname
+	 getprotobyname(${1:\$name [required]})
+endsnippet
+snippet getprotobynumber
+	 getprotobynumber(${1:\$proto [required]})
+endsnippet
+snippet getmyuid
+	 getmyuid()
+endsnippet
+snippet getmygid
+	 getmygid()
+endsnippet
+snippet getmypid
+	 getmypid()
+endsnippet
+snippet getmyinode
+	 getmyinode()
+endsnippet
+snippet getlastmod
+	 getlastmod()
+endsnippet
+snippet base64_decode
+	 base64_decode(${1:\$str [required]},${2:\$strict [optional]})
+endsnippet
+snippet base64_encode
+	 base64_encode(${1:\$str [required]})
+endsnippet
+snippet convert_uuencode
+	 convert_uuencode(${1:\$data [required]})
+endsnippet
+snippet convert_uudecode
+	 convert_uudecode(${1:\$data [required]})
+endsnippet
+snippet abs
+	 abs(${1:\$number [required]})
+endsnippet
+snippet ceil
+	 ceil(${1:\$number [required]})
+endsnippet
+snippet floor
+	 floor(${1:\$number [required]})
+endsnippet
+snippet round
+	 round(${1:\$number [required]},${2:\$precision [optional]},${3:\$mode [optional]})
+endsnippet
+snippet sin
+	 sin(${1:\$number [required]})
+endsnippet
+snippet cos
+	 cos(${1:\$number [required]})
+endsnippet
+snippet tan
+	 tan(${1:\$number [required]})
+endsnippet
+snippet asin
+	 asin(${1:\$number [required]})
+endsnippet
+snippet acos
+	 acos(${1:\$number [required]})
+endsnippet
+snippet atan
+	 atan(${1:\$number [required]})
+endsnippet
+snippet atanh
+	 atanh(${1:\$number [required]})
+endsnippet
+snippet atan2
+	 atan2(${1:\$y [required]},${2:\$x [required]})
+endsnippet
+snippet sinh
+	 sinh(${1:\$number [required]})
+endsnippet
+snippet cosh
+	 cosh(${1:\$number [required]})
+endsnippet
+snippet tanh
+	 tanh(${1:\$number [required]})
+endsnippet
+snippet asinh
+	 asinh(${1:\$number [required]})
+endsnippet
+snippet acosh
+	 acosh(${1:\$number [required]})
+endsnippet
+snippet expm1
+	 expm1(${1:\$number [required]})
+endsnippet
+snippet log1p
+	 log1p(${1:\$number [required]})
+endsnippet
+snippet pi
+	 pi()
+endsnippet
+snippet is_finite
+	 is_finite(${1:\$val [required]})
+endsnippet
+snippet is_nan
+	 is_nan(${1:\$val [required]})
+endsnippet
+snippet is_infinite
+	 is_infinite(${1:\$val [required]})
+endsnippet
+snippet pow
+	 pow(${1:\$base [required]},${2:\$exponent [required]})
+endsnippet
+snippet exp
+	 exp(${1:\$number [required]})
+endsnippet
+snippet log
+	 log(${1:\$number [required]},${2:\$base [optional]})
+endsnippet
+snippet log10
+	 log10(${1:\$number [required]})
+endsnippet
+snippet sqrt
+	 sqrt(${1:\$number [required]})
+endsnippet
+snippet hypot
+	 hypot(${1:\$num1 [required]},${2:\$num2 [required]})
+endsnippet
+snippet deg2rad
+	 deg2rad(${1:\$number [required]})
+endsnippet
+snippet rad2deg
+	 rad2deg(${1:\$number [required]})
+endsnippet
+snippet bindec
+	 bindec(${1:\$binary_number [required]})
+endsnippet
+snippet hexdec
+	 hexdec(${1:\$hexadecimal_number [required]})
+endsnippet
+snippet octdec
+	 octdec(${1:\$octal_number [required]})
+endsnippet
+snippet decbin
+	 decbin(${1:\$decimal_number [required]})
+endsnippet
+snippet decoct
+	 decoct(${1:\$decimal_number [required]})
+endsnippet
+snippet dechex
+	 dechex(${1:\$decimal_number [required]})
+endsnippet
+snippet base_convert
+	 base_convert(${1:\$number [required]},${2:\$frombase [required]},${3:\$tobase [required]})
+endsnippet
+snippet number_format
+	 number_format(${1:\$number [required]},${2:\$num_decimal_places [optional]},${3:\$dec_seperator [optional]},${4:\$thousands_seperator [optional]})
+endsnippet
+snippet fmod
+	 fmod(${1:\$x [required]},${2:\$y [required]})
+endsnippet
+snippet inet_ntop
+	 inet_ntop(${1:\$in_addr [required]})
+endsnippet
+snippet inet_pton
+	 inet_pton(${1:\$ip_address [required]})
+endsnippet
+snippet ip2long
+	 ip2long(${1:\$ip_address [required]})
+endsnippet
+snippet long2ip
+	 long2ip(${1:\$proper_address [required]})
+endsnippet
+snippet getenv
+	 getenv(${1:\$varname [required]})
+endsnippet
+snippet putenv
+	 putenv(${1:\$setting [required]})
+endsnippet
+snippet getopt
+	 getopt(${1:\$options [required]},${2:\$opts [optional]})
+endsnippet
+snippet sys_getloadavg
+	 sys_getloadavg()
+endsnippet
+snippet microtime
+	 microtime(${1:\$get_as_float [optional]})
+endsnippet
+snippet gettimeofday
+	 gettimeofday(${1:\$get_as_float [optional]})
+endsnippet
+snippet getrusage
+	 getrusage(${1:\$who [optional]})
+endsnippet
+snippet uniqid
+	 uniqid(${1:\$prefix [optional]},${2:\$more_entropy [optional]})
+endsnippet
+snippet quoted_printable_decode
+	 quoted_printable_decode(${1:\$str [required]})
+endsnippet
+snippet quoted_printable_encode
+	 quoted_printable_encode(${1:\$str [required]})
+endsnippet
+snippet convert_cyr_string
+	 convert_cyr_string(${1:\$str [required]},${2:\$from [required]},${3:\$to [required]})
+endsnippet
+snippet get_current_user
+	 get_current_user()
+endsnippet
+snippet set_time_limit
+	 set_time_limit(${1:\$seconds [required]})
+endsnippet
+snippet header_register_callback
+	 header_register_callback(${1:\$callback [required]})
+endsnippet
+snippet get_cfg_var
+	 get_cfg_var(${1:\$option_name [required]})
+endsnippet
+snippet magic_quotes_runtime
+	 magic_quotes_runtime(${1:\$new_setting [required]})
+endsnippet
+snippet set_magic_quotes_runtime
+	 set_magic_quotes_runtime(${1:\$new_setting [required]})
+endsnippet
+snippet get_magic_quotes_gpc
+	 get_magic_quotes_gpc()
+endsnippet
+snippet get_magic_quotes_runtime
+	 get_magic_quotes_runtime()
+endsnippet
+snippet error_log
+	 error_log(${1:\$message [required]},${2:\$message_type [optional]},${3:\$destination [optional]},${4:\$extra_headers [optional]})
+endsnippet
+snippet error_get_last
+	 error_get_last()
+endsnippet
+snippet call_user_func
+	 call_user_func(${1:\$function_name [required]},${2:\$parmeter [optional]},${3:\$... [optional]})
+endsnippet
+snippet call_user_func_array
+	 call_user_func_array(${1:\$function_name [required]},${2:\$parameters [required]})
+endsnippet
+snippet call_user_method
+	 call_user_method(${1:\$method_name [required]},${2:\$parameter [optional]},${3:\$... [optional]})
+endsnippet
+snippet call_user_method_array
+	 call_user_method_array(${1:\$method_name [required]},${2:\$params [required]})
+endsnippet
+snippet forward_static_call
+	 forward_static_call(${1:\$function_name [required]},${2:\$parameter [optional]},${3:\$... [optional]})
+endsnippet
+snippet forward_static_call_array
+	 forward_static_call_array(${1:\$function_name [required]},${2:\$parameters [required]})
+endsnippet
+snippet serialize
+	 serialize(${1:\$var [required]})
+endsnippet
+snippet unserialize
+	 unserialize(${1:\$variable_representation [required]})
+endsnippet
+snippet var_dump
+	 var_dump(${1:\$var [required]},${2:\$... [optional]})
+endsnippet
+snippet var_export
+	 var_export(${1:\$var [required]},${2:\$return [optional]})
+endsnippet
+snippet debug_zval_dump
+	 debug_zval_dump(${1:\$var [required]},${2:\$... [optional]})
+endsnippet
+snippet print_r
+	 print_r(${1:\$var [required]},${2:\$return [optional]})
+endsnippet
+snippet memory_get_usage
+	 memory_get_usage(${1:\$real_usage [optional]})
+endsnippet
+snippet memory_get_peak_usage
+	 memory_get_peak_usage(${1:\$real_usage [optional]})
+endsnippet
+snippet register_shutdown_function
+	 register_shutdown_function(${1:\$function_name [required]})
+endsnippet
+snippet register_tick_function
+	 register_tick_function(${1:\$function_name [required]},${2:\$arg [optional]},${3:\$... [optional]})
+endsnippet
+snippet unregister_tick_function
+	 unregister_tick_function(${1:\$function_name [required]})
+endsnippet
+snippet highlight_file
+	 highlight_file(${1:\$file_name [required]},${2:\$return [optional]})
+endsnippet
+snippet show_source
+	 show_source(${1:\$file_name [required]},${2:\$return [optional]})
+endsnippet
+snippet highlight_string
+	 highlight_string(${1:\$string [required]},${2:\$return [optional]})
+endsnippet
+snippet php_strip_whitespace
+	 php_strip_whitespace(${1:\$file_name [required]})
+endsnippet
+snippet ini_get
+	 ini_get(${1:\$varname [required]})
+endsnippet
+snippet ini_get_all
+	 ini_get_all(${1:\$extension [optional]})
+endsnippet
+snippet ini_set
+	 ini_set(${1:\$varname [required]},${2:\$newvalue [required]})
+endsnippet
+snippet ini_alter
+	 ini_alter(${1:\$varname [required]},${2:\$newvalue [required]})
+endsnippet
+snippet ini_restore
+	 ini_restore(${1:\$varname [required]})
+endsnippet
+snippet get_include_path
+	 get_include_path()
+endsnippet
+snippet set_include_path
+	 set_include_path(${1:\$new_include_path [required]})
+endsnippet
+snippet restore_include_path
+	 restore_include_path()
+endsnippet
+snippet setcookie
+	 setcookie(${1:\$name [required]},${2:\$value [optional]},${3:\$expires [optional]},${4:\$path [optional]},${5:\$domain [optional]},${6:\$secure [optional]})
+endsnippet
+snippet setrawcookie
+	 setrawcookie(${1:\$name [required]},${2:\$value [optional]},${3:\$expires [optional]},${4:\$path [optional]},${5:\$domain [optional]},${6:\$secure [optional]})
+endsnippet
+snippet header
+	 header(${1:\$header [required]},${2:\$replace [optional]},${3:\$http_response_code [optional]})
+endsnippet
+snippet header_remove
+	 header_remove(${1:\$name [optional]})
+endsnippet
+snippet headers_sent
+	 headers_sent()
+endsnippet
+snippet headers_list
+	 headers_list()
+endsnippet
+snippet http_response_code
+	 http_response_code(${1:\$response_code [optional]})
+endsnippet
+snippet connection_aborted
+	 connection_aborted()
+endsnippet
+snippet connection_status
+	 connection_status()
+endsnippet
+snippet ignore_user_abort
+	 ignore_user_abort(${1:\$value [optional]})
+endsnippet
+snippet parse_ini_file
+	 parse_ini_file(${1:\$filename [required]},${2:\$process_sections [optional]},${3:\$scanner_mode [optional]})
+endsnippet
+snippet parse_ini_string
+	 parse_ini_string(${1:\$ini_string [required]},${2:\$process_sections [optional]},${3:\$scanner_mode [optional]})
+endsnippet
+snippet is_uploaded_file
+	 is_uploaded_file(${1:\$path [required]})
+endsnippet
+snippet move_uploaded_file
+	 move_uploaded_file(${1:\$path [required]},${2:\$new_path [required]})
+endsnippet
+snippet gethostbyaddr
+	 gethostbyaddr(${1:\$ip_address [required]})
+endsnippet
+snippet gethostbyname
+	 gethostbyname(${1:\$hostname [required]})
+endsnippet
+snippet gethostbynamel
+	 gethostbynamel(${1:\$hostname [required]})
+endsnippet
+snippet gethostname
+	 gethostname()
+endsnippet
+snippet dns_check_record
+	 dns_check_record(${1:\$host [required]},${2:\$type [optional]})
+endsnippet
+snippet checkdnsrr
+	 checkdnsrr(${1:\$host [required]},${2:\$type [optional]})
+endsnippet
+snippet dns_get_mx
+	 dns_get_mx(${1:\$hostname [required]})
+endsnippet
+snippet getmxrr
+	 getmxrr(${1:\$hostname [required]})
+endsnippet
+snippet dns_get_record
+	 dns_get_record(${1:\$hostname [required]},${2:\$type [optional]},${3:\$raw [optional]})
+endsnippet
+snippet intval
+	 intval(${1:\$var [required]},${2:\$base [optional]})
+endsnippet
+snippet floatval
+	 floatval(${1:\$var [required]})
+endsnippet
+snippet doubleval
+	 doubleval(${1:\$var [required]})
+endsnippet
+snippet strval
+	 strval(${1:\$var [required]})
+endsnippet
+snippet gettype
+	 gettype(${1:\$var [required]})
+endsnippet
+snippet settype
+	 settype(${1:\$type [required]})
+endsnippet
+snippet is_null
+	 is_null(${1:\$var [required]})
+endsnippet
+snippet is_resource
+	 is_resource(${1:\$var [required]})
+endsnippet
+snippet is_bool
+	 is_bool(${1:\$var [required]})
+endsnippet
+snippet is_long
+	 is_long(${1:\$var [required]})
+endsnippet
+snippet is_float
+	 is_float(${1:\$var [required]})
+endsnippet
+snippet is_int
+	 is_int(${1:\$var [required]})
+endsnippet
+snippet is_integer
+	 is_integer(${1:\$var [required]})
+endsnippet
+snippet is_double
+	 is_double(${1:\$var [required]})
+endsnippet
+snippet is_real
+	 is_real(${1:\$var [required]})
+endsnippet
+snippet is_numeric
+	 is_numeric(${1:\$value [required]})
+endsnippet
+snippet is_string
+	 is_string(${1:\$var [required]})
+endsnippet
+snippet is_array
+	 is_array(${1:\$var [required]})
+endsnippet
+snippet is_object
+	 is_object(${1:\$var [required]})
+endsnippet
+snippet is_scalar
+	 is_scalar(${1:\$value [required]})
+endsnippet
+snippet is_callable
+	 is_callable(${1:\$var [required]},${2:\$syntax_only [optional]})
+endsnippet
+snippet pclose
+	 pclose(${1:\$fp [required]})
+endsnippet
+snippet popen
+	 popen(${1:\$command [required]},${2:\$mode [required]})
+endsnippet
+snippet readfile
+	 readfile(${1:\$filename [required]},${2:\$flags [optional]},${3:\$context [optional]})
+endsnippet
+snippet rewind
+	 rewind(${1:\$fp [required]})
+endsnippet
+snippet rmdir
+	 rmdir(${1:\$dirname [required]},${2:\$context [optional]})
+endsnippet
+snippet umask
+	 umask(${1:\$mask [optional]})
+endsnippet
+snippet fclose
+	 fclose(${1:\$fp [required]})
+endsnippet
+snippet feof
+	 feof(${1:\$fp [required]})
+endsnippet
+snippet fgetc
+	 fgetc(${1:\$fp [required]})
+endsnippet
+snippet fgets
+	 fgets(${1:\$fp [required]},${2:\$length [optional]})
+endsnippet
+snippet fgetss
+	 fgetss(${1:\$fp [required]},${2:\$length [optional]},${3:\$allowable_tags [optional]})
+endsnippet
+snippet fread
+	 fread(${1:\$fp [required]},${2:\$length [required]})
+endsnippet
+snippet fopen
+	 fopen(${1:\$filename [required]},${2:\$mode [required]},${3:\$use_include_path [optional]},${4:\$context [optional]})
+endsnippet
+snippet fpassthru
+	 fpassthru(${1:\$fp [required]})
+endsnippet
+snippet ftruncate
+	 ftruncate(${1:\$fp [required]},${2:\$size [required]})
+endsnippet
+snippet fstat
+	 fstat(${1:\$fp [required]})
+endsnippet
+snippet fseek
+	 fseek(${1:\$fp [required]},${2:\$offset [required]},${3:\$whence [optional]})
+endsnippet
+snippet ftell
+	 ftell(${1:\$fp [required]})
+endsnippet
+snippet fflush
+	 fflush(${1:\$fp [required]})
+endsnippet
+snippet fwrite
+	 fwrite(${1:\$fp [required]},${2:\$str [required]},${3:\$length [optional]})
+endsnippet
+snippet fputs
+	 fputs(${1:\$fp [required]},${2:\$str [required]},${3:\$length [optional]})
+endsnippet
+snippet mkdir
+	 mkdir(${1:\$pathname [required]},${2:\$mode [optional]},${3:\$recursive [optional]},${4:\$context [optional]})
+endsnippet
+snippet rename
+	 rename(${1:\$old_name [required]},${2:\$new_name [required]},${3:\$context [optional]})
+endsnippet
+snippet copy
+	 copy(${1:\$source_file [required]},${2:\$destination_file [required]},${3:\$context [required]})
+endsnippet
+snippet tempnam
+	 tempnam(${1:\$dir [required]},${2:\$prefix [required]})
+endsnippet
+snippet tmpfile
+	 tmpfile()
+endsnippet
