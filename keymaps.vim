@@ -83,3 +83,6 @@ map <Leader>lcd :exe 'lcd ' . expand ("%:p:h")<CR>
 " quickfix shortcuts
 map <c-j> :cnext<CR>
 map <c-k> :cprevious<CR>
+
+" Send inline SQL to /tmp/q
+vmap <Leader>q :w! /tmp/q<CR>

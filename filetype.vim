@@ -18,3 +18,6 @@ autocmd BufNewFile,BufRead *.org setf org
 
 " Markdown
 autocmd BufNewFile,BufRead set ts=1 tw=80
+
+" RF5 custom XML thingy
+autocmd BufNewFile,BufRead *.rf5 set filetype=rf5
