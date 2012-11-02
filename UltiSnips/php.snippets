@@ -1,0 +1,21 @@
+snippet class "Class declaration template" !b
+/**
+ * Class ${1:`!p snip.rv=snip.fn.capitalize().split('.')[0]`} 
+ *
+ * @author Benjamin Johnson <ben.johnson@worldstores.co.uk>
+ * @package $2
+ * @subpackage $3
+ */
+class $1
+{
+    public function ${4:__construct}(${5:$options})
+    {
+        ${5:// code}
+    }
+}
+$0
+endsnippet
+
+snippet fix "FIXME"
+FIXME: $1
+endsnippet
