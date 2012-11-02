@@ -21,3 +21,15 @@ autocmd BufNewFile,BufRead set ts=1 tw=80
 
 " RF5 custom XML thingy
 autocmd BufNewFile,BufRead *.rf5 set filetype=rf5
+
+" JSON
+au! BufRead,BufNewFile *.json set filetype=json 
+augroup json_autocmd
+    autocmd!
+    autocmd FileType json set autoindent
+    autocmd FileType json set formatoptions=tcq2l
+    autocmd FileType json set textwidth=78 shiftwidth=2
+    autocmd FileType json set softtabstop=2 tabstop=8
+    autocmd FileType json set expandtab
+    autocmd FileType json set foldmethod=syntax
+augroup END

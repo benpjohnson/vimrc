@@ -115,3 +115,6 @@ let g:syntastic_phpcs_disable=1
 " debugbydie mappings
 map <Leader>di :call Die()<CR>
 map <Leader>dr :call RemoveDies()<CR>
+
+" UltiSnips
+let g:UltipsSnippetDirectories=["UltiSnips","snippets"]
