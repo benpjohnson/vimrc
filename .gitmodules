@@ -91,9 +91,6 @@
 [submodule "bundle/vimpipe"]
 	path = bundle/vimpipe
 	url = https://github.com/krisajenkins/vim-pipe.git
-[submodule "bundle/base16"]
-	path = bundle/base16
-	url = https://github.com/chriskempson/base16-vim.git
 [submodule "bundle/let-modeline"]
 	path = bundle/let-modeline
 	url = https://github.com/vim-scripts/let-modeline.vim.git
