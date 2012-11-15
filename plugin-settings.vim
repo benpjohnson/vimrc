@@ -43,9 +43,6 @@ nmap <Leader>gb :Gblame<CR>
 nmap <Leader>gl :Glog<CR>
 nmap <Leader>gg :Ggrep<CR>
 
-" CommandT
-map <Leader>f :CommandT<CR>
-
 " PHP Documenter
 " imap <C-d> <ESC>:set paste<CR>:exe PhpDoc()<CR>:set nopaste<CR>i
  imap <C-d> <ESC>:exe PhpDoc()<CR>i
