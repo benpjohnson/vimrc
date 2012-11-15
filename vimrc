@@ -56,6 +56,8 @@ set hidden
 " auto close the preview onmi complete buffer after we are done with it
 autocmd CursorMovedI * if pumvisible() == 0 && bufname("%") != "[Command Line]"|pclose|endif
 autocmd InsertLeave * if pumvisible() == 0 && bufname("%") != "[Command Line]"|pclose|endif
+" Start new splits on the rhs
+set splitright
 
 " --------------------------------- filetypes ----------------------------------
 syntax on
@@ -74,7 +76,6 @@ set directory=~/.vim_backup
 set tags=tags;
 
 " -------------------------------- key mappings --------------------------------
-" you will need your map leader
 let mapleader = ","
 source $HOME/.vim/keymaps.vim
 
