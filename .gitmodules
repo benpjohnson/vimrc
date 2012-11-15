@@ -67,9 +67,6 @@
 [submodule "bundle/csv"]
 	path = bundle/csv
 	url = https://github.com/chrisbra/csv.vim.git
-[submodule "bundle/AutoFenc"]
-	path = bundle/AutoFenc
-	url = https://github.com/vim-scripts/AutoFenc.vim
 [submodule "bundle/debugbydie"]
 	path = bundle/debugbydie
 	url = git.benpjohnson.com:debugbydie
