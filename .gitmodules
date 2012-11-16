@@ -49,9 +49,6 @@
 [submodule "bundle/unite"]
 	path = bundle/unite
 	url = https://github.com/Shougo/unite.vim.git
-[submodule "bundle/vimroom"]
-	path = bundle/vimroom
-	url = https://github.com/mikewest/vimroom.git
 [submodule "bundle/vim-extradite"]
 	path = bundle/vim-extradite
 	url = https://github.com/int3/vim-extradite.git
