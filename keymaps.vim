@@ -86,3 +86,6 @@ map <c-k> :cprevious<CR>
 
 " Send inline SQL to /tmp/q
 vmap <Leader>q :w! /tmp/q<CR>
+
+" Open my cheatsheet
+nmap <Leader>vc :vsp ~/kb/cheat/VimEditor<CR>
