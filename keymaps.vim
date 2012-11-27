@@ -88,4 +88,4 @@ map <c-k> :cprevious<CR>
 vmap <Leader>q :w! /tmp/q<CR>
 
 " Open my cheatsheet
-nmap <Leader>vc :vsp ~/kb/cheat/VimEditor<CR>
+nmap <Leader>ec :vsp ~/kb/cheat/VimEditor<CR>

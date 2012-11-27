@@ -33,3 +33,11 @@ augroup json_autocmd
     autocmd FileType json set expandtab
     autocmd FileType json set foldmethod=syntax
 augroup END
+
+aug ALL
+    au!
+    " To not interfer with Templates loaders
+    au BufNewFile * :let b:this_is_new_buffer=1
+    " Modeline interpretation
+    au BufEnter * :call FirstModeLine()
+aug END
