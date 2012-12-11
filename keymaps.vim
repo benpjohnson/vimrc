@@ -50,8 +50,11 @@ map <F5> :make<CR>
 
 " edit vimrc 
 map <Leader>er :exec "e " . resolve(expand($MYVIMRC))<CR>
-" edit keymaps                                                                                                                                                                                                                                                              
+" edit keymaps
 map <Leader>ek :exec "e " . $HOME . "/.vim/keymaps.vim"<CR>  
+" edit plugin settings
+map <Leader>ep :exec "e " . $HOME . "/.vim/plugin-settings.vim"<CR>  
+
 " source vimrc
 map <Leader>sr :source $MYVIMRC<CR>
 
