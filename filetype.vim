@@ -41,3 +41,6 @@ aug ALL
     " Modeline interpretation
     au BufEnter * :call FirstModeLine()
 aug END
+
+" ASP
+autocmd BufNewFile,BufRead *.asp set filetype=aspvbs
