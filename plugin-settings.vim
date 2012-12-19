@@ -3,10 +3,10 @@ map <F2> :TagbarToggle<CR>
 let tlist_php_settings = 'php;c:class;f:function;d:constant'
 
 " Buffers
-noremap <Leader>b :Unite buffer<CR>
+noremap <Leader>b :CtrlPBuffer<CR>
 
 " mru
-noremap <Leader>m :Unite file_mru<CR>
+noremap <Leader>m :CtrlPMRUFiles<CR>
 
 " remap vcs commands to stop them messing with surround.vim
 nmap <Leader>va <Plug>VCSAdd
