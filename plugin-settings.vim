@@ -118,3 +118,6 @@ map <Leader>dr :call RemoveDies()<CR>
 
 " UltiSnips
 let g:UltipsSnippetDirectories=["UltiSnips","snippets"]
+
+" vimwiki
+let g:vimwiki_list = [{'path': '~/kb2/', 'syntax': 'markdown', 'ext': '.md', 'index': 'home'}] 
