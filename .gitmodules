@@ -4,12 +4,6 @@
 [submodule "bundle/fugitive"]
 	path = bundle/fugitive
 	url = http://github.com/tpope/vim-fugitive.git
-[submodule "bundle/vcscommand"]
-	path = bundle/vcscommand
-	url = http://github.com/vim-scripts/vcscommand.vim.git
-[submodule "bundle/command-t"]
-	path = bundle/command-t
-	url = git://git.wincent.com/command-t.git
 [submodule "bundle/pdv"]
 	path = bundle/pdv
 	url = https://github.com/vim-scripts/PDV--phpDocumentor-for-Vim.git
@@ -55,12 +49,6 @@
 [submodule "bundle/unite"]
 	path = bundle/unite
 	url = https://github.com/Shougo/unite.vim.git
-[submodule "bundle/vimroom"]
-	path = bundle/vimroom
-	url = https://github.com/mikewest/vimroom.git
-[submodule "bundle/AsyncCommand"]
-	path = bundle/AsyncCommand
-	url = https://github.com/pydave/AsyncCommand.git
 [submodule "bundle/vim-extradite"]
 	path = bundle/vim-extradite
 	url = https://github.com/int3/vim-extradite.git
@@ -70,12 +58,9 @@
 [submodule "bundle/csv"]
 	path = bundle/csv
 	url = https://github.com/chrisbra/csv.vim.git
-[submodule "bundle/AutoFenc"]
-	path = bundle/AutoFenc
-	url = https://github.com/vim-scripts/AutoFenc.vim
 [submodule "bundle/debugbydie"]
 	path = bundle/debugbydie
-	url = ssh://gitolite@git.benpjohnson.com/debugbydie.git
+	url = git.benpjohnson.com:debugbydie
 [submodule "bundle/ctrlp"]
 	path = bundle/ctrlp
 	url = https://github.com/kien/ctrlp.vim.git
@@ -97,3 +82,10 @@
 [submodule "bundle/vimwiki"]
 	path = bundle/vimwiki
 	url = https://github.com/vim-scripts/vimwiki.git
+[submodule "bundle/vimpipe"]
+	path = bundle/vimpipe
+	url = https://github.com/krisajenkins/vim-pipe.git
+[submodule "bundle/let-modeline"]
+	path = bundle/let-modeline
+	url = https://github.com/vim-scripts/let-modeline.vim.git
+>>>>>>> 85562d6c51eaa0d26587dcbee62dee018f26a077

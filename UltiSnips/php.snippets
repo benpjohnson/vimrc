@@ -1,0 +1,98 @@
+snippet class "Class declaration template" !b
+/**
+ * Class ${1:`!p snip.rv=snip.fn.capitalize().split('.')[0]`} 
+ *
+ * @author Benjamin Johnson <ben.johnson@worldstores.co.uk>
+ * @package $2
+ * @subpackage $3
+ */
+class $1
+{
+    public function ${4:__construct}(${5:$options})
+    {
+        ${5:// code}
+    }
+}
+$0
+endsnippet
+
+snippet fix "FIXME"
+FIXME: $1
+endsnippet
+
+snippet pr "print_r"
+print_r($1);
+endsnippet
+
+snippet echo "debug echo"
+echo "{$1}\n";
+endsnippet
+
+snippet Iterator "Spl Iterator"
+
+/**
+ * Class ${1:`!p snip.rv=snip.fn.capitalize().split('.')[0]`} 
+ *
+ * @author Benjamin Johnson <benpjohnson@gmail.com>
+ * @package $2
+ * @subpackage $3
+ */
+class $1 implements Iterator
+{
+    /**
+     * Get the current $1 
+     * 
+     * @access public
+     * @return mixed
+     */
+    function current()                                                                                                       
+    {
+
+    }
+    
+    /**
+     * Get the key for the current element
+     * 
+     * @access public
+     * @return mixed
+     */
+    function key()                                                                                                          
+    {
+
+    }
+
+    /**
+     * Move to the next element
+     * 
+     * @access public
+     * @return void
+     */
+    function next()                                                                                                           
+    {
+
+    }
+
+    /**
+     * Reset to position zero
+     * 
+     * @access public
+     * @return void
+     */
+    function rewind()                                                                                                         
+    {
+
+    }
+
+    /**
+     * Check if the current element is valid
+     * 
+     * @access public
+     * @return void
+     */
+    function valid()                                                                                                         
+    {
+
+    }
+}
+
+endsnippet

@@ -19,6 +19,9 @@ autocmd BufNewFile,BufRead *.org setf org
 " Markdown
 autocmd BufNewFile,BufRead set ts=1 tw=80
 
+" RF5 custom XML thingy
+autocmd BufNewFile,BufRead *.rf5 set filetype=rf5
+
 " JSON
 au! BufRead,BufNewFile *.json set filetype=json 
 augroup json_autocmd
@@ -30,3 +33,14 @@ augroup json_autocmd
     autocmd FileType json set expandtab
     autocmd FileType json set foldmethod=syntax
 augroup END
+
+aug ALL
+    au!
+    " To not interfer with Templates loaders
+    au BufNewFile * :let b:this_is_new_buffer=1
+    " Modeline interpretation
+    au BufEnter * :call FirstModeLine()
+aug END
+
+" ASP
+autocmd BufNewFile,BufRead *.asp set filetype=aspvbs

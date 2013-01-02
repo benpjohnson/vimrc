@@ -50,8 +50,11 @@ map <F5> :make<CR>
 
 " edit vimrc 
 map <Leader>er :exec "e " . resolve(expand($MYVIMRC))<CR>
-" edit keymaps                                                                                                                                                                                                                                                              
+" edit keymaps
 map <Leader>ek :exec "e " . $HOME . "/.vim/keymaps.vim"<CR>  
+" edit plugin settings
+map <Leader>ep :exec "e " . $HOME . "/.vim/plugin-settings.vim"<CR>  
+
 " source vimrc
 map <Leader>sr :source $MYVIMRC<CR>
 
@@ -83,3 +86,9 @@ map <Leader>lcd :exe 'lcd ' . expand ("%:p:h")<CR>
 " quickfix shortcuts
 map <c-j> :cnext<CR>
 map <c-k> :cprevious<CR>
+
+" Send inline SQL to /tmp/q
+vmap <Leader>q :w! /tmp/q<CR>
+
+" Open my cheatsheet
+nmap <Leader>ec :vsp ~/kb/cheat/VimEditor<CR>
