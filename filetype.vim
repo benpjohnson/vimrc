@@ -37,7 +37,7 @@ augroup END
 aug ALL
     au!
     " To not interfer with Templates loaders
-    au BufNewFile * :let b:this_is_new_buffer=1
+    " au BufNewFile * :let b:this_is_new_buffer=1
     " Modeline interpretation
     au BufEnter * :call FirstModeLine()
 aug END
