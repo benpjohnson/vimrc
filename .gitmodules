@@ -88,4 +88,3 @@
 [submodule "bundle/let-modeline"]
 	path = bundle/let-modeline
 	url = https://github.com/vim-scripts/let-modeline.vim.git
->>>>>>> 85562d6c51eaa0d26587dcbee62dee018f26a077
