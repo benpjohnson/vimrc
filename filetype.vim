@@ -43,4 +43,4 @@ aug ALL
 aug END
 
 " ASP
-autocmd BufNewFile,BufRead *.asp set filetype=aspvbs
+autocmd BufNewFile,BufRead *.asp,*.vbs,*.VBS set filetype=aspvbs
