@@ -14,8 +14,8 @@ map <Leader>cc :s/_\([a-z]\)/\U\1/g<CR>
 " let g:neocomplcache_omni_patterns = {} 
 " endif 
 
-let g:neocomplcache_omni_patterns.php = '[^. \t]->\h\w*\|\h\w*::'
-autocmd FileType php set omnifunc=phpcomplete#CompletePHP
+" let g:neocomplcache_omni_patterns.php = '[^. \t]->\h\w*\|\h\w*::'
+" autocmd FileType php set omnifunc=phpcomplete#CompletePHP
 
 " Errors in status line
 set statusline=%<%f\ %h%m%r
