@@ -77,6 +77,7 @@ set tags=tags;
 
 " -------------------------------- key mappings --------------------------------
 let mapleader = ","
+let maplocalleader = "\\"
 source $HOME/.vim/keymaps.vim
 
 " ---------------------------------- plugins -----------------------------------
