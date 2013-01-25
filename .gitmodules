@@ -85,3 +85,6 @@
 [submodule "bundle/let-modeline"]
 	path = bundle/let-modeline
 	url = https://github.com/vim-scripts/let-modeline.vim.git
+[submodule "bundle/vdebug"]
+	path = bundle/vdebug
+	url = https://github.com/joonty/vdebug.git
