@@ -92,3 +92,10 @@ let g:UltipsSnippetDirectories=["UltiSnips","snippets"]
 
 " vimwiki
 let g:vimwiki_list = [{'path': '~/kb2/general', 'syntax': 'markdown', 'ext': '.md', 'index': 'home'}, {'path': '~/kb2/work', 'syntax': 'markdown', 'ext': '.md', 'index': 'home'}, {'path': '~/kb2/personal', 'syntax': 'markdown', 'ext': '.md', 'index': 'home'}] 
+
+
+" Fix csv.vim highlights
+hi CSVColumnEven ctermfg=188 ctermbg=234 guifg=#dcdccc guibg=#1f1f1f
+hi CSVColumnOdd  ctermfg=188 ctermbg=234 guifg=#dcdccc guibg=#1f1f1f
+hi CSVColumnHeaderEven ctermfg=188 ctermbg=234 guifg=#dcdccc guibg=#1f1f1f
+hi CSVColumnHeaderOdd ctermfg=188 ctermbg=234 guifg=#dcdccc guibg=#1f1f1f
