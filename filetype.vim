@@ -42,5 +42,5 @@ aug ALL
     " au BufEnter * :call FirstModeLine()
 aug END
 
-" ASP
-autocmd BufNewFile,BufRead *.asp,*.vbs,*.VBS set filetype=aspvbs
+" VBScript
+autocmd BufNewFile,BufRead *.vbs,*.VBS set filetype=vb
