@@ -88,3 +88,9 @@
 [submodule "bundle/todotxt"]
 	path = bundle/todotxt
 	url = https://github.com/davidoc/todo.txt-vim.git
+[submodule "bundle/vdebug"]
+	path = bundle/vdebug
+	url = https://github.com/joonty/vdebug.git
+[submodule "bundle/vim-repeat"]
+	path = bundle/vim-repeat
+	url = https://github.com/tpope/vim-repeat.git

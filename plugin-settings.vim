@@ -8,32 +8,6 @@ noremap <Leader>b :CtrlPBuffer<CR>
 " mru
 noremap <Leader>m :CtrlPMRUFiles<CR>
 
-" remap vcs commands to stop them messing with surround.vim
-nmap <Leader>va <Plug>VCSAdd
-nmap <Leader>vn <Plug>VCSAnnotate
-nmap <Leader>vc <Plug>VCSCommit
-nmap <Leader>vD <Plug>VCSDelete
-nmap <Leader>vd <Plug>VCSDiff
-nmap <Leader>vg <Plug>VCSGotoOriginal
-nmap <Leader>vG <Plug>VCSGotoOriginal!
-nmap <Leader>vi <Plug>VCSInfo
-nmap <Leader>vl <Plug>VCSLog
-nmap <Leader>vL <Plug>VCSLock
-nmap <Leader>vr <Plug>VCSReview
-nmap <Leader>vs <Plug>VCSStatus
-nmap <Leader>vu <Plug>VCSUpdate
-nmap <Leader>vU <Plug>VCSUnlock
-nmap <Leader>vv <Plug>VCSVimDiff
-" only for cvs buffers: (only remaped to get rid of them)
-nmap <Leader>ve <Plug>CVSEdit
-nmap <Leader>vE <Plug>CVSEditors
-nmap <Leader>vt <Plug>CVSUnedit
-nmap <Leader>vwv <Plug>CVSWatchers
-nmap <Leader>vwa <Plug>CVSWatchAdd
-nmap <Leader>vwn <Plug>CVSWatchOn
-nmap <Leader>vwf <Plug>CVSWatchOff
-nmap <Leader>vwf <Plug>CVSWatchRemove
-
 " git fugitive commands
 nmap <Leader>gs :Gstatus<CR>
 nmap <Leader>gc :Gcommit<CR>
@@ -118,3 +92,9 @@ let g:UltipsSnippetDirectories=["UltiSnips","snippets"]
 
 " vimwiki
 let g:vimwiki_list = [{'path': '~/kb2/general', 'syntax': 'markdown', 'ext': '.md', 'index': 'home'}, {'path': '~/kb2/work', 'syntax': 'markdown', 'ext': '.md', 'index': 'home'}, {'path': '~/kb2/personal', 'syntax': 'markdown', 'ext': '.md', 'index': 'home'}] 
+
+" Fix csv.vim highlights
+hi CSVColumnEven ctermfg=188 ctermbg=234 guifg=#dcdccc guibg=#1f1f1f
+hi CSVColumnOdd  ctermfg=188 ctermbg=234 guifg=#dcdccc guibg=#1f1f1f
+hi CSVColumnHeaderEven ctermfg=188 ctermbg=234 guifg=#dcdccc guibg=#1f1f1f
+hi CSVColumnHeaderOdd ctermfg=188 ctermbg=234 guifg=#dcdccc guibg=#1f1f1f
