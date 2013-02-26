@@ -85,3 +85,6 @@
 [submodule "bundle/let-modeline"]
 	path = bundle/let-modeline
 	url = https://github.com/vim-scripts/let-modeline.vim.git
+[submodule "bundle/todotxt"]
+	path = bundle/todotxt
+	url = https://github.com/davidoc/todo.txt-vim.git
