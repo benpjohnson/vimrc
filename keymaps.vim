@@ -55,9 +55,6 @@ map <Leader>sr :source $MYVIMRC \| sil! source $HOME/.vimrc.local<CR>
 " make ',e' (in normal mode) give a prompt for opening files
 map <Leader>e :e <C-R>=expand("%:p:h") . "/" <CR>
 
-" write with sudo powers
-cmap w!! %!sudo tee > /dev/null %<CR>
-
 " Write quickly
 map <Leader>w :w<CR>
 
