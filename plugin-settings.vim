@@ -21,7 +21,7 @@ nmap <Leader>gg :Ggrep<CR>
 " imap <C-d> <ESC>:set paste<CR>:exe PhpDoc()<CR>:set nopaste<CR>i
  imap <C-d> <ESC>:exe PhpDoc()<CR>i
 " nmap <Leader>d :set paste<CR>:exe PhpDoc()<CR>:set nopaste<CR>
-nmap <Leader>d :exe PhpDoc()<CR>
+nmap <Leader>dd :exe PhpDoc()<CR>
 
 " ----------------------- In Progress -------------------------
 " map to check html and display error in a new window
@@ -88,6 +88,10 @@ map <Leader>di :call Die()<CR>
 map <Leader>dr :call RemoveDies()<CR>
 
 " UltiSnips
+" let g:ycm_key_list_previous_completion=['']
+" let g:UltiSnipsExpandTrigger="" 
+" let g:UltiSnipsListSnippets=""
+
 let g:UltipsSnippetDirectories=["UltiSnips","snippets"]
 
 " vimwiki

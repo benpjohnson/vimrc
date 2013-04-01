@@ -32,6 +32,14 @@ snippet echo "debug echo"
 echo "{$1}\n";
 endsnippet
 
+snippet pf "public function"
+public function 
+endsnippet
+
+snippet me "FIXME"
+// FIXME: $1
+endsnippet
+
 snippet Iterator "Spl Iterator"
 
 /**
@@ -100,3 +108,15 @@ class $1 implements Iterator
 }
 
 endsnippet
+
+snippet rawpost "curl raw post request"
+$ch = curl_init();
+curl_setopt($ch, CURLOPT_URL, 'http://);
+curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
+curl_setopt($ch, CURLOPT_POST, 1);
+curl_setopt($ch, CURLOPT_POSTFIELDS, "body goes here" ); 
+curl_setopt($ch, CURLOPT_HTTPHEADER,  array('Content-Type: application/json')); 
+endsnippet
+
+
+
