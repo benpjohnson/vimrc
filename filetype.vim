@@ -7,7 +7,7 @@ autocmd BufNewFile,BufRead *.zpt,*.inc,*.php,*.phpd,*.htm,*.html setf php
 
 " drupal Modules
 augroup drupal
-    autocmd BufRead,BufNewFile *.module,*.install,*.inc,*.test set filetype=php expandtab tabstop=2 shiftwidth=2 softtabstop=2 autoindent smartindent
+    autocmd BufRead,BufNewFile *.module,*.install,*.inc,*.test setfiletype php expandtab tabstop=2 shiftwidth=2 softtabstop=2 autoindent smartindent
 augroup END
 
 " csv files
@@ -17,13 +17,13 @@ autocmd BufNewFile,BufRead *.csv,*.tsv setf csv
 autocmd BufNewFile,BufRead *.org setf org
 
 " Markdown
-autocmd BufNewFile,BufRead set ts=1 tw=80
+autocmd BufNewFile,BufRead *.mkd, *.markdown set ts=1 tw=80
 
-" RF5 custom XML thingy
-autocmd BufNewFile,BufRead *.rf5 set filetype=rf5
+" RF5 custom XMLlike thingy
+autocmd BufNewFile,BufRead *.rf3,*.rf4,*.rf5 setfiletype xml
 
 " JSON
-au! BufRead,BufNewFile *.json set filetype=json 
+au! BufRead,BufNewFile *.json setfiletype json 
 augroup json_autocmd
     autocmd!
     autocmd FileType json set autoindent
