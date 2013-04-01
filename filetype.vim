@@ -19,6 +19,9 @@ autocmd BufNewFile,BufRead *.org setf org
 " Markdown
 autocmd BufNewFile,BufRead set ts=1 tw=80
 
+" Puppet
+autocmd BufNewFile,BufRead *.pp set filetype=ruby
+
 " RF5 custom XML thingy
 autocmd BufNewFile,BufRead *.rf5 set filetype=rf5
 
