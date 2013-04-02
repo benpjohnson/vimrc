@@ -1,96 +1,128 @@
 [submodule "bundle/markdown"]
 	path = bundle/markdown
 	url = http://github.com/tpope/vim-markdown.git
+    ignore = untracked
 [submodule "bundle/fugitive"]
 	path = bundle/fugitive
 	url = http://github.com/tpope/vim-fugitive.git
+    ignore = untracked
 [submodule "bundle/pdv"]
 	path = bundle/pdv
 	url = https://github.com/vim-scripts/PDV--phpDocumentor-for-Vim.git
+    ignore = untracked
 [submodule "bundle/phpfolding"]
 	path = bundle/phpfolding
 	url = https://github.com/vim-scripts/phpfolding.vim.git
+    ignore = untracked
 [submodule "bundle/async"]
 	path = bundle/async
 	url = https://github.com/MarcWeber/vim-addon-async.git
+    ignore = untracked
 [submodule "bundle/matchit"]
 	path = bundle/matchit
 	url = https://github.com/vim-scripts/matchit.zip.git
+    ignore = untracked
 [submodule "bundle/neocomplcache"]
 	path = bundle/neocomplcache
 	url = https://github.com/Shougo/neocomplcache.git
+    ignore = untracked
 [submodule "bundle/surround"]
 	path = bundle/surround
 	url = https://github.com/tpope/vim-surround.git
+    ignore = untracked
 [submodule "bundle/vimorg"]
 	path = bundle/vimorg
 	url = https://github.com/hsitz/VimOrganizer.git
+    ignore = untracked
 [submodule "bundle/tabular"]
 	path = bundle/tabular
 	url = https://github.com/godlygeek/tabular.git
+    ignore = untracked
 [submodule "bundle/jslint"]
 	path = bundle/jslint
 	url = https://github.com/samg/jslint.vim.git
+    ignore = untracked
 [submodule "bundle/ack"]
 	path = bundle/ack
 	url = https://github.com/mileszs/ack.vim.git
+    ignore = untracked
 [submodule "bundle/phpcomplete"]
 	path = bundle/phpcomplete
 	url = https://github.com/shawncplus/phpcomplete.vim.git
+    ignore = untracked
 [submodule "bundle/taglistplus"]
 	path = bundle/taglistplus
 	url = https://github.com/int3/vim-taglist-plus.git
+    ignore = untracked
 [submodule "bundle/tcomment"]
 	path = bundle/tcomment
 	url = https://github.com/tomtom/tcomment_vim.git
+    ignore = untracked
 [submodule "bundle/tagbar"]
 	path = bundle/tagbar
 	url = git://github.com/majutsushi/tagbar
+    ignore = untracked
 [submodule "bundle/vim-extradite"]
 	path = bundle/vim-extradite
 	url = https://github.com/int3/vim-extradite.git
+    ignore = untracked
 [submodule "bundle/syntastic"]
 	path = bundle/syntastic
 	url = https://github.com/scrooloose/syntastic.git
+    ignore = untracked
 [submodule "bundle/csv"]
 	path = bundle/csv
 	url = https://github.com/chrisbra/csv.vim.git
+    ignore = untracked
 [submodule "bundle/debugbydie"]
 	path = bundle/debugbydie
 	url = git.benpjohnson.com:debugbydie
+    ignore = untracked
 [submodule "bundle/ctrlp"]
 	path = bundle/ctrlp
 	url = https://github.com/kien/ctrlp.vim.git
+    ignore = untracked
 [submodule "bundle/json"]
 	path = bundle/json
 	url = https://github.com/vim-scripts/JSON.vim.git
+    ignore = untracked
 [submodule "bundle/gundo"]
 	path = bundle/gundo
 	url = http://github.com/sjl/gundo.vim.git
+    ignore = untracked
 [submodule "bundle/ultisnips"]
 	path = bundle/ultisnips
 	url = https://github.com/SirVer/ultisnips
+    ignore = untracked
 [submodule "bundle/vim-powerline"]
 	path = bundle/vim-powerline
 	url = https://github.com/Lokaltog/vim-powerline.git
+    ignore = untracked
 [submodule "bundle/base16"]
 	path = bundle/base16
 	url = https://github.com/chriskempson/base16-vim.git
+    ignore = untracked
 [submodule "bundle/vimwiki"]
 	path = bundle/vimwiki
 	url = https://github.com/vim-scripts/vimwiki.git
+    ignore = untracked
 [submodule "bundle/vimpipe"]
 	path = bundle/vimpipe
 	url = https://github.com/krisajenkins/vim-pipe.git
+    ignore = untracked
 [submodule "bundle/let-modeline"]
 	path = bundle/let-modeline
 	url = https://github.com/vim-scripts/let-modeline.vim.git
+    ignore = untracked
 [submodule "bundle/todotxt"]
 	path = bundle/todotxt
 	url = https://github.com/davidoc/todo.txt-vim.git
+    ignore = untracked
 [submodule "bundle/vdebug"]
 	path = bundle/vdebug
 	url = https://github.com/joonty/vdebug.git
+    ignore = untracked
 [submodule "bundle/vim-repeat"]
 	path = bundle/vim-repeat
 	url = https://github.com/tpope/vim-repeat.git
+    ignore = untracked
