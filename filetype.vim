@@ -22,6 +22,13 @@ autocmd BufNewFile,BufRead *.mkd, *.markdown set ts=1 tw=80
 " RF5 custom XMLlike thingy
 autocmd BufNewFile,BufRead *.rf3,*.rf4,*.rf5 setfiletype xml
 
+" Puppet
+autocmd BufNewFile,BufRead *.pp set filetype=ruby
+
+" RF5 custom XML thingy
+autocmd BufNewFile,BufRead *.rf5 set filetype=rf5
+>>>>>>> c600bb832fcf6f383e407a2d9552a9cc49c15a8b
+
 " JSON
 au! BufRead,BufNewFile *.json setfiletype json 
 augroup json_autocmd
