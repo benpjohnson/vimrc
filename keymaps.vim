@@ -54,6 +54,8 @@ map <Leader>er :exec "e " . resolve(expand($MYVIMRC))<CR>
 map <Leader>ek :exec "e " . $HOME . "/.vim/keymaps.vim"<CR>  
 " edit plugin settings
 map <Leader>ep :exec "e " . $HOME . "/.vim/plugin-settings.vim"<CR>  
+" edit Ultisnipts
+map <Leader>eu :UltiSnipsEdit<CR>
 
 " source vimrc
 map <Leader>sr :source $MYVIMRC<CR>
