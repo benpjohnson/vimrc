@@ -91,6 +91,7 @@ map <Leader>dr :call RemoveDies()<CR>
 " let g:ycm_key_list_previous_completion=['']
 " let g:UltiSnipsExpandTrigger="" 
 " let g:UltiSnipsListSnippets=""
+let g:UltiSnipsEditSplit="vertical"
 
 let g:UltipsSnippetDirectories=["UltiSnips","snippets"]
 

@@ -16,6 +16,16 @@ class $1
 $0
 endsnippet
 
+snippet try "try catch block"
+try {
+    ${1}
+}
+catch (Exception $e) {
+    ${2:echo $e->getMessage();}
+}
+
+endsnippet
+
 snippet fix "FIXME"
 FIXME: $1
 endsnippet
@@ -29,11 +39,15 @@ echo var_dump($1);
 endsnippet
 
 snippet echo "debug echo"
-echo "{$1}\n";
+echo "\\$1: {$1}\n";
 endsnippet
 
 snippet pf "public function"
 public function 
+endsnippet
+
+snippet prf "private function"
+private function 
 endsnippet
 
 snippet me "FIXME"
