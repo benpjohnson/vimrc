@@ -122,3 +122,6 @@
 	path = bundle/vim-repeat
 	url = https://github.com/tpope/vim-repeat.git
     ignore = untracked
+[submodule "bundle/Zenburn"]
+	path = bundle/Zenburn
+	url = https://github.com/jnurmine/Zenburn.git
