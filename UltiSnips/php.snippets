@@ -27,7 +27,7 @@ catch (Exception $e) {
 endsnippet
 
 snippet fix "FIXME"
-FIXME: $1
+// FIXME: $1
 endsnippet
 
 snippet pp "print_r"
@@ -50,8 +50,14 @@ snippet prf "private function"
 private function 
 endsnippet
 
-snippet me "FIXME"
-// FIXME: $1
+snippet test "PHPUnit test function"
+/**
+ * $1
+ **/
+public function test${2:One}()
+{
+    ${3}
+}
 endsnippet
 
 snippet Iterator "Spl Iterator"
