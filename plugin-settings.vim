@@ -21,11 +21,30 @@ nmap <Leader>gg :Ggrep<CR>
 
 " PHP Documenter
 " --------------
-imap <C-d> <ESC>:exe PhpDoc()<CR>i
-nmap <Leader>dd :exe PhpDoc()<CR>
-let g:pdv_cfg_Author = "Benjamin Johnson"
-let g:pdv_cfg_Copyright = ""
-let g:pdv_cfg_License = ""
+let g:pdv_template_dir = $HOME ."/.vim/bundle/pdv/templates_snip"
+nmap <Leader>dd :call pdv#DocumentWithSnip()<CR>
+
+" debugbydie 
+" ----------
+map <Leader>di :call Die()<CR>
+map <Leader>dr :call RemoveDies()<CR>
+
+" UltiSnips
+" ---------
+let g:UltiSnipsEditSplit="vertical"
+let g:UltipsSnippetDirectories=["UltiSnips","snippets"]
+
+" vimwiki
+" -------
+let g:vimwiki_list = [{'path': '~/kb2/general', 'syntax': 'markdown', 'ext': '.md', 'index': 'home'}, {'path': '~/kb2/work', 'syntax': 'markdown', 'ext': '.md', 'index': 'home'}, {'path': '~/kb2/personal', 'syntax': 'markdown', 'ext': '.md', 'index': 'home'}] 
+
+" csv
+" ---
+" Fixing default highlights
+hi CSVColumnEven ctermfg=188 ctermbg=234 guifg=#dcdccc guibg=#1f1f1f
+hi CSVColumnOdd  ctermfg=188 ctermbg=234 guifg=#dcdccc guibg=#1f1f1f
+hi CSVColumnHeaderEven ctermfg=188 ctermbg=234 guifg=#dcdccc guibg=#1f1f1f
+hi CSVColumnHeaderOdd ctermfg=188 ctermbg=234 guifg=#dcdccc guibg=#1f1f1f
 
 " ----------------------- In Progress -------------------------
 " map to check html and display error in a new window
@@ -46,9 +65,6 @@ let g:html_map_entity_leader = '~'
 let g:EnhCommentifyBindInInsert = 'No'
 " Don't mess up the tab key
 let g:no_html_tab_mapping = 'yes'
-
-"insert from screen 
-noremap <Leader>< :r /tmp/screen-exchange<CR>
 
 " add a basic note entry
 fun! NoteAdd()
@@ -81,23 +97,3 @@ let g:ackprg= s:ack . " -H --nocolor --nogroup --column"
 " Syntastic_enable_signs
 let g:syntastic_enable_signs=1
 let g:syntastic_phpcs_disable=1
-
-" debugbydie mappings
-map <Leader>di :call Die()<CR>
-map <Leader>dr :call RemoveDies()<CR>
-
-" UltiSnips
-" let g:ycm_key_list_previous_completion=['']
-" let g:UltiSnipsExpandTrigger="" 
-" let g:UltiSnipsListSnippets=""
-let g:UltiSnipsEditSplit="vertical"
-let g:UltipsSnippetDirectories=["UltiSnips","snippets"]
-
-" vimwiki
-let g:vimwiki_list = [{'path': '~/kb2/general', 'syntax': 'markdown', 'ext': '.md', 'index': 'home'}, {'path': '~/kb2/work', 'syntax': 'markdown', 'ext': '.md', 'index': 'home'}, {'path': '~/kb2/personal', 'syntax': 'markdown', 'ext': '.md', 'index': 'home'}] 
-
-" Fix csv.vim highlights
-hi CSVColumnEven ctermfg=188 ctermbg=234 guifg=#dcdccc guibg=#1f1f1f
-hi CSVColumnOdd  ctermfg=188 ctermbg=234 guifg=#dcdccc guibg=#1f1f1f
-hi CSVColumnHeaderEven ctermfg=188 ctermbg=234 guifg=#dcdccc guibg=#1f1f1f
-hi CSVColumnHeaderOdd ctermfg=188 ctermbg=234 guifg=#dcdccc guibg=#1f1f1f

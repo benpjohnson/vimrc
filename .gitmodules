@@ -124,3 +124,6 @@
 [submodule "bundle/pdv"]
 	path = bundle/pdv
 	url = git@github.com:tobyS/pdv.git
+[submodule "bundle/vmustache"]
+	path = bundle/vmustache
+	url = https://github.com/tobyS/vmustache.git
