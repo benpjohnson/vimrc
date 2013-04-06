@@ -5,3 +5,4 @@
 * phpunit
 * Replicate quick notes in wiki(s) then remove existing stuff
 * autocomplete: YouCompleteMe? + php parser / eclim
+* vim-gitgutter
