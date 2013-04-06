@@ -94,3 +94,6 @@ vmap <Leader>q :w! /tmp/q<CR>
 
 " Open my cheatsheet
 nmap <Leader>ec :vsp ~/kb/cheat/VimEditor<CR>
+
+" Create or edit the file under the cursor 
+map <leader>gf :e <cfile><cr>
