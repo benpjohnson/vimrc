@@ -13,17 +13,23 @@ call pathogen#helptags()
 " autocmd ColorScheme * highlight ExtraWhitespace ctermbg=red guibg=red
 " console support for 256 colours
 set t_Co=256
+
+" Zenburn
+" -------
 " make zenburn user darker colours
 let g:zenburn_high_Contrast = 1
+" Nicer selections
+let g:zenburn_old_Visual = 1
+let g:zenburn_alternate_Visual = 1
 colorscheme zenburn 
+
 " turn on auto syntax highlight
 syn on
 set wildmenu
 set wildmode=list:longest,full
 " turn bells off
 set noerrorbells
-set vb t_vb=
-" highlight current line
+set vb t_vb= " highlight current line
 set cul 
 set ruler
 set laststatus=2
