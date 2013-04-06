@@ -21,3 +21,5 @@ set statusline+=%*
 set statusline+=%=%-14.(%l,%c%V%)\ %P
 
 set keywordprg=pman
+
+let g:syntastic_php_checkers=['php', 'phpmd']
