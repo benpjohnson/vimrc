@@ -5,10 +5,6 @@ map <Leader>ar :s/^\s*\(.*\)\s*=>\s*\(.*\)\s*,/\2 => \1,/g<CR>gv=gv:Tab /=><CR>
 "  case
 map <Leader>cc :s/_\([a-z]\)/\U\1/g<CR>
 
-" Experimenting with Neocachecomplete + phpcomplete
-" NeoComplCacheEnable
-" NeoComplCacheCachingTags
-
 "Enable heavy omni completion. 
 " if !exists('g:neocomplcache_omni_patterns') 
 " let g:neocomplcache_omni_patterns = {} 

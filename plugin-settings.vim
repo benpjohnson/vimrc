@@ -1,14 +1,16 @@
 " taglist
+" -------
 map <F2> :TlistToggle<CR>
 let tlist_php_settings = 'php;c:class;f:function;d:constant'
+let Tlist_Use_Right_Window = 1
 
-" Buffers
+" CtrlP
+" -----
 noremap <Leader>b :CtrlPBuffer<CR>
-
-" mru
 noremap <Leader>m :CtrlPMRUFiles<CR>
 
-" git fugitive commands
+" Fugitive
+" --------
 nmap <Leader>gs :Gstatus<CR>
 nmap <Leader>gc :Gcommit<CR>
 nmap <Leader>gw :Gwrite<CR>
@@ -18,9 +20,8 @@ nmap <Leader>gl :Glog<CR>
 nmap <Leader>gg :Ggrep<CR>
 
 " PHP Documenter
-" imap <C-d> <ESC>:set paste<CR>:exe PhpDoc()<CR>:set nopaste<CR>i
- imap <C-d> <ESC>:exe PhpDoc()<CR>i
-" nmap <Leader>d :set paste<CR>:exe PhpDoc()<CR>:set nopaste<CR>
+" --------------
+imap <C-d> <ESC>:exe PhpDoc()<CR>i
 nmap <Leader>dd :exe PhpDoc()<CR>
 
 " ----------------------- In Progress -------------------------
@@ -92,7 +93,6 @@ map <Leader>dr :call RemoveDies()<CR>
 " let g:UltiSnipsExpandTrigger="" 
 " let g:UltiSnipsListSnippets=""
 let g:UltiSnipsEditSplit="vertical"
-
 let g:UltipsSnippetDirectories=["UltiSnips","snippets"]
 
 " vimwiki
