@@ -58,10 +58,6 @@
 	path = bundle/tcomment
 	url = https://github.com/tomtom/tcomment_vim.git
     ignore = untracked
-[submodule "bundle/tagbar"]
-	path = bundle/tagbar
-	url = git://github.com/majutsushi/tagbar
-    ignore = untracked
 [submodule "bundle/vim-extradite"]
 	path = bundle/vim-extradite
 	url = https://github.com/int3/vim-extradite.git

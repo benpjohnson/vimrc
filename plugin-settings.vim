@@ -1,5 +1,5 @@
 " taglist
-map <F2> :TagbarToggle<CR>
+map <F2> :TlistToggle<CR>
 let tlist_php_settings = 'php;c:class;f:function;d:constant'
 
 " Buffers
