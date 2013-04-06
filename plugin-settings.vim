@@ -23,6 +23,9 @@ nmap <Leader>gg :Ggrep<CR>
 " --------------
 imap <C-d> <ESC>:exe PhpDoc()<CR>i
 nmap <Leader>dd :exe PhpDoc()<CR>
+let g:pdv_cfg_Author = "Benjamin Johnson"
+let g:pdv_cfg_Copyright = ""
+let g:pdv_cfg_License = ""
 
 " ----------------------- In Progress -------------------------
 " map to check html and display error in a new window
@@ -65,11 +68,6 @@ map <silent> <Leader>rr :silent !fr -e content  -j 'location.reload()'<CR>
 map <C-s>] :Ack <cword> * <CR>
 map <C-s>n :cnext<CR>
 map <C-s>p :cprevious<CR>
-
-" Set some basic phpdoc values
-let g:pdv_cfg_Author = "Benjamin Johnson"
-let g:pdv_cfg_Copyright = ""
-let g:pdv_cfg_License = ""
 
 " Use debain ack version
 if filereadable($HOME . "/bin/ack")
