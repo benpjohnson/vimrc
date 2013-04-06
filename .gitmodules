@@ -121,3 +121,6 @@
 [submodule "bundle/Zenburn"]
 	path = bundle/Zenburn
 	url = https://github.com/jnurmine/Zenburn.git
+[submodule "bundle/pdv"]
+	path = bundle/pdv
+	url = git@github.com:tobyS/pdv.git
