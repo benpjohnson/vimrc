@@ -50,3 +50,9 @@ aug END
 
 " VBScript
 autocmd BufNewFile,BufRead *.vbs,*.VBS set filetype=vb
+
+" PHPUnit xml config
+au BufNewFile phpunit.xml 0r ~/.vim/skeletons/phpunit.xml
+
+" watchr file
+au BufNewFile watchr.rb 0r ~/.vim/skeletons/watchr.rb
