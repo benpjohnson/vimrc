@@ -6,3 +6,6 @@
 * Replicate quick notes in wiki(s) then remove existing stuff
 * autocomplete: YouCompleteMe? + php parser / eclim
 * vim-gitgutter
+* cfile PHP Exceptions.. can fork: https://github.com/docteurklein/vim-symfony
+  should maybe use a server approach though as likely to use a VM
+* guard for livereload
