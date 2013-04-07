@@ -46,6 +46,10 @@ hi CSVColumnOdd  ctermfg=188 ctermbg=234 guifg=#dcdccc guibg=#1f1f1f
 hi CSVColumnHeaderEven ctermfg=188 ctermbg=234 guifg=#dcdccc guibg=#1f1f1f
 hi CSVColumnHeaderOdd ctermfg=188 ctermbg=234 guifg=#dcdccc guibg=#1f1f1f
 
+" Powerline
+" ---------
+call Pl#Theme#InsertSegment('pwd', 'after', 'fileinfo')
+
 " ----------------------- In Progress -------------------------
 " map to check html and display error in a new window
 noremap \err :1<CR>yG :20new<CR>p :setfiletype html<CR> :%!tidy -i >/dev/null<CR>
