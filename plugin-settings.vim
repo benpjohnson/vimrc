@@ -20,7 +20,7 @@ nmap <Leader>gw :Gwrite<CR>
 nmap <Leader>gd :Gdiff<CR>
 nmap <Leader>gb :Gblame<CR>
 nmap <Leader>gl :Glog<CR>
-nmap <Leader>gg :Ggrep<CR>
+nmap <Leader>gg :Ggrep 
 
 " PHP Documenter
 " --------------
