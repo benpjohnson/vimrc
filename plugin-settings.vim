@@ -7,7 +7,10 @@ let Tlist_Use_Right_Window = 1
 " CtrlP
 " -----
 noremap <Leader>b :CtrlPBuffer<CR>
+noremap <C-b> :CtrlPBuffer<CR>
 noremap <Leader>m :CtrlPMRUFiles<CR>
+noremap <Leader>db :CtrlPBookmarkDir<CR>
+noremap <Leader>da :CtrlPBookmarkDirAdd<CR>
 
 " Fugitive
 " --------
