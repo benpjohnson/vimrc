@@ -1,3 +1,4 @@
+* cdargs as a shared jumper between bash/vim
 * Investigate vundle
 * automate tag generation. FIX: PHPTags!
 * expand snippets
