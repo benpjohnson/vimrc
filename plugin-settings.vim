@@ -50,6 +50,14 @@ hi CSVColumnHeaderOdd ctermfg=188 ctermbg=234 guifg=#dcdccc guibg=#1f1f1f
 " ---------
 call Pl#Theme#InsertSegment('pwd', 'after', 'fileinfo')
 
+" GitGutter
+" ---------
+" Workaround for jumpy performance on BufEnter.
+let g:gitgutter_on_bufenter = 0
+let g:gitgutter_all_on_focusgained = 0
+nmap <silent> ]h :<C-U>execute v:count1 . "GitGutterNextHunk"<CR>
+nmap <silent> [h :<C-U>execute v:count1 . "GitGutterPrevHunk"<CR>
+
 " ----------------------- In Progress -------------------------
 " map to check html and display error in a new window
 noremap \err :1<CR>yG :20new<CR>p :setfiletype html<CR> :%!tidy -i >/dev/null<CR>
