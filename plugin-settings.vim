@@ -1,9 +1,3 @@
-" taglist
-" -------
-map <F2> :TlistToggle<CR>
-let tlist_php_settings = 'php;c:class;f:function;d:constant'
-let Tlist_Use_Right_Window = 1
-
 " CtrlP
 " -----
 noremap <Leader>b :CtrlPBuffer<CR>
@@ -52,6 +46,12 @@ hi CSVColumnHeaderOdd ctermfg=188 ctermbg=234 guifg=#dcdccc guibg=#1f1f1f
 " Powerline
 " ---------
 call Pl#Theme#InsertSegment('pwd', 'after', 'fileinfo')
+
+" Slimux
+" ------
+map <Leader>s :SlimuxREPLSendLine<CR>
+vmap <Leader>s :SlimuxREPLSendSelection<CR>
+map <Leader>a :SlimuxShellLast<CR>
 
 " GitGutter
 " ---------
