@@ -128,3 +128,6 @@
 [submodule "bundle/gitgutter"]
 	path = bundle/gitgutter
 	url = git://github.com/airblade/vim-gitgutter.git
+[submodule "bundle/slimux"]
+	path = bundle/slimux
+	url = https://github.com/epeli/slimux.git
