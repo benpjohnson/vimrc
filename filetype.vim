@@ -56,3 +56,8 @@ au BufNewFile phpunit.xml 0r ~/.vim/skeletons/phpunit.xml
 
 " watchr file
 au BufNewFile watchr.rb 0r ~/.vim/skeletons/watchr.rb
+
+" Git
+" ===
+" Spell check commit messages
+" BufNewFile,BufRead COMMIT_EDITMSG setlocal spell
