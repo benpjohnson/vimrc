@@ -1,5 +1,6 @@
+" FIMXE: syntax!
 function! Unserialize()
-    :%!php -r "var_export(unserialize(file_get_contents('php://stdin')))"
+    :%!php -r "var_export(unserialize(file_get_contents('php://stdin')));"
 endfunction
 
 function! Serialize()
