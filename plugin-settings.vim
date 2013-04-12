@@ -6,6 +6,7 @@ let Tlist_Use_Right_Window = 1
 
 " CtrlP
 " -----
+let g:ctrlp_working_path_mode = 'a'
 noremap <Leader>b :CtrlPBuffer<CR>
 noremap <C-b> :CtrlPBuffer<CR>
 noremap <Leader>m :CtrlPMRUFiles<CR>
