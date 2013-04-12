@@ -9,3 +9,21 @@ endsnippet
 snippet ldb "Connect to local database"
 -- VIM: let b:vimpipe_command='mysql -uroot combined' 
 endsnippet
+
+
+snippet ppvs "Select ppvs for a product"
+SELECT 
+    pp.property_name, ppv.property_value
+FROM
+    product_property_values ppv
+JOIN
+    product_properties pp
+ON
+    ppv.property_id = pp.product_property_idno
+JOIN 
+    products p
+ON
+    p.product_idno = ppv.product_id
+WHERE
+    p.product_code = '${1}';
+endsnippet
