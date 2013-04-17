@@ -18,7 +18,7 @@ endsnippet
 
 snippet try "try catch block"
 try {
-    ${1}
+${VISUAL}   ${1}
 }
 catch (Exception $e) {
     ${2:echo $e->getMessage();}
@@ -138,5 +138,12 @@ curl_setopt($ch, CURLOPT_POSTFIELDS, "body goes here" );
 curl_setopt($ch, CURLOPT_HTTPHEADER,  array('Content-Type: application/json')); 
 endsnippet
 
+snippet mysqli "MySQLi Connection"
 
+$mysqli = new mysqli(${1:\$server}, ${2:\$user}, ${3:$password}, ${4:\$database});
 
+if (\$mysqli->connect_errno) {
+        throw new Exception("Failed to connect to MySQL: (" . $mysqli->connect_errno . ") " . $mysqli->connect_error);
+}
+
+endsnippet
