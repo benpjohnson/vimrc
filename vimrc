@@ -108,29 +108,44 @@ if filereadable($HOME . "/.vimrc.local")
       exec 'source ~/.vimrc.local'
 endif
 
+" ---------------------------------- performance ---------------------------------
+" fixes for syntax hightlight slowdown
+set ttyfast
+set lazyredraw
+" Use the new regex engine
+set re=1
+" Don't hightlight the current line
+set nocursorline
+" Don't look back more than 256 lines
+syntax sync minlines=256
+
 " ------------------------------------ WIP -------------------------------------
 
 " FIXME: handle selected range + optional argument (:help a:0) to override type
 " FIXME: my own SQL formatter
-function! Format()
-	echo &filetype
-	if &filetype == 'sql'
-		exec "%!perl -MMysql::PrettyPrinter -e 'Mysql::PrettyPrinter->passthrough'"
-	endif
+function! Format(type)
+  "FIXME: case
+  "FIXME: handle selections
+  if a:type == 'sql'
+    exec "%!perl -MMysql::PrettyPrinter -e 'Mysql::PrettyPrinter->passthrough'"
+  endif
 
-	if &filetype == 'json'
-		exec "%!/usr/local/bin/python2.7 -mjson.tool"
-	endif
+  if a:type == 'json'
+    exec "%!/usr/local/bin/python2.7 -mjson.tool"
+  endif
+  if a:type == 'xml'
+    exec "%!xmlstarlet fo"
 
-	if &filetype == 'xml'
-		exec "%!xmlstarlet fo"
+  endif
 
-	endif
+  " detect file format
+  " look for a formatter
+  " define Format call
+  " json via python, sql
+endfunction
 
-	" detect file format
-	" look for a formatter
-	" define Format call
-	" json via python, sql
+function! FormatFromType()
+  call Format(&filetype)
 endfunction
 
 function! GotoFileWithLineNum() 
@@ -191,45 +206,3 @@ function! PastePsr2()
     " Read it back in
     " paste
 endfunction
-
-" FIXME: duplicate detection broken
-" CREDIT: Largly nicked from vimpipe!
-" FIXME: add foreign keys
-" FIXME: add top X rows
-" FIXME: reuse buffer if open
-" FIXME: delete on close
-" FIXME: merge with CtrlP option and use let config
-function! DescribeTable(table)
-
-    " use the word at the cursor if no parameter passed
-    if len(a:table) == 0
-        let table = expand("<cword>")
-    else
-        let table = a:table
-    endif
-
-    let bufname = "[Describe]"
-
-    " Split & open.
-    silent execute "vert new " . bufname
-
-    let describebuffer = bufnr(bufname, 1)
-    call setbufvar(describebuffer, "&swapfile", 0)
-    call setbufvar(describebuffer, "&buftype", "nofile")
-    call setbufvar(describebuffer, "&bufhidden", "wipe")
-
-    "FIXME: setbufvar
-    execute ":set nowrap"
-
-    let sql = "SELECT column_name, column_type, column_comment FROM information_schema.columns WHERE table_name = \"" . table . "\""
-    execute ":r!db --table -e '" . sql . ";'"
-
-    let sql = "SELECT * FROM `" . table . "` LIMIT 5;"
-    execute ":r!db --table -e '" . sql . ";'"
-
-endfunction
-
-
-
-
-
