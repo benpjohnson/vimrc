@@ -1,3 +1,5 @@
+* Start extracting plugins for stuff that warrents it
+ * Line number + goto specific line
 * table mode
 * cdargs as a shared jumper between zsh/vim
 * Investigate vundle
