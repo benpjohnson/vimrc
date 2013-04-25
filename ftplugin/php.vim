@@ -53,7 +53,7 @@ let g:syntastic_mode_map = { 'mode': 'active',
             \ 'active_filetypes': [],
             \ 'passive_filetypes': ['php'] }
 
-set nofoldenable
+set foldopen=all
 
 " FIXME: generate this on the fly
 set dictionary-=$HOME/.dbtables dictionary+=$HOME/.dbtables
