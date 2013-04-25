@@ -40,6 +40,7 @@ function! TextEnableCodeSnip(filetype,start,end,textSnipHl) abort
 endfunction
 
 autocmd BufNewFile,BufRead * call TextEnableCodeSnip('sql',   '#sql',   '#end:sql', 'SpecialComment')
+autocmd BufNewFile,BufRead * call TextEnableCodeSnip('json',   '#json',   '#end:json', 'SpecialComment')
 
 " FIXME: use this to grab start/end positions when in a syntax block
 "  Then we have teh l33t inline runnable code
