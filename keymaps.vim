@@ -12,7 +12,7 @@ nnoremap <c-h> gT
 map <Leader>t <ESC>:tabnew<CR>
 
 " Open a new SQL tab 
-map <Leader>ts <ESC>:tabnew +set\ filetype=sql<CR>
+map <Leader>ts <ESC>:call DisposibleBuffer('sql')<CR>
 " Open a new PHP tab 
 map <Leader>tp <ESC>:tabnew +set\ filetype=php<CR>
 " Open a new PHP window

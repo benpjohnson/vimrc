@@ -206,3 +206,25 @@ function! PastePsr2()
     " Read it back in
     " paste
 endfunction
+
+" Attempt to fix formatting with patterns
+function! PhpFormat() range
+    " First part of an if
+    sil execute ":s/if\s*(\s*/if ("
+    " going to need some basic parsing perhaps pipe to PHP + recursive regex
+    " to match brackets
+endfunction
+
+" Let me create an adhoc buffer I won't be prompted to save for queries/etc.
+function! DisposibleBuffer(filetype)
+
+    " Split & open.
+    let bufname = "[Scratch " . a:filetype . "] " . strftime("%d/%m/%y %H:%M:%S")
+    silent execute "tabnew" . bufname
+    silent execute "set filetype=" . a:filetype
+
+    let scratchbuffer = bufnr(bufname, 1)
+    call setbufvar(scratchbuffer, "&swapfile", 0)
+    call setbufvar(scratchbuffer, "&buftype", "nofile")
+
+endfunction
