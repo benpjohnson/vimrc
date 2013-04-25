@@ -68,7 +68,7 @@ set showmode
 " Yank current filename to the unnamed register
 nmap cp :let @" = expand("%:t")<CR>
 " Yank relative to the current dir
-nmap ccp :let @" = expand("%:.")<CR>
+nmap ccp :let @" = expand("%:.") . ":" . line(".")<CR>
 
 " directory navigation
 nmap up :cd ..<CR>:pwd<CR>
