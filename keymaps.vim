@@ -103,6 +103,4 @@ nmap <Leader>vt "zyiw:vert stjump <C-r>"<CR>
 " Playing with
 inoremap jk <esc>
 
-nmap <Leader>dt :call DescribeTable('')<CR>
-
 nmap <Leader>c :tag 
