@@ -143,6 +143,11 @@ map <Leader>,vc :let b:vimpipe_command="
 map <Leader>c <Plug>(operator-camelize)
 map <Leader>C <Plug>(operator-decamelize)
 
+" dbtables maps
+nmap <Leader>dt :call dbtables#describe('')<CR>
+nmap <Leader>dtt :CtrlPDbTables<CR>
+let g:dbtables_dbcommand='mysql -udeveloper Core_DB'
+
 " FIXME: track open pane id
 " FIXME: bump up/down height
 
