@@ -56,6 +56,10 @@ set incsearch
 " highlight whitespace at the end of a line, expect while typing at the end of 
 " the line
 " match ExtraWhitespace /\s\+\%#\@<!$/
+
+" ----------------------------------- spelling ---------------------------------
+ set spelllang=en_gb
+
 " ---------------------------------- buffers -----------------------------------
 set hidden
 
