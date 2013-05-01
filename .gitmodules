@@ -62,10 +62,6 @@
 	path = bundle/csv
 	url = https://github.com/chrisbra/csv.vim.git
     ignore = untracked
-[submodule "bundle/debugbydie"]
-	path = bundle/debugbydie
-	url = git.benpjohnson.com:debugbydie
-    ignore = untracked
 [submodule "bundle/ctrlp"]
 	path = bundle/ctrlp
 	url = https://github.com/kien/ctrlp.vim.git
