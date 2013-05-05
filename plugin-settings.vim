@@ -62,6 +62,11 @@ let g:gitgutter_all_on_focusgained = 0
 nmap <silent> ]h :<C-U>execute v:count1 . "GitGutterNextHunk"<CR>
 nmap <silent> [h :<C-U>execute v:count1 . "GitGutterPrevHunk"<CR>
 
+" taglist
+" -------
+map <F2> :TlistToggle<CR>
+let Tlist_Use_Right_Window = 1
+
 " ----------------------- In Progress -------------------------
 " map to check html and display error in a new window
 noremap \err :1<CR>yG :20new<CR>p :setfiletype html<CR> :%!tidy -i >/dev/null<CR>
@@ -113,3 +118,9 @@ let g:ackprg= s:ack . " -H --nocolor --nogroup --column"
 " Syntastic_enable_signs
 let g:syntastic_enable_signs=1
 let g:syntastic_phpcs_disable=1
+
+
+" vdebug
+" ======
+" Conflicts with the php-fpm port I tend to use
+" let g:vdebug_options['port'] = 9300
