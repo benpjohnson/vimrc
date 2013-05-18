@@ -67,6 +67,10 @@ nmap <silent> [h :<C-U>execute v:count1 . "GitGutterPrevHunk"<CR>
 map <F2> :TlistToggle<CR>
 let Tlist_Use_Right_Window = 1
 
+" Vdebug
+" ------
+let g:vdebug_keymap = { "run" : "<F6>" }
+
 " ----------------------- In Progress -------------------------
 " map to check html and display error in a new window
 noremap \err :1<CR>yG :20new<CR>p :setfiletype html<CR> :%!tidy -i >/dev/null<CR>
@@ -118,7 +122,6 @@ let g:ackprg= s:ack . " -H --nocolor --nogroup --column"
 " Syntastic_enable_signs
 let g:syntastic_enable_signs=1
 let g:syntastic_phpcs_disable=1
-
 
 " vdebug
 " ======
