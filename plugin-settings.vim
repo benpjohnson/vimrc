@@ -69,7 +69,7 @@ let Tlist_Use_Right_Window = 1
 
 " Vdebug
 " ------
-let g:vdebug_keymap = { "run" : "<F6>" }
+" let g:vdebug_keymap = { "run" : "<F6>" }
 
 " ----------------------- In Progress -------------------------
 " map to check html and display error in a new window
@@ -127,3 +127,26 @@ let g:syntastic_phpcs_disable=1
 " ======
 " Conflicts with the php-fpm port I tend to use
 " let g:vdebug_options['port'] = 9300
+
+
+" FIXME: track open pane id
+" FIXME: bump up/down height
+
+fun! RunUnder()
+    if !g:opened
+        call OpenUnder()
+    endif
+    exec("!tmux send-keys -t 1 echo 'lol'\r")
+endfun
+
+fun! OpenUnder()
+    let g:opened=1
+    exec("sil! !tmux splitw -p 20 && tmux selectp -t 0")
+endfun
+
+fun! CloseUnder()
+    let g:opened=0
+    exec("sil! !tmux killp -t 1")
+endfun
+
+
