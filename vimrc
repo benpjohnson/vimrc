@@ -69,6 +69,9 @@ autocmd InsertLeave * if pumvisible() == 0 && bufname("%") != "[Command Line]"|p
 " Start new splits on the rhs
 set splitright
 
+" Use * by default
+set clipboard=unnamed
+
 " --------------------------------- filetypes ----------------------------------
 syntax on
 filetype on
@@ -84,6 +87,12 @@ set backupdir=~/.vim_backup
 set directory=~/.vim_backup
 " Search upwards for a tags file
 set tags=tags;
+
+" -------------------------------- Paths --------------------------------
+" Search all the things
+set path=**
+" Don't require common file extensions
+set suffixesadd=.php
 
 " -------------------------------- key mappings --------------------------------
 let mapleader = ","
