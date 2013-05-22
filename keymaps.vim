@@ -46,7 +46,7 @@ set pastetoggle=<F3>
 " I have have a spelling checker it came with my pc
 map <F4> :setlocal spell! spelllang=en_gb<CR>
 " f5 to make
-map <F5> :make<CR>
+noremap <F5> :make<CR>
 
 " edit vimrc 
 map <Leader>er :exec "e " . resolve(expand($MYVIMRC))<CR>
@@ -58,6 +58,8 @@ map <Leader>ep :exec "e " . $HOME . "/.vim/plugin-settings.vim"<CR>
 map <Leader>eu :UltiSnipsEdit<CR>
 " edit todo list
 map <Leader>et :e ~/todo.txt<CR>
+" edit local rc file
+map <Leader>el :exec "e " . $HOME . "/.vimrc.local"<CR>
 
 " source vimrc
 map <Leader>sr :source $MYVIMRC<CR>

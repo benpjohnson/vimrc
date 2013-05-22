@@ -1,9 +1,3 @@
-" taglist
-" -------
-map <F2> :TlistToggle<CR>
-let tlist_php_settings = 'php;c:class;f:function;d:constant'
-let Tlist_Use_Right_Window = 1
-
 " CtrlP
 " -----
 let g:ctrlp_working_path_mode = 'a'
@@ -54,6 +48,12 @@ hi CSVColumnHeaderOdd ctermfg=188 ctermbg=234 guifg=#dcdccc guibg=#1f1f1f
 " ---------
 call Pl#Theme#InsertSegment('pwd', 'after', 'fileinfo')
 
+" Slimux
+" ------
+map <Leader>s :SlimuxREPLSendLine<CR>
+vmap <Leader>s :SlimuxREPLSendSelection<CR>
+map <Leader>a :SlimuxShellLast<CR>
+
 " GitGutter
 " ---------
 " Workaround for jumpy performance on BufEnter.
@@ -61,6 +61,15 @@ let g:gitgutter_on_bufenter = 0
 let g:gitgutter_all_on_focusgained = 0
 nmap <silent> ]h :<C-U>execute v:count1 . "GitGutterNextHunk"<CR>
 nmap <silent> [h :<C-U>execute v:count1 . "GitGutterPrevHunk"<CR>
+
+" taglist
+" -------
+map <F2> :TlistToggle<CR>
+let Tlist_Use_Right_Window = 1
+
+" Vdebug
+" ------
+" let g:vdebug_keymap = { "run" : "<F6>" }
 
 " ----------------------- In Progress -------------------------
 " map to check html and display error in a new window
@@ -113,3 +122,31 @@ let g:ackprg= s:ack . " -H --nocolor --nogroup --column"
 " Syntastic_enable_signs
 let g:syntastic_enable_signs=1
 let g:syntastic_phpcs_disable=1
+
+" vdebug
+" ======
+" Conflicts with the php-fpm port I tend to use
+" let g:vdebug_options['port'] = 9300
+
+
+" FIXME: track open pane id
+" FIXME: bump up/down height
+
+fun! RunUnder()
+    if !g:opened
+        call OpenUnder()
+    endif
+    exec("!tmux send-keys -t 1 echo 'lol'\r")
+endfun
+
+fun! OpenUnder()
+    let g:opened=1
+    exec("sil! !tmux splitw -p 20 && tmux selectp -t 0")
+endfun
+
+fun! CloseUnder()
+    let g:opened=0
+    exec("sil! !tmux killp -t 1")
+endfun
+
+
