@@ -1,8 +1,12 @@
 " CtrlP
 " -----
 let g:ctrlp_working_path_mode = 'a'
-noremap <Leader>b :CtrlPBuffer<CR>
+let g:ctrlp_extensions = ['funky']
+
 noremap <C-b> :CtrlPBuffer<CR>
+noremap <C-f> :CtrlPFunky<CR>
+
+noremap <Leader>b :CtrlPBuffer<CR>
 noremap <Leader>m :CtrlPMRUFiles<CR>
 noremap <Leader>db :CtrlPBookmarkDir<CR>
 noremap <Leader>da :CtrlPBookmarkDirAdd<CR>
