@@ -3,7 +3,7 @@ set nocompatible
 " fix for debian autoenabling filetype detection before pathogen gets started
 " see http://www.adamlowe.me/2009/12/vim-destroys-all-other-rails-editors.html
 filetype off
-call pathogen#runtime_append_all_bundles()
+call pathogen#incubate()
 call pathogen#helptags()
 
 " ---------------------------------- look/feel ---------------------------------
@@ -70,7 +70,9 @@ autocmd InsertLeave * if pumvisible() == 0 && bufname("%") != "[Command Line]"|p
 set splitright
 
 " Use * by default
-set clipboard=unnamed
+if $TMUX == ''
+	set clipboard=unnamed
+endif
 
 " --------------------------------- filetypes ----------------------------------
 syntax on
