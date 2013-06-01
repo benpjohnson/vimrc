@@ -16,6 +16,7 @@ nmap <Leader>gd :Gdiff<CR>
 nmap <Leader>gb :Gblame<CR>
 nmap <Leader>gl :Glog<CR>
 nmap <Leader>gg :Ggrep 
+nmap <Leader>gr yiw:Ggrep '<c-r>"'<CR> 
 
 " PHP Documenter
 " --------------
