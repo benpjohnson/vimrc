@@ -137,3 +137,6 @@
 [submodule "bundle/ctrlp-funky"]
 	path = bundle/ctrlp-funky
 	url = git://github.com/tacahiroy/ctrlp-funky.git
+[submodule "bundle/vim-phpunitqf"]
+	path = bundle/vim-phpunitqf
+	url = https://github.com/joonty/vim-phpunitqf.git
