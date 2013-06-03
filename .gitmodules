@@ -131,3 +131,9 @@
 [submodule "bundle/slimux"]
 	path = bundle/slimux
 	url = https://github.com/epeli/slimux.git
+[submodule "bundle/vim-unimpaired"]
+	path = bundle/vim-unimpaired
+	url = https://github.com/tpope/vim-unimpaired.git
+[submodule "bundle/ctrlp-funky"]
+	path = bundle/ctrlp-funky
+	url = git://github.com/tacahiroy/ctrlp-funky.git

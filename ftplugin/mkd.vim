@@ -10,3 +10,6 @@ inoremap <Leader>h2 <Esc>yyp<c-v>$r-A
 set textwidth=80
 " Mark the boundary
 set colorcolumn=80
+
+" Use nicer spacing when I can!
+set expandtab

@@ -56,6 +56,8 @@ map <Leader>ek :exec "e " . $HOME . "/.vim/keymaps.vim"<CR>
 map <Leader>ep :exec "e " . $HOME . "/.vim/plugin-settings.vim"<CR>  
 " edit Ultisnipts
 map <Leader>eu :UltiSnipsEdit<CR>
+" edit todo list
+map <Leader>et :e ~/todo.txt<CR>
 " edit local rc file
 map <Leader>el :exec "e " . $HOME . "/.vimrc.local"<CR>
 

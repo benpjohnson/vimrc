@@ -1,8 +1,12 @@
 " CtrlP
 " -----
 let g:ctrlp_working_path_mode = 'a'
-noremap <Leader>b :CtrlPBuffer<CR>
+let g:ctrlp_extensions = ['funky']
+
 noremap <C-b> :CtrlPBuffer<CR>
+noremap <C-f> :CtrlPFunky<CR>
+
+noremap <Leader>b :CtrlPBuffer<CR>
 noremap <Leader>m :CtrlPMRUFiles<CR>
 noremap <Leader>db :CtrlPBookmarkDir<CR>
 noremap <Leader>da :CtrlPBookmarkDirAdd<CR>
@@ -16,6 +20,7 @@ nmap <Leader>gd :Gdiff<CR>
 nmap <Leader>gb :Gblame<CR>
 nmap <Leader>gl :Glog<CR>
 nmap <Leader>gg :Ggrep 
+nmap <Leader>gr yiw:Ggrep '<c-r>"'<CR> 
 
 " PHP Documenter
 " --------------
