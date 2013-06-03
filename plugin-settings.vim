@@ -136,7 +136,7 @@ fun! RunUnder()
     if !g:opened
         call OpenUnder()
     endif
-    exec("!tmux send-keys -t 1 echo 'lol'\r")
+    exec("!tmux send-keys -t 1 'php " . expand("%") . "'\r")
 endfun
 
 fun! OpenUnder()
@@ -148,5 +148,3 @@ fun! CloseUnder()
     let g:opened=0
     exec("sil! !tmux killp -t 1")
 endfun
-
-
