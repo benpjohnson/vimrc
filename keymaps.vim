@@ -79,6 +79,8 @@ noremap <Leader>< :r $HOME/.screen-exchange<CR>
 set showmode
 " Yank current filename to the unnamed register
 nmap cp :let @" = expand("%:t")<CR>
+" Yank relative to the current dir
+nmap ccp :let @" = expand("%:.")<CR>
 
 " directory navigation
 nmap up :cd ..<CR>:pwd<CR>
