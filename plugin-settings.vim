@@ -39,7 +39,7 @@ let g:UltipsSnippetDirectories=["UltiSnips","snippets"]
 
 " vimwiki
 " -------
-let g:vimwiki_list = [{'path': '~/kb2/general', 'syntax': 'markdown', 'ext': '.md', 'index': 'home'}, {'path': '~/kb2/work', 'syntax': 'markdown', 'ext': '.md', 'index': 'home'}, {'path': '~/kb2/personal', 'syntax': 'markdown', 'ext': '.md', 'index': 'home'}] 
+let g:vimwiki_list = [{'path': '~/kb2/general', 'syntax': 'markdown', 'ext': '.md', 'index': 'home'}, {'path': '~/kb2/work', 'syntax': 'markdown', 'ext': '.md', 'index': 'home'}, {'path': '~/kb2/personal', 'syntax': 'markdown', 'ext': '.md', 'index': 'home'}, {'path': '~/kb2/project', 'syntax': 'markdown', 'ext': '.md', 'index': 'home'} ] 
 
 " csv
 " ---
