@@ -128,6 +128,9 @@ let g:ackprg= s:ack . " -H --nocolor --nogroup --column"
 let g:syntastic_enable_signs=1
 let g:syntastic_phpcs_disable=1
 
+" vimpipe
+map <Leader>,vc :let b:vimpipe_command="
+
 " vdebug
 " ======
 " Conflicts with the php-fpm port I tend to use
