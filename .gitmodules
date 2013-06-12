@@ -113,9 +113,6 @@
 [submodule "bundle/Zenburn"]
 	path = bundle/Zenburn
 	url = https://github.com/jnurmine/Zenburn.git
-[submodule "bundle/pdv"]
-	path = bundle/pdv
-	url = git@github.com:tobyS/pdv.git
 [submodule "bundle/vmustache"]
 	path = bundle/vmustache
 	url = https://github.com/tobyS/vmustache.git
@@ -140,3 +137,6 @@
 [submodule "bundle/vim-phpunitqf"]
 	path = bundle/vim-phpunitqf
 	url = https://github.com/joonty/vim-phpunitqf.git
+[submodule "bundle/pdv"]
+	path = bundle/pdv
+	url = https://github.com/tobyS/pdv.git

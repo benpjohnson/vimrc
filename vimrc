@@ -109,3 +109,16 @@ source $HOME/.vim/plugin-settings.vim
 if filereadable($HOME . "/.vimrc.local")
       exec 'source ~/.vimrc.local'
 endif
+
+" ---------------------------------- WIP -----------------------------------
+
+function! Format()
+	" detect file format
+	" look for a formatter
+	" define Format call
+	" json via python, sql
+endfunction
+
+
+
+
