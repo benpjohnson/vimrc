@@ -137,3 +137,6 @@
 [submodule "bundle/vim-phpunitqf"]
 	path = bundle/vim-phpunitqf
 	url = https://github.com/joonty/vim-phpunitqf.git
+[submodule "bundle/pdv"]
+	path = bundle/pdv
+	url = https://github.com/tobyS/pdv.git
