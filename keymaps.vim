@@ -1,5 +1,6 @@
 " tabs
 " use the command key in OSX
+" FIX THESE!
 if has("mac") 
     map <D-k> <ESC>:tabnext<CR>
     map <D-j> <ESC>:tabprev<CR>
@@ -33,6 +34,8 @@ nnoremap <c-l> gt
 nnoremap <c-h> gT
 " new tab
 map <Leader>t <ESC>:tabnew<CR>
+map <Leader>ts <ESC>:tabnew +set\ filetype=sql<CR>
+map <Leader>tp <ESC>:tabnew +set\ filetype=php<CR>
 
 " gnome-vim specific remap copy/paste to something sensible
 " use alt instead of shift as it will override c-v for some 
