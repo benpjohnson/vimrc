@@ -34,7 +34,7 @@ set cul
 set ruler
 set laststatus=2
 
-" ------------------------------- text handling -------------------------------
+" ------------------------------- text handling --------------------------------
 " convert tabs to spaces
 set expandtab
 " amount of whitespace to insert
@@ -90,7 +90,7 @@ set directory=~/.vim_backup
 " Search upwards for a tags file
 set tags=tags;
 
-" -------------------------------- Paths --------------------------------
+" ----------------------------------- paths ------------------------------------
 " Search all the things
 set path=**
 " Don't require common file extensions
@@ -110,7 +110,7 @@ if filereadable($HOME . "/.vimrc.local")
       exec 'source ~/.vimrc.local'
 endif
 
-" ---------------------------------- WIP -----------------------------------
+" ------------------------------------ WIP -------------------------------------
 
 function! Format()
     exec '%!/usr/local/bin/python2.7 -mjson.tool'
