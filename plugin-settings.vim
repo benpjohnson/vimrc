@@ -39,7 +39,7 @@ let g:UltipsSnippetDirectories=["UltiSnips","snippets"]
 
 " vimwiki
 " -------
-let g:vimwiki_list = [{'path': '~/kb2/general', 'syntax': 'markdown', 'ext': '.md', 'index': 'home'}, {'path': '~/kb2/work', 'syntax': 'markdown', 'ext': '.md', 'index': 'home'}, {'path': '~/kb2/personal', 'syntax': 'markdown', 'ext': '.md', 'index': 'home'}] 
+let g:vimwiki_list = [{'path': '~/kb2/general', 'syntax': 'markdown', 'ext': '.md', 'index': 'home'}, {'path': '~/kb2/work', 'syntax': 'markdown', 'ext': '.md', 'index': 'home'}, {'path': '~/kb2/personal', 'syntax': 'markdown', 'ext': '.md', 'index': 'home'}, {'path': '~/kb2/project', 'syntax': 'markdown', 'ext': '.md', 'index': 'home'} ] 
 
 " csv
 " ---
@@ -144,7 +144,7 @@ fun! RunUnder()
     if !g:opened
         call OpenUnder()
     endif
-    exec("!tmux send-keys -t 1 echo 'lol'\r")
+    exec("!tmux send-keys -t 1 'php " . expand("%") . "'\r")
 endfun
 
 fun! OpenUnder()
@@ -156,5 +156,3 @@ fun! CloseUnder()
     let g:opened=0
     exec("sil! !tmux killp -t 1")
 endfun
-
-

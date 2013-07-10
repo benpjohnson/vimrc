@@ -6,5 +6,10 @@ inoremap <Leader>h1 <Esc>yyp<c-v>$r=A
 nnoremap <Leader>h2 yyp<c-v>$r-
 inoremap <Leader>h2 <Esc>yyp<c-v>$r-A
 
+" Ensure we are wrapping at 80
+set textwidth=80
+" Mark the boundary
+set colorcolumn=80
+
 " Use nicer spacing when I can!
 set expandtab

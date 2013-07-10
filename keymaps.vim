@@ -109,5 +109,8 @@ vmap <Leader>q :w! /tmp/q<CR>
 " Open my cheatsheet
 nmap <Leader>ec :vsp ~/kb/cheat/VimEditor<CR>
 
+" FIXME: This should use a template or something
+nmap <Leader>fp :setf php<CR>I<?php<CR><Esc>
+
 " Create or edit the file under the cursor 
 map <leader>gf :e <cfile><cr>
