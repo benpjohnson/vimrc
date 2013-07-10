@@ -113,12 +113,9 @@ endif
 " ---------------------------------- WIP -----------------------------------
 
 function! Format()
+    exec '%!/usr/local/bin/python2.7 -mjson.tool'
 	" detect file format
 	" look for a formatter
 	" define Format call
 	" json via python, sql
 endfunction
-
-
-
-
