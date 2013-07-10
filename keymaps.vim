@@ -34,8 +34,13 @@ nnoremap <c-l> gt
 nnoremap <c-h> gT
 " new tab
 map <Leader>t <ESC>:tabnew<CR>
+
+" Open a new SQL tab 
 map <Leader>ts <ESC>:tabnew +set\ filetype=sql<CR>
+" Open a new PHP tab 
 map <Leader>tp <ESC>:tabnew +set\ filetype=php<CR>
+" Open a new PHP window
+map <Leader>vp <ESC>:vert new +set\ filetype=php<CR>
 
 " gnome-vim specific remap copy/paste to something sensible
 " use alt instead of shift as it will override c-v for some 
