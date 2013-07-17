@@ -5,6 +5,7 @@ let g:ctrlp_extensions = ['funky']
 
 noremap <C-b> :CtrlPBuffer<CR>
 noremap <C-f> :CtrlPFunky<CR>
+noremap <C-p> :Unite file_rec/async<CR>
 
 noremap <Leader>b :CtrlPBuffer<CR>
 noremap <Leader>m :CtrlPMRUFiles<CR>
