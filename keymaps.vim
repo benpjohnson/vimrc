@@ -69,8 +69,8 @@ map <Leader>et :e ~/todo.txt<CR>
 " edit local rc file
 map <Leader>el :exec "e " . $HOME . "/.vimrc.local"<CR>
 
-" source vimrc
-map <Leader>sr :source $MYVIMRC<CR>
+" source vimrc and local if it's about
+map <Leader>sr :source $MYVIMRC \| sil! source $HOME/.vimrc.local<CR>
 
 " make ',e' (in normal mode) give a prompt for opening files
 map <Leader>e :e <C-R>=expand("%:p:h") . "/" <CR>
@@ -110,7 +110,9 @@ vmap <Leader>q :w! /tmp/q<CR>
 nmap <Leader>ec :vsp ~/kb/cheat/VimEditor<CR>
 
 " FIXME: This should use a template or something
+"
 nmap <Leader>fp :setf php<CR>I<?php<CR><Esc>
+nmap <Leader>fs :setf sql<CR>I<?php<CR><Esc>
 
 " Create or edit the file under the cursor 
 map <leader>gf :e <cfile><cr>
