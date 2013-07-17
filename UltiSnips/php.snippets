@@ -59,11 +59,17 @@ echo "\\$1: {$1}\n";
 endsnippet
 
 snippet pf "public function"
-public function 
+public function ${1}()
+{
+	${2}
+}
 endsnippet
 
 snippet prf "private function"
-private function 
+public function ${1}()
+{
+	${2}
+}
 endsnippet
 
 snippet test "PHPUnit test function"
