@@ -16,6 +16,13 @@ class $1
 $0
 endsnippet
 
+snippet __c "constructor"
+    public function __construct(${1})
+    {
+        ${2:// code}
+    }
+endsnippet
+
 snippet try "try catch block"
 try {
 ${VISUAL}   ${1}
@@ -32,6 +39,10 @@ endsnippet
 
 snippet pp "print_r"
 print_r($1);
+endsnippet
+
+snippet ppp "print_r"
+echo "<pre>" . print_r($1, true) . "</pre>";
 endsnippet
 
 snippet vd "var_dump"
@@ -60,6 +71,28 @@ public function test${2:One}()
 }
 endsnippet
 
+snippet testclass "PHPUnit test skeleton"
+
+/**
+ * $1
+ *
+ * @author Benjamin Johnson <benpjohnson@gmail.com>
+ * @package $2
+ * @subpackage $3
+ *
+ */
+class $2Test extends PHPUnit_Framework_Testcase
+{
+    /**
+     * $3
+     **/
+    public function test${4:One}()
+    {
+	${5}
+    }
+}
+endsnippet
+
 snippet php "Open tag"
 <?php 
 
@@ -70,7 +103,7 @@ snippet ph "short open tag"
 <?php ${1} ?>
 endsnippet
 
-snippet Iterator "Spl Iterator"
+snippet iterator "Spl Iterator"
 
 /**
  * Class ${1:`!p snip.rv=snip.fn.capitalize().split('.')[0]`} 
