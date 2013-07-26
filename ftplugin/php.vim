@@ -22,4 +22,6 @@ set statusline+=%=%-14.(%l,%c%V%)\ %P
 
 set keywordprg=pman
 
-let g:syntastic_php_checkers=['php', 'phpmd']
+" let g:syntastic_php_checkers=['php', 'phpmd']
+" TEMP removed because of a response parsing bug
+let g:syntastic_php_checkers=['php']

@@ -1,3 +1,3 @@
 augroup vimwiki
-    au! BufWritePost $HOME/kb2/** :sil Gwrite | Gcommit -m "edit" | redraw | echo <afile>" [committed]"
+    au! BufWritePost $HOME/kb2/** :sil Gwrite | Gcommit -m "edit" | echo <afile>" [committed]"
 augroup END
