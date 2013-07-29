@@ -113,7 +113,15 @@ endif
 " ------------------------------------ WIP -------------------------------------
 
 function! Format()
-    exec '%!/usr/local/bin/python2.7 -mjson.tool'
+	echo &filetype
+	if &filetype == 'sql'
+		exec "%!perl -MMysql::PrettyPrinter -e 'Mysql::PrettyPrinter->passthrough'"
+	endif
+
+	if &filetype == 'json'
+		exec "%!/usr/local/bin/python2.7 -mjson.tool"
+	endif
+
 	" detect file format
 	" look for a formatter
 	" define Format call
