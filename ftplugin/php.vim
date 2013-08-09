@@ -24,4 +24,7 @@ set keywordprg=pman
 
 " let g:syntastic_php_checkers=['php', 'phpmd']
 " TEMP removed because of a response parsing bug
-let g:syntastic_php_checkers=['php']
+let g:syntastic_php_checkers=['php', 'phpcs']
+
+" Highlight embeded SQL queries
+let php_sql_query=1
