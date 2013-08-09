@@ -152,3 +152,6 @@
 [submodule "bundle/easymotion"]
 	path = bundle/easymotion
 	url = https://github.com/Lokaltog/vim-easymotion.git
+[submodule "bundle/php"]
+	path = bundle/php
+	url = https://github.com/StanAngeloff/php.vim.git
