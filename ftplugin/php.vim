@@ -25,3 +25,4 @@ set keywordprg=pman
 " let g:syntastic_php_checkers=['php', 'phpmd']
 " TEMP removed because of a response parsing bug
 let g:syntastic_php_checkers=['php']
+set shiftwidth=4
