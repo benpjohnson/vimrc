@@ -1,34 +1,17 @@
 " tabs
-" use the command key in OSX
-" FIX THESE!
-if has("mac") 
-    map <D-k> <ESC>:tabnext<CR>
-    map <D-j> <ESC>:tabprev<CR>
-    map <D-W> <ESC>:tabclose<CR>
-    map <D-1> 1gt
-    map <D-2> 2gt
-    map <D-3> 3gt
-    map <D-4> 4gt
-    map <D-5> 5gt
-    map <D-6> 6gt
-    map <D-7> 7gt
-    map <D-8> 8gt
-    map <D-9> 9gt
-" use the ctrl key in other os
-else
-    noremap <C-Right> <ESC>:tabnext<CR>
-    noremap <C-Left> <ESC>:tabprev<CR>
-    map <D-W> <ESC>:tabclose<CR>
-    map <A-1> 1gt
-    map <A-2> 2gt
-    map <A-3> 3gt
-    map <A-4> 4gt
-    map <A-5> 5gt
-    map <A-6> 6gt
-    map <A-7> 7gt
-    map <A-8> 8gt
-    map <A-9> 9gt
-end
+noremap <C-Right> <ESC>:tabnext<CR>
+noremap <C-Left> <ESC>:tabprev<CR>
+map <D-W> <ESC>:tabclose<CR>
+map <A-1> 1gt
+map <A-2> 2gt
+map <A-3> 3gt
+map <A-4> 4gt
+map <A-5> 5gt
+map <A-6> 6gt
+map <A-7> 7gt
+map <A-8> 8gt
+map <A-9> 9gt
+
 " tab next/previous
 nnoremap <c-l> gt
 nnoremap <c-h> gT
