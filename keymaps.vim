@@ -1,16 +1,7 @@
 " tabs
 noremap <C-Right> <ESC>:tabnext<CR>
 noremap <C-Left> <ESC>:tabprev<CR>
-map <D-W> <ESC>:tabclose<CR>
-map <A-1> 1gt
-map <A-2> 2gt
-map <A-3> 3gt
-map <A-4> 4gt
-map <A-5> 5gt
-map <A-6> 6gt
-map <A-7> 7gt
-map <A-8> 8gt
-map <A-9> 9gt
+map <Leader>to <ESC>:tabonly<CR>
 
 " tab next/previous
 nnoremap <c-l> gt
