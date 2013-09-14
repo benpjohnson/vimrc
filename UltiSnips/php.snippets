@@ -66,7 +66,7 @@ public function ${1}()
 endsnippet
 
 snippet prf "private function"
-public function ${1}()
+private function ${1}()
 {
 	${2}
 }
@@ -92,12 +92,12 @@ snippet testclass "PHPUnit test skeleton"
  * @subpackage $3
  *
  */
-class $2Test extends PHPUnit_Framework_Testcase
+class $4Test extends PHPUnit_Framework_Testcase
 {
     /**
-     * $3
+     * $4
      **/
-    public function test${4:One}()
+    public function test${5:One}()
     {
 	${5}
     }
@@ -206,5 +206,11 @@ snippet isset "Regular use for isset"
 	isset(${1:\$var}) ? $1 : ${3:false};
 endsnippet
 
+snippet getter "PHP Class Getter" !b
 
-
+public function get${1/\w+\s*/\u$0/}() 
+{
+    return $this->$1;$2
+}
+$4
+endsnippet
