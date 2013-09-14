@@ -82,10 +82,6 @@
 	path = bundle/ultisnips
 	url = https://github.com/SirVer/ultisnips
     ignore = untracked
-[submodule "bundle/vim-powerline"]
-	path = bundle/vim-powerline
-	url = https://github.com/Lokaltog/vim-powerline.git
-    ignore = untracked
 [submodule "bundle/vimwiki"]
 	path = bundle/vimwiki
 	url = https://github.com/vim-scripts/vimwiki.git
