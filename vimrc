@@ -7,10 +7,6 @@ call pathogen#incubate()
 call pathogen#helptags()
 
 " ---------------------------------- look/feel ---------------------------------
-" define a highlight for trailing whitespace before the colorscheme is pulled in
-" to prevent it getting overwritten
-" highlight ExtraWhitespace ctermbg=red guibg=red
-" autocmd ColorScheme * highlight ExtraWhitespace ctermbg=red guibg=red
 " console support for 256 colours
 set t_Co=256
 
@@ -122,8 +118,60 @@ function! Format()
 		exec "%!/usr/local/bin/python2.7 -mjson.tool"
 	endif
 
+	if &filetype == 'xml'
+		exec "%!xmlstarlet fo"
+
+	endif
+
 	" detect file format
 	" look for a formatter
 	" define Format call
 	" json via python, sql
+endfunction
+
+function! GotoFileWithLineNum() 
+    " filename under the cursor 
+    let file_name = expand('<cfile>') 
+    if !strlen(file_name) 
+        echo 'NO FILE UNDER CURSOR' 
+        return 
+    endif 
+
+    " look for a line number separated by a : 
+    if search('\%#\f*:\zs[0-9]\+') 
+        " change the 'iskeyword' option temporarily to pick up just numbers 
+        let temp = &iskeyword 
+        set iskeyword=48-57 
+        let line_number = expand('<cword>') 
+        exe 'set iskeyword=' . temp 
+    endif 
+
+    " edit the file 
+    exe 'e '.file_name 
+
+    " if there is a line number, go to it 
+    if exists('line_number') 
+        exe line_number 
+    endif 
+endfunction 
+
+map gf :call GotoFileWithLineNum()<CR> 
+map gsf :sp<CR>:call GotoFileWithLineNum()<CR>
+
+" move to php.vim
+" FIXME: make whitespace highlight global?? Can achieve this with a check
+" in php.vim before defining it
+function! ToggleStaticAnalysis()
+	if !exists('g:staticAnalysis')
+		" Clear ExtraWhitespace
+		exec "silent! match ExtraWhitespace"
+		let g:staticAnalysis = 1
+	else
+		" Redefine whitespace check
+		exec "silent! match ExtraWhitespace /\s\+$/"
+		unlet g:staticAnalysis
+	endif
+
+	exec "silent SyntasticToggleMode"
+	exec "redraw!"
 endfunction

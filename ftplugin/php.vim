@@ -5,6 +5,10 @@ map <Leader>ar :s/^\s*\(.*\)\s*=>\s*\(.*\)\s*,/\2 => \1,/g<CR>gv=gv:Tab /=><CR>
 "  case
 map <Leader>cc :s/_\([a-z]\)/\U\1/g<CR>
 
+" Convert display format print_r array mappings [1] => ANAHSBND into actuals 
+" of course var_export may be a better choice!
+" '<,'>s/\[\([0-9]\+\)\] => \([a-zA-Z0-9_]\+\)/\1 => "\2"/
+
 "Enable heavy omni completion. 
 " if !exists('g:neocomplcache_omni_patterns') 
 " let g:neocomplcache_omni_patterns = {} 
@@ -24,9 +28,15 @@ set keywordprg=pman
 
 " let g:syntastic_php_checkers=['php', 'phpmd']
 " TEMP removed because of a response parsing bug
-"let g:syntastic_php_checkers=['php', 'phpcs']
-let g:syntastic_php_checkers=['php']
+let g:syntastic_php_checkers=['php', 'phpcs']
+" let g:syntastic_php_checkers=['php']
 set shiftwidth=4
 
 " Highlight embeded SQL queries
 let php_sql_query=1
+
+" autocmd ColorScheme * highlight ExtraWhitespace ctermbg=red guibg=red
+" highlight ExtraWhitespace ctermbg=red guibg=red
+highlight ExtraWhitespace ctermbg=236 guibg=#313633
+
+match ExtraWhitespace /\s\+$/
