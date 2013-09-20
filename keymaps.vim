@@ -102,3 +102,6 @@ map <leader>gf :e <cfile><cr>
 
 " Jump to tag in new vertical split
 nmap <Leader>vt "zyiw:vert stjump <C-r>"<CR>
+
+" Playing with
+inoremap jk <esc>
