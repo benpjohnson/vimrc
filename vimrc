@@ -40,8 +40,8 @@ set tabstop=4
 set smarttab
 " controls the spaces inserted when using indentation commands
 set shiftwidth=4
-set cindent
-set autoindent
+" set cindent
+" set autoindent
 set notagbsearch
 " show line numbers by default
 set number
