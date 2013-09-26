@@ -151,3 +151,6 @@
 [submodule "bundle/php"]
 	path = bundle/php
 	url = https://github.com/StanAngeloff/php.vim.git
+[submodule "bundle/YouCompleteMe"]
+	path = bundle/YouCompleteMe
+	url = https://github.com/Valloric/YouCompleteMe.git

@@ -37,6 +37,7 @@ map <Leader>dr :call RemoveDies()<CR>
 " ---------
 let g:UltiSnipsEditSplit="vertical"
 let g:UltipsSnippetDirectories=["UltiSnips","snippets"]
+let g:UltiSnipsExpandTrigger="<Leader>s"
 
 " vimwiki
 " -------
