@@ -122,8 +122,43 @@ function! Format()
 		exec "%!/usr/local/bin/python2.7 -mjson.tool"
 	endif
 
+	if &filetype == 'xml'
+		exec "%!xmlstarlet fo"
+
+	endif
+
 	" detect file format
 	" look for a formatter
 	" define Format call
 	" json via python, sql
 endfunction
+
+
+function! GotoFileWithLineNum() 
+    " filename under the cursor 
+    let file_name = expand('<cfile>') 
+    if !strlen(file_name) 
+        echo 'NO FILE UNDER CURSOR' 
+        return 
+    endif 
+
+    " look for a line number separated by a : 
+    if search('\%#\f*:\zs[0-9]\+') 
+        " change the 'iskeyword' option temporarily to pick up just numbers 
+        let temp = &iskeyword 
+        set iskeyword=48-57 
+        let line_number = expand('<cword>') 
+        exe 'set iskeyword=' . temp 
+    endif 
+
+    " edit the file 
+    exe 'e '.file_name 
+
+    " if there is a line number, go to it 
+    if exists('line_number') 
+        exe line_number 
+    endif 
+endfunction 
+
+map gf :call GotoFileWithLineNum()<CR> 
+map gsf :sp<CR>:call GotoFileWithLineNum()<CR>
