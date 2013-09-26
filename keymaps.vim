@@ -1,7 +1,9 @@
 " tabs
 noremap <C-Right> <ESC>:tabnext<CR>
 noremap <C-Left> <ESC>:tabprev<CR>
-map <Leader>to <ESC>:tabonly<CR>
+noremap <Leader>to <ESC>:tabonly<CR>
+" Open the current buffer in another tab
+noremap <Leader>tt <ESC>:tab split<CR>
 
 " tab next/previous
 nnoremap <c-l> gt
@@ -27,8 +29,8 @@ vmap <C-A-C> "+y
 set pastetoggle=<F3>
 " I have have a spelling checker it came with my pc
 map <F4> :setlocal spell! spelllang=en_gb<CR>
-" f5 to make
-noremap <F5> :make<CR>
+" f6 to make
+noremap <F6> :make<CR>
 
 " edit vimrc 
 map <Leader>er :exec "e " . resolve(expand($MYVIMRC))<CR>
@@ -90,3 +92,6 @@ nmap <Leader>fs :setf sql<CR>
 
 " Create or edit the file under the cursor 
 map <leader>gf :e <cfile><cr>
+
+" Jump to tag in new vertical split
+nmap <Leader>vt "zyiw:vert stjump <C-r>"<CR>

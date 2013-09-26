@@ -154,3 +154,6 @@
 [submodule "bundle/YouCompleteMe"]
 	path = bundle/YouCompleteMe
 	url = https://github.com/Valloric/YouCompleteMe.git
+[submodule "bundle/php-indent"]
+	path = bundle/php-indent
+	url = https://github.com/2072/PHP-Indenting-for-VIm.git
