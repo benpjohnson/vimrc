@@ -88,7 +88,7 @@
     ignore = untracked
 [submodule "bundle/vimpipe"]
 	path = bundle/vimpipe
-	url = https://github.com/krisajenkins/vim-pipe.git
+	url = git@github.com:benpjohnson/vim-pipe.git
     ignore = untracked
 [submodule "bundle/let-modeline"]
 	path = bundle/let-modeline
@@ -157,3 +157,6 @@
 [submodule "bundle/php-indent"]
 	path = bundle/php-indent
 	url = https://github.com/2072/PHP-Indenting-for-VIm.git
+[submodule "bundle/phpcomplete-extended"]
+	path = bundle/phpcomplete-extended
+	url = https://github.com/m2mdas/phpcomplete-extended.git
