@@ -256,11 +256,25 @@ endfunction
 function! BuildTags()
 endfunction
 
+" Probably need a "server" version of the PHP parser to get this one
 function! CurrentFunction()
 python << endpython
 from phply import phplex
-
 vim.command('echomsg "test"')
-
 endpython
 endfunction
+
+function! InsertRandomValueFromFile(filename)
+    let value=substitute(system("perl -e 'srand; rand($.) < 1 && ($line = $_) while <>; print $line;' " . a:filename . ""),"\n","","")
+    " setline(line('.'), getline(line('.')) . " " . value)
+    execute "normal i" . value
+endfunction
+
+function! s:DiffWithSaved()
+  let filetype=&ft
+  diffthis
+  vnew | r # | normal! 1Gdd
+  diffthis
+  exe "setlocal bt=nofile bh=wipe nobl noswf ro ft=" . filetype
+endfunction
+com! DiffSaved call s:DiffWithSaved()
