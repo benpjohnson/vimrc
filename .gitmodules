@@ -151,9 +151,6 @@
 [submodule "bundle/php-indent"]
 	path = bundle/php-indent
 	url = https://github.com/2072/PHP-Indenting-for-VIm.git
-[submodule "bundle/phpcomplete-extended"]
-	path = bundle/phpcomplete-extended
-	url = https://github.com/m2mdas/phpcomplete-extended.git
 [submodule "bundle/vimproc"]
 	path = bundle/vimproc
 	url = https://github.com/Shougo/vimproc.vim.git
