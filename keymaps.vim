@@ -46,6 +46,8 @@ map <Leader>et :e ~/todo.txt<CR>
 map <Leader>el :exec "e " . $HOME . "/.vimrc.local"<CR>
 " edit php.vim
 map <Leader>epp :exec "e " . $HOME . "/.vim/ftplugin/php.vim"<CR>
+" edit .zshrc
+map <Leader>ez :e ~/.zshrc<CR>
 
 " source vimrc and local if it's about
 map <Leader>sr :source $MYVIMRC \| sil! source $HOME/.vimrc.local<CR>
