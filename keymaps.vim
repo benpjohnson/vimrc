@@ -44,6 +44,8 @@ map <Leader>eu :UltiSnipsEdit<CR>
 map <Leader>et :e ~/todo.txt<CR>
 " edit local rc file
 map <Leader>el :exec "e " . $HOME . "/.vimrc.local"<CR>
+" edit php.vim
+map <Leader>epp :exec "e " . $HOME . "/.vim/ftplugin/php.vim"<CR>
 
 " source vimrc and local if it's about
 map <Leader>sr :source $MYVIMRC \| sil! source $HOME/.vimrc.local<CR>
