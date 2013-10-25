@@ -28,7 +28,7 @@ set keywordprg=pman
 
 " let g:syntastic_php_checkers=['php', 'phpmd']
 " TEMP removed because of a response parsing bug
-let g:syntastic_php_checkers=['php', 'phpcs']
+let g:syntastic_php_checkers=['php', 'phpcs', 'phpmd']
 " let g:syntastic_php_checkers=['php']
 set shiftwidth=4
 
@@ -42,4 +42,4 @@ match ExtraWhitespace /\s\+$/
 
 " PSR-2 complient
 " https://github.com/php-fig/fig-standards/blob/master/accepted/PSR-2-coding-style-guide.md#52-switch-case
-let g:PHP_vintage_case_default_indent = 1
+" let g:PHP_vintage_case_default_indent = 1
