@@ -116,6 +116,8 @@ map <C-s>p :cprevious<CR>
 " Use debain ack version
 if filereadable($HOME . "/bin/ack")
     let s:ack = $HOME . "/bin/ack"
+elseif filereadable("/usr/bin/ack")
+    let s:ack = "/usr/bin/ack"
 else
     let s:ack = "ack-grep"
 endif
