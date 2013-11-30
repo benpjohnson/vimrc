@@ -58,6 +58,9 @@ map <Leader>e :e <C-R>=expand("%:p:h") . "/" <CR>
 " write with sudo powers
 cmap w!! %!sudo tee > /dev/null %<CR>
 
+" Write quickly
+map <Leader>w :w<CR>
+
 " friendly vert split new file
 map <Leader>v :vert botright new<cr>
 
