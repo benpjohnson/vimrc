@@ -19,8 +19,10 @@ nmap <Leader>gw :Gwrite<CR>
 nmap <Leader>gd :Gdiff<CR>
 nmap <Leader>gb :Gblame<CR>
 nmap <Leader>gl :Glog<CR>
+" FIXME: Add copen
 nmap <Leader>gg :Ggrep 
-nmap <Leader>gr yiw:Ggrep '<c-r>"'<CR> 
+nmap <Leader>ggw :Ggrep <cword><CR>
+nmap <Leader>gr yiw:Ggrep '<c-r>"'<CR>
 
 " PHP Documenter
 " --------------

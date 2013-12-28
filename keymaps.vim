@@ -87,7 +87,7 @@ map <c-k> :cprevious<CR>
 vmap <Leader>q :w! /tmp/q<CR>
 
 " Open my cheatsheet
-nmap <Leader>ec :vsp ~/kb2/general/cheat/vim<CR>
+nmap <Leader>ec :vsp ~/kb2/general/cheat/vim-editor.md<CR>
 
 " FIXME: This should use a template or something
 "
