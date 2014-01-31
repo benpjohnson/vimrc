@@ -38,5 +38,8 @@ let php_sql_query=1
 " autocmd ColorScheme * highlight ExtraWhitespace ctermbg=red guibg=red
 " highlight ExtraWhitespace ctermbg=red guibg=red
 highlight ExtraWhitespace ctermbg=236 guibg=#313633
-
 match ExtraWhitespace /\s\+$/
+
+" PSR-2 complient
+" https://github.com/php-fig/fig-standards/blob/master/accepted/PSR-2-coding-style-guide.md#52-switch-case
+let g:PHP_vintage_case_default_indent = 1

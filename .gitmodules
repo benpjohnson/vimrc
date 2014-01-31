@@ -151,3 +151,6 @@
 [submodule "bundle/php"]
 	path = bundle/php
 	url = https://github.com/StanAngeloff/php.vim.git
+[submodule "bundle/php-indent"]
+	path = bundle/php-indent
+	url = https://github.com/2072/PHP-Indenting-for-VIm.git
