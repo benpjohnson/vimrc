@@ -30,6 +30,8 @@ set cul
 set ruler
 set laststatus=2
 
+" Elimate delays switching out of insert mode
+set ttimeoutlen=50
 " ------------------------------- text handling --------------------------------
 " convert tabs to spaces
 set expandtab
