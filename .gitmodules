@@ -22,17 +22,9 @@
 	path = bundle/surround
 	url = https://github.com/tpope/vim-surround.git
     ignore = untracked
-[submodule "bundle/vimorg"]
-	path = bundle/vimorg
-	url = https://github.com/hsitz/VimOrganizer.git
-    ignore = untracked
 [submodule "bundle/tabular"]
 	path = bundle/tabular
 	url = https://github.com/godlygeek/tabular.git
-    ignore = untracked
-[submodule "bundle/jslint"]
-	path = bundle/jslint
-	url = https://github.com/samg/jslint.vim.git
     ignore = untracked
 [submodule "bundle/ack"]
 	path = bundle/ack
@@ -45,10 +37,6 @@
 [submodule "bundle/taglistplus"]
 	path = bundle/taglistplus
 	url = https://github.com/int3/vim-taglist-plus.git
-    ignore = untracked
-[submodule "bundle/tcomment"]
-	path = bundle/tcomment
-	url = https://github.com/tomtom/tcomment_vim.git
     ignore = untracked
 [submodule "bundle/vim-extradite"]
 	path = bundle/vim-extradite
@@ -109,12 +97,6 @@
 [submodule "bundle/Zenburn"]
 	path = bundle/Zenburn
 	url = https://github.com/jnurmine/Zenburn.git
-[submodule "bundle/vmustache"]
-	path = bundle/vmustache
-	url = https://github.com/tobyS/vmustache.git
-[submodule "bundle/skeletons"]
-	path = bundle/skeletons
-	url = https://github.com/tobyS/skeletons.vim.git
 [submodule "bundle/vim-eunuch"]
 	path = bundle/vim-eunuch
 	url = https://github.com/tpope/vim-eunuch.git
@@ -136,15 +118,9 @@
 [submodule "bundle/pdv"]
 	path = bundle/pdv
 	url = https://github.com/tobyS/pdv.git
-[submodule "bundle/vimshell"]
-	path = bundle/vimshell
-	url = https://github.com/Shougo/vimshell.vim.git
 [submodule "bundle/neocomplcache"]
 	path = bundle/neocomplcache
 	url = https://github.com/Shougo/neocomplcache.vim.git
-[submodule "bundle/easymotion"]
-	path = bundle/easymotion
-	url = https://github.com/Lokaltog/vim-easymotion.git
 [submodule "bundle/php"]
 	path = bundle/php
 	url = https://github.com/StanAngeloff/php.vim.git
