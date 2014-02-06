@@ -183,3 +183,53 @@ endfunction
 map <F10> :echo "hi<" . synIDattr(synID(line("."),col("."),1),"name") . '> trans<'
             \ . synIDattr(synID(line("."),col("."),0),"name") . "> lo<"
             \ . synIDattr(synIDtrans(synID(line("."),col("."),1)),"name") . ">"<CR>
+
+function! PastePsr2()
+    " write the contents of the buffer to a temp file
+    " Run cs fixer on it
+    " Other crap
+    " Read it back in
+    " paste
+endfunction
+
+" FIXME: duplicate detection broken
+" CREDIT: Largly nicked from vimpipe!
+" FIXME: add foreign keys
+" FIXME: add top X rows
+" FIXME: reuse buffer if open
+" FIXME: delete on close
+" FIXME: merge with CtrlP option and use let config
+function! DescribeTable(table)
+
+    " use the word at the cursor if no parameter passed
+    if len(a:table) == 0
+        let table = expand("<cword>")
+    else
+        let table = a:table
+    endif
+
+    let bufname = "[Describe]"
+
+    " Split & open.
+    silent execute "vert new " . bufname
+
+    let describebuffer = bufnr(bufname, 1)
+    call setbufvar(describebuffer, "&swapfile", 0)
+    call setbufvar(describebuffer, "&buftype", "nofile")
+    call setbufvar(describebuffer, "&bufhidden", "wipe")
+
+    "FIXME: setbufvar
+    execute ":set nowrap"
+
+    let sql = "SELECT column_name, column_type, column_comment FROM information_schema.columns WHERE table_name = \"" . table . "\""
+    execute ":r!db --table -e '" . sql . ";'"
+
+    let sql = "SELECT * FROM `" . table . "` LIMIT 5;"
+    execute ":r!db --table -e '" . sql . ";'"
+
+endfunction
+
+
+
+
+

@@ -47,8 +47,13 @@ let g:PHP_vintage_case_default_indent = 1
 
 " Too many errors to run syntastic by default
 " FIXME: Could this be handled as a local setting somehow?
-exec "silent SyntasticToggleMode"
+" exec "silent SyntasticToggleMode"
 
 let g:syntastic_mode_map = { 'mode': 'active',
             \ 'active_filetypes': [],
             \ 'passive_filetypes': ['php'] }
+
+set nofoldenable
+
+" FIXME: generate this on the fly
+set dictionary-=$HOME/.dbtables dictionary+=$HOME/.dbtables

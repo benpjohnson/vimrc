@@ -87,7 +87,7 @@ map <c-k> :cprevious<CR>
 vmap <Leader>q :w! /tmp/q<CR>
 
 " Open my cheatsheet
-nmap <Leader>ec :vsp ~/kb/cheat/VimEditor<CR>
+nmap <Leader>ec :vsp ~/kb2/general/cheat/vim<CR>
 
 " FIXME: This should use a template or something
 "
@@ -102,3 +102,7 @@ nmap <Leader>vt "zyiw:vert stjump <C-r>"<CR>
 
 " Playing with
 inoremap jk <esc>
+
+nmap <Leader>dt :call DescribeTable('')<CR>
+
+nmap <Leader>c :tag 
