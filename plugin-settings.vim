@@ -140,6 +140,10 @@ map <Leader>,vc :let b:vimpipe_command="
 " let g:vdebug_options['port'] = 9300
 
 
+" operator-camelize
+map <Leader>c <Plug>(operator-camelize)
+map <Leader>C <Plug>(operator-decamelize)
+
 " FIXME: track open pane id
 " FIXME: bump up/down height
 
