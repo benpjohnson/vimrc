@@ -1,4 +1,5 @@
-* cdargs as a shared jumper between bash/vim
+* table mode
+* cdargs as a shared jumper between zsh/vim
 * Investigate vundle
 * automate tag generation. FIX: PHPTags!
 * expand snippets
@@ -11,4 +12,3 @@
 * guard for livereload
 * https://github.com/Stormherz/tablify may fill the database results hole
 * Decent mappings for editing db queries
-
