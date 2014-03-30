@@ -42,4 +42,13 @@ match ExtraWhitespace /\s\+$/
 
 " PSR-2 complient
 " https://github.com/php-fig/fig-standards/blob/master/accepted/PSR-2-coding-style-guide.md#52-switch-case
-" let g:PHP_vintage_case_default_indent = 1
+let g:PHP_vintage_case_default_indent = 1
+
+
+" Too many errors to run syntastic by default
+" FIXME: Could this be handled as a local setting somehow?
+exec "silent SyntasticToggleMode"
+
+let g:syntastic_mode_map = { 'mode': 'active',
+            \ 'active_filetypes': [],
+            \ 'passive_filetypes': ['php'] }
