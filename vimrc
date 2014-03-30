@@ -108,6 +108,8 @@ endif
 
 " ------------------------------------ WIP -------------------------------------
 
+" FIXME: handle selected range + optional argument (:help a:0) to override type
+" FIXME: my own SQL formatter
 function! Format()
 	echo &filetype
 	if &filetype == 'sql'
@@ -175,3 +177,7 @@ function! ToggleStaticAnalysis()
 	exec "silent SyntasticToggleMode"
 	exec "redraw!"
 endfunction
+
+map <F10> :echo "hi<" . synIDattr(synID(line("."),col("."),1),"name") . '> trans<'
+            \ . synIDattr(synID(line("."),col("."),0),"name") . "> lo<"
+            \ . synIDattr(synIDtrans(synID(line("."),col("."),1)),"name") . ">"<CR>
