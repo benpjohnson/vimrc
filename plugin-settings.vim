@@ -64,6 +64,9 @@ let g:gitgutter_on_bufenter = 0
 let g:gitgutter_all_on_focusgained = 0
 nmap <silent> ]h :<C-U>execute v:count1 . "GitGutterNextHunk"<CR>
 nmap <silent> [h :<C-U>execute v:count1 . "GitGutterPrevHunk"<CR>
+" Workaround a very anoying bug:
+" https://github.com/airblade/vim-gitgutter/issues/106
+let g:gitgutter_realtime = 0
 
 " taglist
 " -------
