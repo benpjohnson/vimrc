@@ -97,48 +97,64 @@
 [submodule "bundle/Zenburn"]
 	path = bundle/Zenburn
 	url = https://github.com/jnurmine/Zenburn.git
+    ignore = untracked
 [submodule "bundle/vim-eunuch"]
 	path = bundle/vim-eunuch
 	url = https://github.com/tpope/vim-eunuch.git
+    ignore = untracked
 [submodule "bundle/gitgutter"]
 	path = bundle/gitgutter
 	url = git://github.com/airblade/vim-gitgutter.git
+    ignore = untracked
 [submodule "bundle/slimux"]
 	path = bundle/slimux
 	url = https://github.com/epeli/slimux.git
+    ignore = untracked
 [submodule "bundle/vim-unimpaired"]
 	path = bundle/vim-unimpaired
 	url = https://github.com/tpope/vim-unimpaired.git
+    ignore = untracked
 [submodule "bundle/ctrlp-funky"]
 	path = bundle/ctrlp-funky
 	url = git://github.com/tacahiroy/ctrlp-funky.git
+    ignore = untracked
 [submodule "bundle/vim-phpunitqf"]
 	path = bundle/vim-phpunitqf
 	url = https://github.com/joonty/vim-phpunitqf.git
+    ignore = untracked
 [submodule "bundle/pdv"]
 	path = bundle/pdv
 	url = https://github.com/tobyS/pdv.git
+    ignore = untracked
 [submodule "bundle/neocomplcache"]
 	path = bundle/neocomplcache
 	url = https://github.com/Shougo/neocomplcache.vim.git
+    ignore = untracked
 [submodule "bundle/php"]
 	path = bundle/php
 	url = https://github.com/StanAngeloff/php.vim.git
+    ignore = untracked
 [submodule "bundle/php-indent"]
 	path = bundle/php-indent
 	url = https://github.com/2072/PHP-Indenting-for-VIm.git
+    ignore = untracked
 [submodule "bundle/vimproc"]
 	path = bundle/vimproc
 	url = https://github.com/Shougo/vimproc.vim.git
+    ignore = untracked
 [submodule "bundle/vim-airline"]
 	path = bundle/vim-airline
 	url = https://github.com/bling/vim-airline.git
+    ignore = untracked
 [submodule "bundle/TagHighlight"]
 	path = bundle/TagHighlight
 	url = https://github.com/vim-scripts/TagHighlight
+    ignore = untracked
 [submodule "bundle/operator-camelize"]
 	path = bundle/operator-camelize
 	url = https://github.com/tyru/operator-camelize.vim
+    ignore = untracked
 [submodule "bundle/vim-operator-user"]
 	path = bundle/vim-operator-user
 	url = https://github.com/kana/vim-operator-user.git
+    ignore = untracked
