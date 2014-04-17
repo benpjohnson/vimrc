@@ -95,7 +95,7 @@ set path=**
 set suffixesadd=.php
 
 " -------------------------------- key mappings --------------------------------
-let mapleader = ","
+let mapleader = "\<Space>"
 let maplocalleader = "\\"
 source $HOME/.vim/keymaps.vim
 
@@ -217,7 +217,6 @@ endfunction
 
 " Let me create an adhoc buffer I won't be prompted to save for queries/etc.
 function! DisposibleBuffer(filetype)
-
     " Split & open.
     let bufname = "[Scratch " . a:filetype . "] " . strftime("%d/%m/%y %H:%M:%S")
     silent execute "tabnew" . bufname
@@ -226,5 +225,20 @@ function! DisposibleBuffer(filetype)
     let scratchbuffer = bufnr(bufname, 1)
     call setbufvar(scratchbuffer, "&swapfile", 0)
     call setbufvar(scratchbuffer, "&buftype", "nofile")
-
 endfunction
+
+" can we autocreate classes/etc?
+" function! PhpClass(
+"     let class = expand("<cword>")
+"     silent execute "vert new " . bufname
+"
+"    Python << EOF
+"    import sys, vim
+"    new_path = vim.eval("expand('g:UltiSnipsPythonPath')")
+"    sys.path.append(new_path)
+"    from UltiSnips import UltiSnips_Manager
+"    UltiSnips_Manager.expand()
+"    EOF
+"    return ""
+"
+" endfunction

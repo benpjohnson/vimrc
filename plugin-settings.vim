@@ -139,6 +139,9 @@ map <Leader>,vc :let b:vimpipe_command="
 " ======
 " Conflicts with the php-fpm port I tend to use
 " let g:vdebug_options['port'] = 9300
+map <Leader>bw :BreakpointWindow<CR>
+map <Leader>br :BreakpointRemove *<CR>
+map <Leader>bb :Breakpoint<CR>
 
 
 " operator-camelize

@@ -29,7 +29,7 @@ set keywordprg=pman
 " let g:syntastic_php_checkers=['php', 'phpmd']
 " TEMP removed because of a response parsing bug
 " let g:syntastic_php_checkers=['php', 'phpcs', 'phpmd']
-let g:syntastic_php_checkers=['php']
+" let g:syntastic_php_checkers=['php']
 set shiftwidth=4
 
 " Highlight embeded SQL queries
@@ -50,8 +50,8 @@ let g:PHP_vintage_case_default_indent = 1
 " exec "silent SyntasticToggleMode"
 
 let g:syntastic_mode_map = { 'mode': 'active',
-            \ 'active_filetypes': ['php'],
-            \ 'passive_filetypes': [] }
+            \ 'active_filetypes': ['php', 'phpcs'],
+            \ 'passive_filetypes': ['php'] }
 
 " FIXME: generate this on the fly
 set dictionary-=$HOME/.dbtables dictionary+=$HOME/.dbtables

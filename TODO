@@ -14,3 +14,7 @@
 * guard for livereload
 * https://github.com/Stormherz/tablify may fill the database results hole
 * Decent mappings for editing db queries
+
+PHP Parsing / Code generation
+
+Would be nice to use the PHP parser to grab things like abstract methods to generate skeleton versions of classes that extend them. Reflection may even be able to do this.
