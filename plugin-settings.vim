@@ -26,7 +26,7 @@ nmap <Leader>gr yiw:Ggrep '<c-r>"'<CR>
 
 " PHP Documenter
 " --------------
-let g:pdv_template_dir = $HOME ."/.vim/bundle/pdv/templates_snip"
+let g:pdv_template_dir = $HOME ."/.vim/templates_snip"
 nmap <Leader>dd :call pdv#DocumentWithSnip()<CR>
 
 " debugbydie 
