@@ -227,3 +227,11 @@ endsnippet
 snippet namespace "Expand namespace based on path vs working directory"
 namespace ${1:`!v put =expand("%h")`}
 endsnippet
+
+snippet pdo
+$db = new PDO('mysql:dbname=${1};host=${2:localhost}', '${3:root}', ${4:null});
+$db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+$sql = "${5}";
+$result = $db->query($sql);
+$row = $result->fetch();
+endsnippet
