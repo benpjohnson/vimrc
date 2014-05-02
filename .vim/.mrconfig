@@ -1,0 +1,120 @@
+[bundle/markdown]
+checkout = git clone https://github.com/tpope/vim-markdown.git
+
+[bundle/fugitive]
+checkout = git clone https://github.com/tpope/vim-fugitive.git
+
+[bundle/phpfolding]
+checkout = git clone  https://github.com/rayburgemeestre/phpfolding.vim.git
+
+[bundle/async]
+checkout = git clone https://github.com/MarcWeber/vim-addon-async.git
+
+[bundle/matchit]
+checkout = git clone https://github.com/vim-scripts/matchit.zip.git
+
+[bundle/surround]
+checkout = git clone https://github.com/tpope/vim-surround.git
+
+[bundle/tabular]
+checkout = git clone https://github.com/godlygeek/tabular.git
+
+[bundle/ack]
+checkout = git clone https://github.com/mileszs/ack.vim.git
+
+[bundle/phpcomplete]
+checkout = git clone https://github.com/shawncplus/phpcomplete.vim.git
+
+[bundle/taglistplus]
+checkout = git clone https://github.com/int3/vim-taglist-plus.git
+
+[bundle/vim-extradite]
+checkout = git clone https://github.com/int3/vim-extradite.git
+
+[bundle/syntastic]
+checkout = git clone https://github.com/scrooloose/syntastic.git
+
+[bundle/csv]
+checkout = git clone https://github.com/chrisbra/csv.vim.git
+
+[bundle/debugbydie]
+checkout = git clone git.benpjohnson.com:debugbydie
+
+[bundle/ctrlp]
+checkout = git clone https://github.com/kien/ctrlp.vim.git
+
+[bundle/json]
+checkout = git clone https://github.com/vim-scripts/JSON.vim.git
+
+[bundle/gundo]
+checkout = git clone https://github.com/sjl/gundo.vim.git
+
+[bundle/ultisnips]
+checkout = git clone https://github.com/SirVer/ultisnips
+
+[bundle/vimwiki]
+checkout = git clone https://github.com/vim-scripts/vimwiki.git
+
+[bundle/vimpipe]
+checkout = git clone git@github.com:benpjohnson/vim-pipe.git
+
+[bundle/let-modeline]
+checkout = git clone https://github.com/vim-scripts/let-modeline.vim.git
+
+[bundle/todotxt]
+checkout = git clone https://github.com/davidoc/todo.txt-vim.git
+
+[bundle/vdebug]
+checkout = git clone https://github.com/joonty/vdebug.git
+
+[bundle/vim-repeat]
+checkout = git clone https://github.com/tpope/vim-repeat.git
+
+[bundle/Zenburn]
+checkout = git clone https://github.com/jnurmine/Zenburn.git
+
+[bundle/vim-eunuch]
+checkout = git clone https://github.com/tpope/vim-eunuch.git
+
+[bundle/gitgutter]
+checkout = git clone git://github.com/airblade/vim-gitgutter.git
+
+[bundle/slimux]
+checkout = git clone https://github.com/epeli/slimux.git
+
+[bundle/vim-unimpaired]
+checkout = git clone https://github.com/tpope/vim-unimpaired.git
+
+[bundle/ctrlp-funky]
+checkout = git clone git://github.com/tacahiroy/ctrlp-funky.git
+
+[bundle/vim-phpunitqf]
+checkout = git clone https://github.com/joonty/vim-phpunitqf.git
+
+[bundle/pdv]
+checkout = git clone https://github.com/tobyS/pdv.git
+
+[bundle/neocomplcache]
+checkout = git clone https://github.com/Shougo/neocomplcache.vim.git
+
+[bundle/php]
+checkout = git clone https://github.com/StanAngeloff/php.vim.git
+
+[bundle/php-indent]
+checkout = git clone https://github.com/2072/PHP-Indenting-for-VIm.git
+
+[bundle/vimproc]
+checkout = git clone https://github.com/Shougo/vimproc.vim.git
+
+[bundle/vim-airline]
+checkout = git clone https://github.com/bling/vim-airline.git
+
+[bundle/TagHighlight]
+checkout = git clone https://github.com/vim-scripts/TagHighlight
+
+[bundle/operator-camelize]
+checkout = git clone https://github.com/tyru/operator-camelize.vim
+
+[bundle/vim-operator-user]
+checkout = git clone https://github.com/kana/vim-operator-user.git
+
