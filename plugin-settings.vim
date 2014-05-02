@@ -98,17 +98,6 @@ let g:EnhCommentifyBindInInsert = 'No'
 " Don't mess up the tab key
 let g:no_html_tab_mapping = 'yes'
 
-" add a basic note entry
-fun! NoteAdd()
-    return "* " . strftime("%Y-%m-%d") . " "
-endfun
-fun! EntryAdd()
-    return strftime("%Y-%m-%d %H:%M:%S") . " "
-endfun
-
-map <Leader>n <Esc>ggO<C-r>=NoteAdd()<CR>
-map <Leader>N <Esc>ggO<C-r>=EntryAdd()<CR>
-
 " Experiments with MozRepl
 map <silent> <Leader>rr :silent !fr -e content  -j 'location.reload()'<CR>
 

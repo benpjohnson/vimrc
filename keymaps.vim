@@ -4,6 +4,7 @@ noremap <C-Left> <ESC>:tabprev<CR>
 noremap <Leader>to <ESC>:tabonly<CR>
 " Open the current buffer in another tab
 noremap <Leader>tt <ESC>:tab split<CR>
+noremap <Leader>c <ESC>:tabclose<CR>
 
 " tab next/previous
 nnoremap <c-l> gt
@@ -56,7 +57,7 @@ map <Leader>sr :source $MYVIMRC \| sil! source $HOME/.vimrc.local<CR>
 map <Leader>e :e <C-R>=expand("%:p:h") . "/" <CR>
 
 " Write quickly
-map <Leader>w :w<CR>
+map <Leader>w :windo! w<CR>
 
 " friendly vert split new file
 map <Leader>v :vert botright new<cr>
@@ -103,4 +104,4 @@ nmap <Leader>vt "zyiw:vert stjump <C-r>"<CR>
 " Playing with
 inoremap jk <esc>
 
-nmap <Leader>c :tag 
+nmap <Leader>n :tag 

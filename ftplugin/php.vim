@@ -50,8 +50,8 @@ let g:PHP_vintage_case_default_indent = 1
 " exec "silent SyntasticToggleMode"
 
 let g:syntastic_mode_map = { 'mode': 'active',
-            \ 'active_filetypes': ['php', 'phpcs'],
-            \ 'passive_filetypes': ['php'] }
+            \ 'active_filetypes': ['php'],
+            \ 'passive_filetypes': [] }
 
 " FIXME: generate this on the fly
 set dictionary-=$HOME/.dbtables dictionary+=$HOME/.dbtables
