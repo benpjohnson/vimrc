@@ -1,3 +1,4 @@
 autoload/pathogen.vim
 .netrwhist
 spell
+bundle/*
