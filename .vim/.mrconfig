@@ -1,120 +1,158 @@
 [bundle/vim-markdown]
 checkout = git clone https://github.com/tpope/vim-markdown.git
+skip = [ "$1" = push ]
 
 [bundle/vim-fugitive]
 checkout = git clone https://github.com/tpope/vim-fugitive.git
+skip = [ "$1" = push ]
 
 [bundle/phpfolding.vim]
 checkout = git clone https://github.com/rayburgemeestre/phpfolding.vim.git
+skip = [ "$1" = push ]
 
 [bundle/vim-addon-async]
 checkout = git clone https://github.com/MarcWeber/vim-addon-async.git
+skip = [ "$1" = push ]
 
 [bundle/matchit.zip]
 checkout = git clone https://github.com/vim-scripts/matchit.zip.git
+skip = [ "$1" = push ]
 
 [bundle/vim-surround]
 checkout = git clone https://github.com/tpope/vim-surround.git
+skip = [ "$1" = push ]
 
 [bundle/tabular]
 checkout = git clone https://github.com/godlygeek/tabular.git
+skip = [ "$1" = push ]
 
 [bundle/ack.vim]
 checkout = git clone https://github.com/mileszs/ack.vim.git
+skip = [ "$1" = push ]
 
 [bundle/phpcomplete.vim]
 checkout = git clone https://github.com/shawncplus/phpcomplete.vim.git
+skip = [ "$1" = push ]
 
 [bundle/vim-taglist-plus]
 checkout = git clone https://github.com/int3/vim-taglist-plus.git
+skip = [ "$1" = push ]
 
 [bundle/vim-extradite]
 checkout = git clone https://github.com/int3/vim-extradite.git
+skip = [ "$1" = push ]
 
 [bundle/syntastic]
 checkout = git clone https://github.com/scrooloose/syntastic.git
+skip = [ "$1" = push ]
 
 [bundle/csv.vim]
 checkout = git clone https://github.com/chrisbra/csv.vim.git
+skip = [ "$1" = push ]
 
 [bundle/debugbydie]
 checkout = git clone git.benpjohnson.com:debugbydie
 
 [bundle/ctrlp.vim]
 checkout = git clone https://github.com/kien/ctrlp.vim.git
+skip = [ "$1" = push ]
 
 [bundle/JSON.vim]
 checkout = git clone https://github.com/vim-scripts/JSON.vim.git
+skip = [ "$1" = push ]
 
 [bundle/gundo.vim]
 checkout = git clone https://github.com/sjl/gundo.vim.git
+skip = [ "$1" = push ]
 
 [bundle/ultisnips]
 checkout = git clone https://github.com/SirVer/ultisnips
+skip = [ "$1" = push ]
 
 [bundle/vimwiki]
 checkout = git clone https://github.com/vim-scripts/vimwiki.git
+skip = [ "$1" = push ]
 
 [bundle/vim-pipe]
 checkout = git clone git@github.com:benpjohnson/vim-pipe.git
 
 [bundle/let-modeline.vim]
 checkout = git clone https://github.com/vim-scripts/let-modeline.vim.git
+skip = [ "$1" = push ]
 
 [bundle/todo.txt-vim]
 checkout = git clone https://github.com/davidoc/todo.txt-vim.git
+skip = [ "$1" = push ]
 
 [bundle/vdebug]
 checkout = git clone https://github.com/joonty/vdebug.git
+skip = [ "$1" = push ]
 
 [bundle/vim-repeat]
 checkout = git clone https://github.com/tpope/vim-repeat.git
+skip = [ "$1" = push ]
 
 [bundle/Zenburn]
 checkout = git clone https://github.com/jnurmine/Zenburn.git
+skip = [ "$1" = push ]
 
 [bundle/vim-eunuch]
 checkout = git clone https://github.com/tpope/vim-eunuch.git
+skip = [ "$1" = push ]
 
 [bundle/vim-gitgutter]
 checkout = git clone git://github.com/airblade/vim-gitgutter.git
+skip = [ "$1" = push ]
 
 [bundle/slimux]
 checkout = git clone https://github.com/epeli/slimux.git
+skip = [ "$1" = push ]
 
 [bundle/vim-unimpaired]
 checkout = git clone https://github.com/tpope/vim-unimpaired.git
+skip = [ "$1" = push ]
 
 [bundle/ctrlp-funky]
 checkout = git clone git://github.com/tacahiroy/ctrlp-funky.git
+skip = [ "$1" = push ]
 
 [bundle/vim-phpunitqf]
 checkout = git clone https://github.com/joonty/vim-phpunitqf.git
+skip = [ "$1" = push ]
 
 [bundle/pdv]
 checkout = git clone https://github.com/tobyS/pdv.git
+skip = [ "$1" = push ]
 
 [bundle/neocomplcache.vim]
 checkout = git clone https://github.com/Shougo/neocomplcache.vim.git
+skip = [ "$1" = push ]
 
 [bundle/php.vim]
 checkout = git clone https://github.com/StanAngeloff/php.vim.git
+skip = [ "$1" = push ]
 
 [bundle/PHP-Indenting-for-VIm]
 checkout = git clone https://github.com/2072/PHP-Indenting-for-VIm.git
+skip = [ "$1" = push ]
 
 [bundle/vimproc.vim]
 checkout = git clone https://github.com/Shougo/vimproc.vim.git
+skip = [ "$1" = push ]
 
 [bundle/vim-airline]
 checkout = git clone https://github.com/bling/vim-airline.git
+skip = [ "$1" = push ]
 
 [bundle/TagHighlight]
 checkout = git clone https://github.com/vim-scripts/TagHighlight
+skip = [ "$1" = push ]
 
 [bundle/operator-camelize.vim]
 checkout = git clone https://github.com/tyru/operator-camelize.vim
+skip = [ "$1" = push ]
 
 [bundle/vim-operator-user]
 checkout = git clone https://github.com/kana/vim-operator-user.git
+skip = [ "$1" = push ]
 
