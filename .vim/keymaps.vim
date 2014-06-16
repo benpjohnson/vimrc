@@ -49,6 +49,8 @@ map <Leader>el :exec "e " . $HOME . "/.vimrc.local"<CR>
 map <Leader>epp :exec "e " . $HOME . "/.vim/ftplugin/php.vim"<CR>
 " edit .zshrc
 map <Leader>ez :e ~/.zshrc<CR>
+" edit awesomerc
+map <Leader>ea :exec "e " . $HOME . "/.config/awesome/rc.lua"<CR>
 
 " source vimrc and local if it's about
 map <Leader>sr :source $MYVIMRC \| sil! source $HOME/.vimrc.local<CR>
