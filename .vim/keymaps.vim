@@ -28,8 +28,7 @@ vmap <C-A-C> "+y
 
 " F3 toggle paste setting
 set pastetoggle=<F3>
-" I have have a spelling checker it came with my pc
-map <F4> :setlocal spell! spelllang=en_gb<CR>
+map <F4> :Test<CR>
 " f6 to make
 noremap <F6> :make<CR>
 
@@ -104,4 +103,8 @@ nmap <Leader>vt "zyiw:vert stjump <C-r>"<CR>
 " Playing with
 inoremap jk <esc>
 
-nmap <Leader>n :tag 
+" use ctrl + hjkl in command mode
+cnoremap <c-h> <Left>
+cnoremap <c-j> <Down>
+cnoremap <c-k> <Up>
+cnoremap <c-l> <Right>

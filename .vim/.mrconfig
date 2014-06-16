@@ -162,3 +162,7 @@ skip = [ "$1" = push ]
 
 [bundle/dbtables]
 checkout = git clone git@github.com:benpjohnson/dbtables.git
+
+[bundle/vim-commentary]
+checkout = git clone https://github.com/tpope/vim-commentary.git
+skip = [ "$1" = push ]

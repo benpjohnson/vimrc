@@ -7,6 +7,7 @@ noremap <C-b> :CtrlPBuffer<CR>
 noremap <C-f> :CtrlPFunky<CR>
 
 noremap <Leader>b :CtrlPBuffer<CR>
+noremap <Leader>n :CtrlPTag<CR> 
 noremap <Leader>m :CtrlPMRUFiles<CR>
 noremap <Leader>db :CtrlPBookmarkDir<CR>
 noremap <Leader>da :CtrlPBookmarkDirAdd<CR>
@@ -57,6 +58,14 @@ hi CSVColumnHeaderOdd ctermfg=188 ctermbg=234 guifg=#dcdccc guibg=#1f1f1f
 map <Leader>s :SlimuxREPLSendLine<CR>
 vmap <Leader>s :SlimuxREPLSendSelection<CR>
 map <Leader>a :SlimuxShellLast<CR>
+
+" Adding phpunit into the mix:
+map <Leader>ps SlimuxShellRun phpunit
+" project:
+" log failed tests and rerun filtered
+" get test output in a window or something to remove the need to run it
+" outside vim
+map <Leader>ps :Test<CR>
 
 " GitGutter
 " ---------

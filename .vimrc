@@ -1,4 +1,4 @@
-" .vimrc rebuilt from scratch
+".vimrc rebuilt from scratch
 set nocompatible
 " fix for debian autoenabling filetype detection before pathogen gets started
 " see http://www.adamlowe.me/2009/12/vim-destroys-all-other-rails-editors.html
@@ -30,8 +30,8 @@ set cul
 set ruler
 set laststatus=2
 
-" Elimate delays switching out of insert mode
-set ttimeoutlen=50
+" Elimate delays switching out of insert mode and leader
+set timeoutlen=300
 " ------------------------------- text handling --------------------------------
 " convert tabs to spaces
 set expandtab
@@ -228,6 +228,9 @@ function! DisposibleBuffer(filetype)
 endfunction
 
 " can we autocreate classes/etc?
+" Prompt for class name
+" create a new php buffer and name it for the Class name
+" save to pwd by default and use ctrlp to move to sub dir if required
 " function! PhpClass(
 "     let class = expand("<cword>")
 "     silent execute "vert new " . bufname
@@ -242,3 +245,6 @@ endfunction
 "    return ""
 "
 " endfunction
+
+function! BuildTags()
+endfunction
