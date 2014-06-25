@@ -18,6 +18,7 @@ map <Leader>ts <ESC>:call DisposibleBuffer('sql')<CR>
 map <Leader>tp <ESC>:tabnew +set\ filetype=php<CR>
 " Open a new PHP window
 map <Leader>vp <ESC>:vert new +set\ filetype=php<CR>
+map <Leader>h <ESC>:new<CR>
 
 " gnome-vim specific remap copy/paste to something sensible
 " use alt instead of shift as it will override c-v for some 
@@ -48,6 +49,8 @@ map <Leader>el :exec "e " . $HOME . "/.vimrc.local"<CR>
 map <Leader>epp :exec "e " . $HOME . "/.vim/ftplugin/php.vim"<CR>
 " edit .zshrc
 map <Leader>ez :e ~/.zshrc<CR>
+" edit work projects/todos
+map <Leader>ew :exec "e " . $HOME . "/kb2/general/todo.mkd"<CR>
 
 " source vimrc and local if it's about
 map <Leader>sr :source $MYVIMRC \| sil! source $HOME/.vimrc.local<CR>
