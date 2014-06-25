@@ -248,3 +248,12 @@ endfunction
 
 function! BuildTags()
 endfunction
+
+function! CurrentFunction()
+python << endpython
+from phply import phplex
+
+vim.command('echomsg "test"')
+
+endpython
+endfunction
