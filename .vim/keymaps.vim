@@ -111,3 +111,7 @@ cnoremap <c-h> <Left>
 cnoremap <c-j> <Down>
 cnoremap <c-k> <Up>
 cnoremap <c-l> <Right>
+
+" Resize windows like awesomewm
+nmap <leader>h 10<c-w><
+nmap <leader>l 10<c-w>>

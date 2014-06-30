@@ -19,6 +19,9 @@ let g:zenburn_old_Visual = 1
 let g:zenburn_alternate_Visual = 1
 colorscheme zenburn 
 
+" Give signs a more sensible background colour
+hi SignColumn ctermbg=234
+
 " turn on auto syntax highlight
 syn on
 set wildmenu
@@ -32,6 +35,7 @@ set laststatus=2
 
 " Elimate delays switching out of insert mode and leader
 set timeoutlen=300
+
 " ------------------------------- text handling --------------------------------
 " convert tabs to spaces
 set expandtab

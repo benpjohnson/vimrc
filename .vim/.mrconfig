@@ -164,5 +164,5 @@ checkout = git clone https://github.com/tpope/vim-commentary.git
 skip = [ "$1" = push ]
 
 [bundle/Vimpeg]
-checkout = https://github.com/dahu/Vimpeg.git
+checkout = git clone https://github.com/dahu/Vimpeg.git
 skip = [ "$1" = push ]
