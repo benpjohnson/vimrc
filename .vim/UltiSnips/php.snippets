@@ -263,3 +263,12 @@ if ($1) {
     $2
 }
 endsnippet
+
+#FIXME: would be nice to select from a list (string|mixed|etc) I think this is
+#possible if memory serves
+snippet @ "PHPDoc @var"
+@var ${1:string}
+endsnippet
+snippet @r "PHPDoc @return"
+@return ${1:string}
+endsnippet
