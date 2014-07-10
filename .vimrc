@@ -119,6 +119,9 @@ set nocursorline
 " Don't look back more than 256 lines
 syntax sync minlines=256
 
+" ------------------------------------ misc  -----------------------------------
+set history=1000
+
 " ------------------------------------ WIP -------------------------------------
 
 " FIXME: handle selected range + optional argument (:help a:0) to override type
