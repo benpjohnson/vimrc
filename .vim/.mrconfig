@@ -128,10 +128,6 @@ skip = [ "$1" = push ]
 checkout = git clone https://github.com/tobyS/pdv.git
 skip = [ "$1" = push ]
 
-[bundle/neocomplcache.vim]
-checkout = git clone https://github.com/Shougo/neocomplcache.vim.git
-skip = [ "$1" = push ]
-
 [bundle/php.vim]
 checkout = git clone https://github.com/StanAngeloff/php.vim.git
 skip = [ "$1" = push ]
@@ -165,4 +161,8 @@ checkout = git clone git@github.com:benpjohnson/dbtables.git
 
 [bundle/vim-commentary]
 checkout = git clone https://github.com/tpope/vim-commentary.git
+skip = [ "$1" = push ]
+
+[bundle/peg.vim]
+checkout = git clone https://github.com/gf3/peg.vim.git
 skip = [ "$1" = push ]
