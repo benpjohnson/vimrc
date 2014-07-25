@@ -18,6 +18,7 @@ map <Leader>ts <ESC>:call DisposibleBuffer('sql')<CR>
 map <Leader>tp <ESC>:tabnew +set\ filetype=php<CR>
 " Open a new PHP window
 map <Leader>vp <ESC>:vert new +set\ filetype=php<CR>
+map <Leader>h <ESC>:new<CR>
 
 " gnome-vim specific remap copy/paste to something sensible
 " use alt instead of shift as it will override c-v for some 
@@ -28,8 +29,7 @@ vmap <C-A-C> "+y
 
 " F3 toggle paste setting
 set pastetoggle=<F3>
-" I have have a spelling checker it came with my pc
-map <F4> :setlocal spell! spelllang=en_gb<CR>
+map <F4> :Test<CR>
 " f6 to make
 noremap <F6> :make<CR>
 
@@ -49,8 +49,12 @@ map <Leader>el :exec "e " . $HOME . "/.vimrc.local"<CR>
 map <Leader>epp :exec "e " . $HOME . "/.vim/ftplugin/php.vim"<CR>
 " edit .zshrc
 map <Leader>ez :e ~/.zshrc<CR>
+
 " edit awesomerc
 map <Leader>ea :exec "e " . $HOME . "/.config/awesome/rc.lua"<CR>
+
+" edit work projects/todos
+map <Leader>ew :exec "e " . $HOME . "/kb2/general/todo.mkd"<CR>
 
 " source vimrc and local if it's about
 map <Leader>sr :source $MYVIMRC \| sil! source $HOME/.vimrc.local<CR>
@@ -106,4 +110,8 @@ nmap <Leader>vt "zyiw:vert stjump <C-r>"<CR>
 " Playing with
 inoremap jk <esc>
 
-nmap <Leader>n :tag 
+" use ctrl + hjkl in command mode
+cnoremap <c-h> <Left>
+cnoremap <c-j> <Down>
+cnoremap <c-k> <Up>
+cnoremap <c-l> <Right>
