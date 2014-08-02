@@ -120,6 +120,10 @@ skip = [ "$1" = push ]
 checkout = git clone https://github.com/joonty/vim-phpunitqf.git
 skip = [ "$1" = push ]
 
+[bundle/vmustache]
+checkout = git clone https://github.com/tobyS/vmustache.git
+skip = [ "$1" = push ]
+
 [bundle/pdv]
 checkout = git clone https://github.com/tobyS/pdv.git
 skip = [ "$1" = push ]
@@ -156,3 +160,5 @@ skip = [ "$1" = push ]
 checkout = git clone https://github.com/kana/vim-operator-user.git
 skip = [ "$1" = push ]
 
+[bundle/dbtables]
+checkout = git clone git@github.com:benpjohnson/dbtables.git
