@@ -163,6 +163,6 @@ checkout = git clone git@github.com:benpjohnson/dbtables.git
 checkout = git clone https://github.com/tpope/vim-commentary.git
 skip = [ "$1" = push ]
 
-[bundle/Vimpeg]
-checkout = https://github.com/dahu/Vimpeg.git
+[bundle/vimroom]
+checkout = git clone https://github.com/mikewest/vimroom.git
 skip = [ "$1" = push ]
