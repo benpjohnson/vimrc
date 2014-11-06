@@ -1,8 +1,17 @@
-".vimrc rebuilt from scratch
+" ---------------------------------- workarounds -------------------------------
+
 set nocompatible
 " fix for debian autoenabling filetype detection before pathogen gets started
 " see http://www.adamlowe.me/2009/12/vim-destroys-all-other-rails-editors.html
 filetype off
+
+" Workaround for python/neovim
+if has('nvim')
+    runtime! python_setup.vim
+endif
+
+" ---------------------------------- plugins ---------------------------------
+
 call pathogen#incubate()
 call pathogen#helptags()
 

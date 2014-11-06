@@ -19,3 +19,6 @@ commandt :
 
 pman :
 	sudo pear install doc.php.net/pman
+
+neovim-python :
+	sudo pip install neovim
