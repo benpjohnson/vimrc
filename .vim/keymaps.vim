@@ -72,10 +72,15 @@ map <Leader>v :vert botright new<cr>
 noremap <Leader>< :r $HOME/.screen-exchange<CR>
 
 set showmode
+
 " Yank current filename to the unnamed register
 nmap cp :let @" = expand("%:t")<CR>
+
 " Yank relative to the current dir
 nmap ccp :let @" = expand("%:.") . ":" . line(".")<CR>
+
+" Yank full path
+nmap ccc :let @" = expand("%:p")<CR>
 
 " directory navigation
 nmap up :cd ..<CR>:pwd<CR>
@@ -119,3 +124,20 @@ cnoremap <c-l> <Right>
 " Resize windows like awesomewm
 nmap <leader>h 10<c-w><
 nmap <leader>l 10<c-w>>
+
+" WIP: fun with leaders
+nmap <Leader>o :CtrlP<CR>
+nmap <Leader>c :bd<CR>
+nmap <Leader>B :CtrlP ~/bin/<CR>
+
+"nmap <Leader>n :bn<CR>
+" Find stuff
+nmap <Leader>ff :execute "Ggrep " .  expand('%:t')<CR>
+nmap <Leader>z :execute "vert stjump " .  expand('<cword>')<CR>
+
+nmap <Leader>x :bd<CR>
+nmap <Leader>X :bd!<CR>
+
+nmap <Leader>r :redraw!<CR>
+
+nmap <Leader>p yaW | let @"="print_r(" . @" . ");"

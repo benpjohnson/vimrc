@@ -1,17 +1,14 @@
 " ---------------------------------- workarounds -------------------------------
 
 set nocompatible
+
+" if has("nvim")
+"     runtime! plugin/python_setup.vim
+" endif
+
 " fix for debian autoenabling filetype detection before pathogen gets started
 " see http://www.adamlowe.me/2009/12/vim-destroys-all-other-rails-editors.html
 filetype off
-
-" Workaround for python/neovim
-if has('nvim')
-    runtime! python_setup.vim
-endif
-
-" ---------------------------------- plugins ---------------------------------
-
 call pathogen#incubate()
 call pathogen#helptags()
 
@@ -30,7 +27,6 @@ colorscheme zenburn
 
 " Give signs a more sensible background colour
 hi SignColumn ctermbg=234
-
 " turn on auto syntax highlight
 syn on
 set wildmenu
@@ -41,10 +37,10 @@ set vb t_vb= " highlight current line
 set cul 
 set ruler
 set laststatus=2
-
 " Elimate delays switching out of insert mode and leader
 set timeoutlen=300
-
+" disable folding
+set nofoldenable
 " ------------------------------- text handling --------------------------------
 " convert tabs to spaces
 set expandtab
@@ -273,6 +269,16 @@ vim.command('echomsg "test"')
 endpython
 endfunction
 
+"TODO: CtlP-my functions to keep an index of useful stuf I can't remember aka. emacs search stuff
+"TODO: CtrlPGitBranch: jump to all changes that occured on this branch
+" Grab parent revision since last reabseline etc
+" DO  git diff --name-only 8030fa4515187ffe959c7622468102008d78f321.. << " probably numstat
+" on enter diff with parent
+"
+
+"
+"TODO: CtrlPUltisnips would be handy
+
 function! InsertRandomValueFromFile(filename)
     let value=substitute(system("perl -e 'srand; rand($.) < 1 && ($line = $_) while <>; print $line;' " . a:filename . ""),"\n","","")
     " setline(line('.'), getline(line('.')) . " " . value)
@@ -287,3 +293,51 @@ function! s:DiffWithSaved()
   exe "setlocal bt=nofile bh=wipe nobl noswf ro ft=" . filetype
 endfunction
 com! DiffSaved call s:DiffWithSaved()
+
+" FIXME: track open pane id
+" FIXME: bump up/down height
+
+fun! RunUnder()
+    if !g:opened
+        call OpenUnder()
+    endif
+    exec("!tmux send-keys -t 1 'php " . expand("%") . "'\r")
+endfun
+
+" FIXME: toggle support
+fun! OpenUnder()
+    let g:opened=1
+    exec("sil! !tmux splitw -p 22 && tmux selectp -t 0")
+endfun
+
+fun! CloseUnder()
+    let g:opened=0
+    exec("sil! !tmux killp -t 1")
+endfun
+
+" FIXME: toggle. Will need to get the ID of the opened pane to do this.
+" if not loaded > load > open [x] > attach via SLMUX
+" if not visible max
+" if visible min
+let g:php_repl_open=0
+function! PhpRepl()
+    " if g:php_repl_open == 0
+    "     let g:php_repl_open=1
+        call OpenUnder()
+        exec("!tmux send-keys -t 2 'clear\r'")
+        exec("!tmux send-keys -t 2 'psysh\r'")
+        exec("!tmux send-keys -t 2 'clear\r'")
+    " else
+    "     exec("!tmux kill-pane -t 2:2")
+    " endif
+endfunction
+
+nmap <F7> :sil! call PhpRepl()<CR>
+
+function! KillSwapFiles()
+    exec("sil! !rm -rf ~/.vim_backup/*.swp")
+    exec("redraw!")
+endfunction
+
+let g:tmuxify_custom_command = 'tmux split-window -p 20'
+nmap <Leader>c :call PhpRepl()<CR>
