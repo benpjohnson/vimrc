@@ -39,6 +39,8 @@ map <Leader>er :exec "e " . resolve(expand($MYVIMRC))<CR>
 map <Leader>ek :exec "e " . $HOME . "/.vim/keymaps.vim"<CR>  
 " edit plugin settings
 map <Leader>ep :exec "e " . $HOME . "/.vim/plugin-settings.vim"<CR>  
+" edit keymaps settings
+map <Leader>ef :exec "e " . $HOME . "/.vim/filetype.vim"<CR>  
 " edit Ultisnipts
 map <Leader>eu :UltiSnipsEdit<CR>
 " edit todo list

@@ -19,14 +19,8 @@ autocmd BufNewFile,BufRead *.org setf org
 " Markdown
 autocmd BufNewFile,BufRead *.mkd, *.markdown set ts=1 tw=80
 
-" RF5 custom XMLlike thingy
-autocmd BufNewFile,BufRead *.rf3,*.rf4,*.rf5 setfiletype xml
-
 " Puppet
 autocmd BufNewFile,BufRead *.pp set filetype=ruby
-
-" RF5 custom XML thingy
-autocmd BufNewFile,BufRead *.rf5 set filetype=rf5
 
 " JSON
 au! BufRead,BufNewFile *.json setfiletype json 
@@ -56,6 +50,12 @@ au BufNewFile phpunit.xml 0r ~/.vim/skeletons/phpunit.xml
 
 " watchr file
 au BufNewFile watchr.rb 0r ~/.vim/skeletons/watchr.rb
+
+" mr configuration
+au BufNewFile,BufRead .mrconfig set filetype=dosini
+
+" ledger
+au BufNewFile,BufRead *.dat set filetype=ledger
 
 " Git
 " ===

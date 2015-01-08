@@ -196,3 +196,7 @@ skip = [ "$1" = push ]
 [bundle/w3m.vim]
 checkout = git clone https://github.com/yuratomo/w3m.vim.git
 skip = [ "$1" = push ]
+
+[bundle/ledger]
+checkout = git clone https://github.com/ledger/vim-ledger.git
+skip = [ "$1" = push ]
