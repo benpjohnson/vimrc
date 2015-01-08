@@ -1,9 +1,14 @@
 " contine comments when a newline is started
 set comments=sr:/*,mb:*,ex:*/
+
 " reverse the order of elements in an array
 map <Leader>ar :s/^\s*\(.*\)\s*=>\s*\(.*\)\s*,/\2 => \1,/g<CR>gv=gv:Tab /=><CR>
+
 "  case
 map <Leader>cc :s/_\([a-z]\)/\U\1/g<CR>
+
+" Don't scan included files
+set complete-=i
 
 " Convert display format print_r array mappings [1] => ANAHSBND into actuals 
 " of course var_export may be a better choice!

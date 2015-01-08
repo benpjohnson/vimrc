@@ -2,14 +2,13 @@
 
 set nocompatible
 
-" if has("nvim")
-"     runtime! plugin/python_setup.vim
-" endif
-
 " fix for debian autoenabling filetype detection before pathogen gets started
 " see http://www.adamlowe.me/2009/12/vim-destroys-all-other-rails-editors.html
 filetype off
-call pathogen#incubate()
+
+" ------------------------------------ plugins ---------------------------------
+
+call pathogen#infect('bundle/{}')
 call pathogen#helptags()
 
 " ---------------------------------- look/feel ---------------------------------

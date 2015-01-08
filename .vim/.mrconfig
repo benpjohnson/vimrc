@@ -47,7 +47,7 @@ checkout = git clone https://github.com/chrisbra/csv.vim.git
 skip = [ "$1" = push ]
 
 [bundle/debugbydie]
-checkout = git clone git.benpjohnson.com:debugbydie
+checkout = git clone git.benj.at:debugbydie.git
 
 [bundle/ctrlp.vim]
 checkout = git clone https://github.com/kien/ctrlp.vim.git
@@ -177,5 +177,22 @@ checkout = git clone https://github.com/kaneshin/ctrlp-git.git
 skip = [ "$1" = push ]
 
 [bundle/vimroom]
-checkout = https://github.com/mikewest/vimroom.git
+checkout = git clone https://github.com/mikewest/vimroom.git
+skip = [ "$1" = push ]
+
+[bundle/ctrlp-modified.vim]
+checkout = git clone https://github.com/jasoncodes/ctrlp-modified.vim.git
+skip = [ "$1" = push ]
+
+[bundle/YouCompleteMe]
+#git submodule update --init --recursive
+checkout = git clone https://github.com/Valloric/YouCompleteMe.git
+skip = [ "$1" = push ]
+
+[bundle/supertab]
+checkout = git clone https://github.com/ervandew/supertab.git
+skip = [ "$1" = push ]
+
+[bundle/w3m.vim]
+checkout = git clone https://github.com/yuratomo/w3m.vim.git
 skip = [ "$1" = push ]

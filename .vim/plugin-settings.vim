@@ -41,6 +41,14 @@ let g:UltiSnipsEditSplit="vertical"
 let g:UltipsSnippetDirectories=["UltiSnips","snippets"]
 let g:UltiSnipsExpandTrigger="<Tab>"
 
+" YCM
+" ---
+let g:ycm_key_list_select_completion = ['<C-TAB>', '<Down>']
+let g:ycm_key_list_previous_completion = ['<C-S-TAB>', '<Up>']
+
+" Supertab
+let g:SuperTabDefaultCompletionType = '<C-Tab>'
+
 " vimwiki
 " -------
 let g:vimwiki_list = [{'path': '~/kb2/general', 'syntax': 'markdown', 'ext': '.md', 'index': 'home'}, {'path': '~/kb2/work', 'syntax': 'markdown', 'ext': '.md', 'index': 'home'}, {'path': '~/kb2/personal', 'syntax': 'markdown', 'ext': '.md', 'index': 'home'}, {'path': '~/kb2/project', 'syntax': 'markdown', 'ext': '.md', 'index': 'home'} ] 
