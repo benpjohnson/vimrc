@@ -61,3 +61,6 @@ au BufNewFile,BufRead *.dat set filetype=ledger
 " ===
 " Spell check commit messages
 " BufNewFile,BufRead COMMIT_EDITMSG setlocal spell
+
+" ePub
+au BufReadCmd *.epub call zip#Browse(expand("<amatch>"))
