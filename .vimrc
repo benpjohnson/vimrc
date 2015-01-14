@@ -338,5 +338,16 @@ function! KillSwapFiles()
     exec("redraw!")
 endfunction
 
-let g:tmuxify_custom_command = 'tmux split-window -p 20'
+" Could I vcsh from here too?
+function TGitCommit()
+    let message = input("Message: ")
+    if message == "" 
+        echom "Aborted!"
+    else
+        exec("sil! !tgit-commit -m '" . message . "'")
+        exec("redraw!")
+        echom "Committed"
+    endif
+endfunction
+map <Leader>cc :call TGitCommit()<CR>
 nmap <Leader>c :call PhpRepl()<CR>
