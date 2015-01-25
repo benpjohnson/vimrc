@@ -306,7 +306,7 @@ endfun
 " FIXME: toggle support
 fun! OpenUnder()
     let g:opened=1
-    exec("sil! !tmux splitw -p 22 && tmux selectp -t 0")
+    exec("sil! !tmux splitw -p 22 -t 2 && tmux selectp -t 0")
 endfun
 
 fun! CloseUnder()
@@ -323,9 +323,9 @@ function! PhpRepl()
     " if g:php_repl_open == 0
     "     let g:php_repl_open=1
         call OpenUnder()
-        exec("!tmux send-keys -t 2 'clear\r'")
-        exec("!tmux send-keys -t 2 'psysh\r'")
-        exec("!tmux send-keys -t 2 'clear\r'")
+        exec("sil! !tmux send-keys -t 2 'clear' C-m")
+        exec("sil! !tmux send-keys -t 2 'psysh' C-m")
+        exec("sil! !tmux send-keys -t 2 'clear' C-m")
     " else
     "     exec("!tmux kill-pane -t 2:2")
     " endif
@@ -338,5 +338,21 @@ function! KillSwapFiles()
     exec("redraw!")
 endfunction
 
-let g:tmuxify_custom_command = 'tmux split-window -p 20'
+" Could I vcsh from here too?
+function! TGitCommit()
+    let message = input("Message: ")
+    if message == "" 
+        echom "Aborted!"
+    else
+        exec("sil! !tgit-commit -m '" . message . "'")
+        exec("redraw!")
+        echom "Committed"
+    endif
+endfunction
+map <Leader>cc :call TGitCommit()<CR>
 nmap <Leader>c :call PhpRepl()<CR>
+
+
+function! AlignChained() 
+    execute ":'<,'>Tabularize /^[^->]*/l0<CR>"
+endfunction  

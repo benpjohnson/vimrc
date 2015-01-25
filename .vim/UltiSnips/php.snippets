@@ -271,3 +271,14 @@ endsnippet
 snippet @r "PHPDoc @return"
 @return ${1:string}
 endsnippet
+
+snippet expects
+expects({$this->once()}
+->will($this->returnValue());
+endsnippet
+
+snippet bootstrap
+$bootstrap = Config::get('bootstrap');
+$serviceFactory = new Application_Factory_Service($bootstrap);
+${1:name}Service = $serviceFactory->create("${1:name}");
+endsnippet
