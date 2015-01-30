@@ -53,10 +53,6 @@ skip = [ "$1" = push ]
 checkout = git clone https://github.com/vim-scripts/JSON.vim.git
 skip = [ "$1" = push ]
 
-[bundle/gundo.vim]
-checkout = git clone https://github.com/sjl/gundo.vim.git
-skip = [ "$1" = push ]
-
 [bundle/ultisnips]
 checkout = git clone https://github.com/SirVer/ultisnips
 skip = [ "$1" = push ]
