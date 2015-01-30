@@ -339,7 +339,7 @@ function! KillSwapFiles()
 endfunction
 
 " Could I vcsh from here too?
-function TGitCommit()
+function! TGitCommit()
     let message = input("Message: ")
     if message == "" 
         echom "Aborted!"
@@ -351,3 +351,8 @@ function TGitCommit()
 endfunction
 map <Leader>cc :call TGitCommit()<CR>
 nmap <Leader>c :call PhpRepl()<CR>
+
+
+function! AlignChained() 
+    execute ":'<,'>Tabularize /^[^->]*/l0<CR>"
+endfunction  
