@@ -268,6 +268,15 @@ vim.command('echomsg "test"')
 endpython
 endfunction
 
+function! FormatSql()
+python << endpython
+import sqlparse
+vim.command('echomsg "test"')
+
+#print sqlparse.format('select * from foo where id in (select id from bar);', reindent=True, keyword_case='upper')
+endpython
+endfunction
+
 "TODO: CtlP-my functions to keep an index of useful stuf I can't remember aka. emacs search stuff
 "TODO: CtrlPGitBranch: jump to all changes that occured on this branch
 " Grab parent revision since last reabseline etc
@@ -356,3 +365,9 @@ nmap <Leader>c :call PhpRepl()<CR>
 function! AlignChained() 
     execute ":'<,'>Tabularize /^[^->]*/l0<CR>"
 endfunction  
+
+" if has("multi_byte")
+"     set lcs=tab: ⇥
+" else
+"     set lcs=tab:>-
+" endif

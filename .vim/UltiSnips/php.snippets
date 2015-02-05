@@ -268,8 +268,13 @@ endsnippet
 snippet @ "PHPDoc @var"
 @var ${1:string}
 endsnippet
+
 snippet @r "PHPDoc @return"
 @return ${1:string}
+endsnippet
+
+snippet @t
+@throws ${1:Exception} ${2}
 endsnippet
 
 snippet expects
@@ -282,3 +287,4 @@ $bootstrap = Config::get('bootstrap');
 $serviceFactory = new Application_Factory_Service($bootstrap);
 ${1:name}Service = $serviceFactory->create("${1:name}");
 endsnippet
+
